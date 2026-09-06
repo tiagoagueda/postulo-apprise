@@ -1,0 +1,73 @@
+# French translations for postulo-apprise.
+# This file is distributed under the same license as the postulo-apprise package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: postulo-apprise 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/postulo_apprise/notifier.py
+msgid "Apprise"
+msgstr "Apprise"
+
+#: src/postulo_apprise/notifier.py
+msgid "Apprise URLs"
+msgstr "URL Apprise"
+
+#: src/postulo_apprise/notifier.py
+msgid ""
+"One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, "
+"discord://webhook-id/webhook-token, mailto://user:password@example.org, and any "
+"of the others Apprise lists. The credentials live inside the URL, so the whole "
+"field is stored encrypted and never shown again; the connections list names each "
+"service with the secret parts masked."
+msgstr ""
+"Une par ligne, sous la forme d'Apprise : tgram://jeton-du-bot/id-de-discussion, "
+"ntfy://sujet, discord://id-webhook/jeton-webhook, "
+"mailto://utilisateur:motdepasse@example.org, et toutes celles qu'Apprise recense. "
+"Les identifiants sont dans l'URL elle-même : tout le champ est donc chiffré et "
+"n'est jamais réaffiché ; la liste des connexions nomme chaque service en masquant "
+"les parties secrètes."
+
+#: src/postulo_apprise/notifier.py
+msgid "At least one Apprise URL is needed."
+msgstr "Il faut au moins une URL Apprise."
+
+#: src/postulo_apprise/notifier.py
+msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
+msgstr ""
+"La ligne %(line)d n'est pas une URL Apprise que cette version comprend "
+"(%(scheme)s)."
+
+#: src/postulo_apprise/notifier.py
+msgid "%(service)s at %(host)s: %(error)s"
+msgstr "%(service)s sur %(host)s : %(error)s"
+
+#: src/postulo_apprise/notifier.py
+msgid "Postulo can reach you here"
+msgstr "Postulo peut vous joindre ici"
+
+#: src/postulo_apprise/notifier.py
+msgid ""
+"This is the test message from your Apprise connection. Reminders and captures "
+"will arrive the same way."
+msgstr ""
+"Ceci est le message de test de votre connexion Apprise. Les rappels et les "
+"captures arriveront de la même façon."
+
+#: src/postulo_apprise/notifier.py
+msgid "Delivered to %(count)d service."
+msgstr "Remis à %(count)d service."
+
+#: src/postulo_apprise/notifier.py
+msgid "Delivered to %(count)d services."
+msgstr "Remis à %(count)d services."
+
+#: src/postulo_apprise/notifier.py
+msgid "At least one service refused the message."
+msgstr "Au moins un service a refusé le message."

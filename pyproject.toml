@@ -1,0 +1,62 @@
+[project]
+name = "postulo-apprise"
+version = "0.1.0"
+description = "Notifications from Postulo through Apprise: Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services, each named by one URL."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "AGPL-3.0-or-later"
+authors = [{ name = "Tiago Agueda" }]
+keywords = ["postulo", "plugin", "apprise", "notifications"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Topic :: Communications",
+]
+# Apprise is the whole point. Postulo itself is not declared: a plugin runs inside
+# Postulo's environment and uses what is already there, and Postulo is not on PyPI, so
+# naming it here would send pip looking for something it cannot find.
+dependencies = ["apprise>=1.9"]
+
+[project.urls]
+Homepage = "https://source.tiagoagueda.com/postulo/postulo-apprise"
+"Postulo" = "https://source.tiagoagueda.com/postulo/postulo"
+"Apprise" = "https://github.com/caronc/apprise"
+"Writing a plugin" = "https://source.tiagoagueda.com/postulo/postulo/src/branch/main/docs/PLUGINS.md"
+
+# The installation, in full: Postulo reads this group when it starts and the notifier
+# appears under Settings → Connections.
+[project.entry-points."postulo.notifiers"]
+apprise = "postulo_apprise.notifier:AppriseNotifier"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/postulo_apprise"]
+
+[dependency-groups]
+# Postulo itself, for the tests: they run the plugin inside a real Postulo, through its
+# registry, exactly as an instance would.
+dev = [
+    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git",
+    "pytest>=8.3",
+    "pytest-django>=4.14",
+    "ruff>=0.16",
+]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+pythonpath = ["."]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "S"]
+ignore = ["S101"]
