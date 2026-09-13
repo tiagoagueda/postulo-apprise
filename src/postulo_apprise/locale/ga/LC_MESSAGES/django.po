@@ -17,52 +17,61 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py:145
-#, python-format
+#, python-format, draft
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr ""
+msgstr "%(service)s ag %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py:93
+#, draft
 msgid "Apprise"
-msgstr ""
+msgstr "Apprise"
 
 #: src/postulo_apprise/notifier.py:99
+#, draft
 msgid "Apprise URLs"
-msgstr ""
+msgstr "URLanna Apprise"
 
 #: src/postulo_apprise/notifier.py:130
+#, draft
 msgid "At least one Apprise URL is needed."
-msgstr ""
+msgstr "Tá URL Apprise amháin ar a laghad ag teastáil."
 
 #: src/postulo_apprise/notifier.py:185 src/postulo_apprise/notifier.py:197
+#, draft
 msgid "At least one service refused the message."
-msgstr ""
+msgstr "Dhiúltaigh seirbhís amháin ar a laghad don teachtaireacht."
 
 #: src/postulo_apprise/notifier.py:179
-#, python-format
+#, python-format, draft
 msgid "Delivered to %(count)d service."
-msgstr ""
+msgstr "Seachadta chuig %(count)d seirbhís."
 
 #: src/postulo_apprise/notifier.py:181
-#, python-format
+#, python-format, draft
 msgid "Delivered to %(count)d services."
-msgstr ""
+msgstr "Seachadta chuig %(count)d seirbhís."
 
 #: src/postulo_apprise/notifier.py:133
-#, python-format
+#, python-format, draft
 msgid ""
 "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
+msgstr "Ní URL Apprise a thuigeann an leagan seo í líne %(line)d (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py:103
+#, draft
 msgid ""
 "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
 msgstr ""
+"Ceann amháin in aghaidh na líne, i bhfoirm Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, agus aon cheann eile a liostaíonn Apprise. Tá na dintiúir istigh san URL, mar sin stóráiltear an réimse ar fad go criptithe agus ní thaispeántar arís é go deo; ainmníonn liosta na nasc gach seirbhís agus na codanna rúnda ceilte."
 
 #: src/postulo_apprise/notifier.py:166
+#, draft
 msgid "Postulo can reach you here"
-msgstr ""
+msgstr "Is féidir le Postulo teacht ort anseo"
 
 #: src/postulo_apprise/notifier.py:168
+#, draft
 msgid ""
 "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr ""
+"Seo an teachtaireacht tástála ó do nasc Apprise. Tiocfaidh meabhrúcháin agus gabhálacha ar an mbealach céanna."
