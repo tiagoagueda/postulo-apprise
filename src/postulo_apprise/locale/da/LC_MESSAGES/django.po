@@ -1,0 +1,68 @@
+# dansk translation of postulo-apprise.
+# This file is distributed under the same license as Postulo (AGPL-3.0-or-later).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Postulo\n"
+"Report-Msgid-Bugs-To: https://source.tiagoagueda.com/postulo/postulo/issues\n"
+"POT-Creation-Date: 2026-09-13 04:03+0000\n"
+"PO-Revision-Date: 2026-09-13 04:03+0000\n"
+"Last-Translator: Postulo contributors\n"
+"Language-Team: dansk\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: postulo scripts/messages.py\n"
+
+#: src/postulo_apprise/notifier.py:145
+#, python-format
+msgid "%(service)s at %(host)s: %(error)s"
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:93
+msgid "Apprise"
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:99
+msgid "Apprise URLs"
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:130
+msgid "At least one Apprise URL is needed."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:185 src/postulo_apprise/notifier.py:197
+msgid "At least one service refused the message."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:179
+#, python-format
+msgid "Delivered to %(count)d service."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:181
+#, python-format
+msgid "Delivered to %(count)d services."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:133
+#, python-format
+msgid ""
+"Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:103
+msgid ""
+"One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:166
+msgid "Postulo can reach you here"
+msgstr ""
+
+#: src/postulo_apprise/notifier.py:168
+msgid ""
+"This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
+msgstr ""
