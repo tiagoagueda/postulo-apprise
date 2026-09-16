@@ -1,0 +1,47 @@
+# A tag is a published version, and a published version promises more than a commit does:
+# the twenty-four European Union catalogues complete, and the core it was released beside
+# actually present rather than quietly missing (#1). `pytest -m release` is what asks for
+# them, and a tag is the only thing that asks for it.
+#
+# Its own workflow rather than a second job in `ci.yml`, where it reported failure on every
+# ordinary push although its `if:` named a tag — and a red mark for a job that was never
+# meant to run on a branch is the same red as a real failure. A workflow a branch push does
+# not trigger cannot be red on one (#2).
+name: Release gate
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    container:
+      # Node, because Forgejo runs `actions/checkout` as JavaScript inside this container;
+      # uv brings its own Python. `ci.yml` says more about why.
+      image: node:22-bookworm
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install WeasyPrint's libraries
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libfontconfig1
+          rm -rf /var/lib/apt/lists/*
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Install the plugin, Postulo and the test tools
+        run: uv sync --locked --python 3.14
+
+      - name: The promises a published version makes
+        run: uv run pytest -m release
