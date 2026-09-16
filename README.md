@@ -53,10 +53,14 @@ Some things worth knowing:
 - **A typo is caught at the form.** Each line must be a URL Apprise understands; the
   form says which line is not, and nothing is saved until every line is.
 - **Your own servers are subject to the instance's destination policy.** An ntfy, Gotify
-  or Matrix server on a private address is refused unless the operator set
-  `POSTULO_CONNECTIONS_ALLOW_PRIVATE=true`, exactly as for every other connection.
-  Hosted services (Telegram, Discord, Pushover…) name no address of yours and are not
-  affected.
+  or Matrix server, or a `json://`, `xml://` or `form://` webhook, on a private address is
+  refused unless the operator set `POSTULO_CONNECTIONS_ALLOW_PRIVATE=true`, exactly as for
+  every other connection. That includes a name with no dot in it — `json://redis:6379/`,
+  `form://paperless:8000/`, a Docker service or a machine on the LAN — which is a real
+  destination like any other and was let through unchecked before 0.3.0. Which URLs name a
+  server of yours is read from Apprise's own description of each service; hosted ones
+  (Telegram, Discord, Pushover…) keep a token where the host would be, name no address of
+  yours, and are not affected.
 - **Several connections or several lines?** Either. One connection with three URLs sends
   every chosen event to all three; two connections let you send reminders to the phone
   and captures to a chat.

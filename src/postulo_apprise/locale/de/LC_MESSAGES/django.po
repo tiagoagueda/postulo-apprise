@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Postulo\n"
 "Report-Msgid-Bugs-To: https://source.tiagoagueda.com/postulo/postulo/issues\n"
-"POT-Creation-Date: 2026-09-13 04:03+0000\n"
+"POT-Creation-Date: 2026-09-16 08:40+0000\n"
 "PO-Revision-Date: 2026-09-13 04:03+0000\n"
 "Last-Translator: Postulo contributors\n"
 "Language-Team: Deutsch\n"
@@ -16,61 +16,61 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: postulo scripts/messages.py\n"
 
-#: src/postulo_apprise/notifier.py:145
+#: src/postulo_apprise/notifier.py:185
 #, python-format, draft
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s bei %(host)s: %(error)s"
 
-#: src/postulo_apprise/notifier.py:93
+#: src/postulo_apprise/notifier.py:133
 #, draft
 msgid "Apprise"
 msgstr "Apprise"
 
-#: src/postulo_apprise/notifier.py:99
+#: src/postulo_apprise/notifier.py:139
 #, draft
 msgid "Apprise URLs"
 msgstr "Apprise-URLs"
 
-#: src/postulo_apprise/notifier.py:130
+#: src/postulo_apprise/notifier.py:170
 #, draft
 msgid "At least one Apprise URL is needed."
 msgstr "Mindestens eine Apprise-URL ist nötig."
 
-#: src/postulo_apprise/notifier.py:185 src/postulo_apprise/notifier.py:197
+#: src/postulo_apprise/notifier.py:225 src/postulo_apprise/notifier.py:237
 #, draft
 msgid "At least one service refused the message."
 msgstr "Mindestens ein Dienst hat die Nachricht abgelehnt."
 
-#: src/postulo_apprise/notifier.py:179
+#: src/postulo_apprise/notifier.py:219
 #, python-format, draft
 msgid "Delivered to %(count)d service."
 msgstr "An %(count)d Dienst zugestellt."
 
-#: src/postulo_apprise/notifier.py:181
+#: src/postulo_apprise/notifier.py:221
 #, python-format, draft
 msgid "Delivered to %(count)d services."
 msgstr "An %(count)d Dienste zugestellt."
 
-#: src/postulo_apprise/notifier.py:133
+#: src/postulo_apprise/notifier.py:173
 #, python-format, draft
 msgid ""
 "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr ""
 "Zeile %(line)d ist keine Apprise-URL, die diese Version versteht (%(scheme)s)."
 
-#: src/postulo_apprise/notifier.py:103
+#: src/postulo_apprise/notifier.py:143
 #, draft
 msgid ""
 "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
 msgstr ""
 "Eine pro Zeile, in der Form von Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org und jede andere, die Apprise aufführt. Die Zugangsdaten stecken in der URL, daher wird das ganze Feld verschlüsselt gespeichert und nie wieder angezeigt; die Verbindungsliste nennt jeden Dienst mit maskierten geheimen Teilen."
 
-#: src/postulo_apprise/notifier.py:166
+#: src/postulo_apprise/notifier.py:206
 #, draft
 msgid "Postulo can reach you here"
 msgstr "Hier erreicht Sie Postulo"
 
-#: src/postulo_apprise/notifier.py:168
+#: src/postulo_apprise/notifier.py:208
 #, draft
 msgid ""
 "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."

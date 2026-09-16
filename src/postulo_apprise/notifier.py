@@ -9,29 +9,37 @@ masked (Apprise knows which parts those are).
 Two things are checked at the form rather than at delivery time. Each line must be a URL
 Apprise understands — a typo in a scheme is caught when it is typed, not when a reminder
 falls due at three in the morning. And a URL that names a server of the person's own — an
-ntfy, a Gotify, a Matrix homeserver on the LAN — is subject to the instance's destination
-policy, exactly as a request through ``postulo.plugins.http`` would be: private addresses
-are refused unless the operator allowed them. The same check runs again before every
-send, because the policy is the operator's and may change.
+ntfy, a Gotify, a Matrix homeserver on the LAN, a webhook at a container next door — is
+subject to the instance's destination policy, exactly as a request through ``client()``
+would be: private addresses are refused unless the operator allowed them. The same check
+runs again before every send, because the policy is the operator's and may change.
+
+**Which hosts are destinations is decided by the scheme, not by the spelling of the host.**
+Apprise keeps whatever came before the first slash in ``host`` whether that is an address
+or a credential, so the question "is this an address" has to be asked of the service.
+:func:`names_a_server` asks Apprise's own URL template, and anything it cannot answer for
+is treated as an address and checked — a refusal a person can read and an operator can
+lift, rather than a hole nobody sees. What that replaces was a guess from the spelling: a
+host had to carry a dot to count, so ``json://redis:6379/``, ``form://paperless:8000/``
+and every other Docker service name or single-label LAN host went out unchecked (#1).
+
+**One thing this cannot do is close the gap between the check and the send.** Apprise
+opens its own connections and resolves the name again when it does, so a name that
+answered publicly here is free to answer with a private address a moment later. Closing it
+means carrying the custom-webhook schemes (``json``, ``xml``, ``form``) over ``client()``,
+where approving and connecting are one act; that is a larger change and is not this one.
 """
 
 from __future__ import annotations
 
 import ipaddress
-import re
 
 import apprise
 from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy
-from postulo.plugins import http
-from postulo.plugins.base import FieldSpec, TestResult
+from postulo.plugins.api import DestinationRefused, FieldSpec, TestResult, check_destination
 
 from . import __version__
-
-#: A host that is a name to resolve, as opposed to a token Apprise happens to keep in the
-#: host slot (Telegram's bot token, a Discord webhook id, a Pushover key). Only real
-#: destinations are checked against the destination policy; a token is not an address.
-_HOSTNAME = re.compile(r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$", re.I)
 
 
 class ConfigurationError(ValueError):
@@ -63,21 +71,53 @@ def build(urls: list[str]) -> tuple[apprise.Apprise, list[tuple[int, str]]]:
     return client, rejected
 
 
+def names_a_server(server) -> bool:
+    """Whether this scheme's host slot holds an address, rather than a token.
+
+    Apprise's own URL template is the authority, and it is the only one that scales: a
+    service whose URL names a machine of yours declares a ``host`` token — ntfy, Gotify,
+    Matrix, Mattermost, ``mailto``, and the custom webhooks ``json``, ``xml`` and ``form``
+    — while a hosted one declares what it really keeps there, ``bot_token`` for Telegram,
+    ``webhook_id`` for Discord, ``user_key`` for Pushover. Over two hundred schemes are
+    sorted by that one question, and a service Apprise adds tomorrow is sorted with them
+    instead of waiting for a list here to be updated.
+
+    **A scheme this cannot read is a destination.** If the template is missing — a plugin
+    that does not use one, an Apprise that has renamed it — the answer is yes, and the host
+    is checked. That way round a token in the host slot of an unusual service is refused
+    with a sentence naming it, which somebody reads and reports; the other way round an
+    unchecked address is a hole nothing announces (#1).
+
+    What that costs, in this Apprise, is ``wechat``: it declares a ``host`` and keeps an
+    agent id there, so a WeChat connection is refused on an instance that does not allow
+    private destinations. One scheme in ninety-four, it says so on the form, and naming it
+    here is cheaper than a second list that would be wrong about something else.
+    """
+    template = getattr(type(server), "template_tokens", None)
+    if not isinstance(template, dict) or not template:
+        return True
+    return "host" in template
+
+
 def destination_of(server) -> str | None:
     """The address a service will be reached at, if the URL names one; else ``None``.
 
-    Apprise keeps whatever came before the first slash in ``host``. For a self-hosted
-    service that is a hostname or an IP address; for a hosted one it is usually a token.
+    Every host of a scheme that names a server is a destination, whatever it looks like:
+    a dotted name, a single label such as a Docker service or a LAN machine, an address
+    literal, or something that resolves nowhere at all — the policy is asked about all
+    four, and answers for the last by refusing it.
     """
     host = str(getattr(server, "host", "") or "").strip("[]")
-    if not host:
+    if not host or not names_a_server(server):
         return None
     try:
-        ipaddress.ip_address(host)
+        address = ipaddress.ip_address(host)
     except ValueError:
-        if host.lower() != "localhost" and not _HOSTNAME.match(host):
-            return None
-    return f"https://{host}"
+        authority = host
+    else:
+        authority = f"[{host}]" if address.version == 6 else host
+    port = getattr(server, "port", None)
+    return f"https://{authority}:{port}" if port else f"https://{authority}"
 
 
 def describe(server) -> str:
@@ -139,8 +179,8 @@ class AppriseNotifier:
             if destination is None:
                 continue
             try:
-                http.check_destination(destination)
-            except http.DestinationRefused as error:
+                check_destination(destination)
+            except DestinationRefused as error:
                 problems.append(
                     str(_("%(service)s at %(host)s: %(error)s"))
                     % {"service": server.service_name, "host": server.host, "error": error}

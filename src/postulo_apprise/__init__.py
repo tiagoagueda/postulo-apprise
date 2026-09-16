@@ -15,4 +15,9 @@ Every string a person reads is translated by this package itself, from ``locale/
 this file; Postulo never carries a plugin's words.
 """
 
-__version__ = "0.1.0"
+from importlib import metadata
+
+#: One version, and it is the installed distribution's. Written out by hand it was a label
+#: rather than a fact -- `0.1.0` here while `pyproject.toml` said `0.3.0`, so every
+#: connection recorded a version the package had not had for two releases (#1).
+__version__ = metadata.version("postulo-apprise")

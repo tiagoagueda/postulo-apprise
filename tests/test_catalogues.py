@@ -12,9 +12,10 @@ from pathlib import Path
 
 import pytest
 
-messages_tool = pytest.importorskip(
-    "postulo.core.messages_tool", reason="the catalogue tool arrived with Postulo 0.3"
-)
+try:
+    from postulo.core import messages_tool
+except ImportError:  # a Postulo older than 0.3 has no catalogue tool
+    messages_tool = None
 
 REPO = Path(__file__).resolve().parents[1]
 
@@ -22,13 +23,36 @@ REPO = Path(__file__).resolve().parents[1]
 WORKING = ("fr-fr", "pt-pt")
 #: The twenty-four, minus the source. Complete in a published version, not in every commit.
 EUROPEAN_UNION = (
-    "bg", "cs", "da", "de", "el", "es", "et", "fi", "fr-fr", "ga", "hr", "hu", "it",
-    "lt", "lv", "mt", "nl", "pl", "pt-pt", "ro", "sk", "sl", "sv",
+    "bg",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "es",
+    "et",
+    "fi",
+    "fr-fr",
+    "ga",
+    "hr",
+    "hu",
+    "it",
+    "lt",
+    "lv",
+    "mt",
+    "nl",
+    "pl",
+    "pt-pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
 )
 
 
 @pytest.fixture(scope="module")
 def tool():
+    if messages_tool is None:
+        pytest.skip("the catalogue tool arrived with Postulo 0.3")
     messages_tool.use(REPO)
     return messages_tool
 
@@ -54,6 +78,21 @@ def test_every_language_postulo_offers_has_a_catalogue(tool):
 @pytest.mark.parametrize("code", WORKING)
 def test_the_working_languages_are_complete(tool, code):
     assert missing(tool, code) == []
+
+
+@pytest.mark.release
+def test_the_core_this_is_released_beside_can_read_the_catalogues():
+    """A skip is not a pass in a published version.
+
+    Everything below needs the core's catalogue tool, and everything below skipped when the
+    core was old enough not to have it -- a green run that had checked nothing, which is how
+    a release gate stops being one. Under `-m release` its absence is a failure, and the
+    thing to fix is the pin in `pyproject.toml` (#1).
+    """
+    assert messages_tool is not None, (
+        "This Postulo has no postulo.core.messages_tool, so every catalogue check below "
+        "skipped. Pin the dev group to the core this plugin is released beside."
+    )
 
 
 @pytest.mark.release
