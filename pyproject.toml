@@ -47,7 +47,7 @@ packages = ["src/postulo_apprise"]
 # silence (#1). This is the 0.3.0 release line; there is no `v0.3.0` tag yet, and the day
 # there is one, `@v0.3.0` replaces the commit and says the same thing in words.
 dev = [
-    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@5ee31c66aa278f5d189acf7e59031d3f56188b68",
+    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@1d6cdd7e0",
     "pytest>=8.3",
     "pytest-django>=4.14",
     "ruff>=0.16",
