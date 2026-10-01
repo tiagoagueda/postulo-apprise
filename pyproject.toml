@@ -3,7 +3,7 @@ name = "postulo-apprise"
 version = "0.3.0"
 description = "Notifications from Postulo through Apprise: Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services, each named by one URL."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12.4"
 license = "AGPL-3.0-or-later"
 authors = [{ name = "Tiago Agueda" }]
 keywords = ["postulo", "plugin", "apprise", "notifications"]
@@ -47,7 +47,7 @@ packages = ["src/postulo_apprise"]
 # silence (#1). This is the 0.3.0 release line; there is no `v0.3.0` tag yet, and the day
 # there is one, `@v0.3.0` replaces the commit and says the same thing in words.
 dev = [
-    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@1d6cdd7e0",
+    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@a6363a397",
     "pytest>=8.3",
     "pytest-django>=4.14",
     "ruff>=0.16",

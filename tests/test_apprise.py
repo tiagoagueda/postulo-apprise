@@ -6,7 +6,7 @@ import pytest
 from django.urls import reverse
 from django.utils import translation
 from postulo.notifications.base import Notification
-from postulo.plugins import fetching, registry
+from postulo.plugins import public_addresses, registry
 from postulo.plugins.models import Connection
 
 from postulo_apprise.notifier import (
@@ -59,7 +59,7 @@ def compose_network(monkeypatch):
     def addresses(host: str):
         return [ipaddress.ip_address("172.18.0.7")] if host in {"redis", "paperless"} else []
 
-    monkeypatch.setattr(fetching, "_addresses_for", addresses)
+    monkeypatch.setattr(public_addresses, "_addresses_for", addresses)
 
 
 # --------------------------------------------------------------- the pieces
@@ -282,10 +282,10 @@ def test_the_connection_form_keeps_the_urls_secret_and_the_list_masks_them(clien
 def test_the_plugin_speaks_french_and_portuguese_by_itself():
     registry.plugins("notifier", refresh=True)
     notifier = registry.find_plugin("notifier", "apprise")
-    with translation.override("fr-fr"):
+    with translation.override("fr-FR"):
         assert notifier.config_fields()[0].label == "URL Apprise"
         assert notifier.validate({"urls": ""}) == {"urls": ["Il faut au moins une URL Apprise."]}
-    with translation.override("pt-pt"):
+    with translation.override("pt-PT"):
         assert notifier.validate({"urls": ""}) == {"urls": ["É preciso pelo menos um URL Apprise."]}
-    with translation.override("en-gb"):
+    with translation.override("en-GB"):
         assert notifier.config_fields()[0].label == "Apprise URLs"
