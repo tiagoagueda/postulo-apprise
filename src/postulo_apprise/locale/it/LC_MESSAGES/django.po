@@ -1,11 +1,9 @@
 # italiano translation of postulo-apprise.
-# This file is distributed under the same license as Postulo (AGPL-3.0-or-later).
+# This file is distributed under the same license as the postulo-apprise package (AGPL-3.0-or-later).
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Postulo\n"
-"Report-Msgid-Bugs-To: https://source.tiagoagueda.com/postulo/postulo/issues\n"
-"POT-Creation-Date: 2026-09-16 08:40+0000\n"
+"Project-Id-Version: postulo-apprise\n"
 "PO-Revision-Date: 2026-09-13 04:03+0000\n"
 "Last-Translator: Postulo contributors\n"
 "Language-Team: italiano\n"
@@ -16,63 +14,57 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: postulo scripts/messages.py\n"
 
-#: src/postulo_apprise/notifier.py:185
-#, python-format, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s su %(host)s: %(error)s"
 
-#: src/postulo_apprise/notifier.py:133
-#, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise"
 msgstr "Apprise"
 
-#: src/postulo_apprise/notifier.py:139
-#, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise URLs"
 msgstr "URL Apprise"
 
-#: src/postulo_apprise/notifier.py:170
-#, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Serve almeno un URL Apprise."
 
-#: src/postulo_apprise/notifier.py:225 src/postulo_apprise/notifier.py:237
-#, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Almeno un servizio ha rifiutato il messaggio."
 
-#: src/postulo_apprise/notifier.py:219
-#, python-format, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgstr "Consegnato a %(count)d servizio."
 
-#: src/postulo_apprise/notifier.py:221
-#, python-format, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy, python-format
 msgid "Delivered to %(count)d services."
 msgstr "Consegnato a %(count)d servizi."
 
-#: src/postulo_apprise/notifier.py:173
-#, python-format, draft
-msgid ""
-"Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
-"La riga %(line)d non è un URL Apprise che questa versione comprende (%(scheme)s)."
+#: src/postulo_apprise/notifier.py
+#, fuzzy, python-format
+msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
+msgstr "La riga %(line)d non è un URL Apprise che questa versione comprende (%(scheme)s)."
 
-#: src/postulo_apprise/notifier.py:143
-#, draft
-msgid ""
-"One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr ""
-"Uno per riga, nella forma di Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org e qualsiasi altro tra quelli elencati da Apprise. Le credenziali stanno dentro l'URL, quindi l'intero campo è salvato cifrato e non viene più mostrato; l'elenco delle connessioni nomina ogni servizio con le parti segrete mascherate."
+#: src/postulo_apprise/notifier.py
+#, fuzzy
+msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
+msgstr "Uno per riga, nella forma di Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org e qualsiasi altro tra quelli elencati da Apprise. Le credenziali stanno dentro l'URL, quindi l'intero campo è salvato cifrato e non viene più mostrato; l'elenco delle connessioni nomina ogni servizio con le parti segrete mascherate."
 
-#: src/postulo_apprise/notifier.py:206
-#, draft
+#: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo può raggiungerti qui"
 
-#: src/postulo_apprise/notifier.py:208
-#, draft
-msgid ""
-"This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr ""
-"Questo è il messaggio di prova dalla tua connessione Apprise. Promemoria e acquisizioni arriveranno allo stesso modo."
+#: src/postulo_apprise/notifier.py
+#, fuzzy
+msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
+msgstr "Questo è il messaggio di prova dalla tua connessione Apprise. Promemoria e acquisizioni arriveranno allo stesso modo."
