@@ -4,60 +4,67 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-09-13 04:03+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: Kiswahili\n"
+"PO-Revision-Date: 2026-10-10 12:45+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Swahili <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/sw/>\n"
 "Language: sw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr ""
+msgstr "[TD=\"width: 456\"] [FONT=&](2)[/FONT][FONT=&]Bila kuathiri masharti ya kifungu kidogo (1) cha kifungu hiki"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise"
-msgstr ""
+msgstr "Utangulizi"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise URLs"
-msgstr ""
+msgstr "Tumia URL"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr ""
+msgstr "Inahitaji angalau URL moja."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one service refused the message."
-msgstr ""
+msgstr "Hata hivyo, angalau mtu mmoja alikataa ujumbe huo."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d service."
-msgstr ""
+msgstr "(iii) Kutoa huduma kwa wateja."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d services."
-msgstr ""
+msgstr "Huduma kwa wateja %(count)d."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
+msgstr "Mstari %(line)d si URL ya kuingia ambayo toleo hili linaelewa (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr ""
+msgstr "Moja kwa kila mstari, katika fomu ya Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@ example.org, na orodha yoyote ya orodha. Vyeti vya kuishi ndani ya URL, hivyo shamba lote limehifadhiwa kwa encrypted na kamwe kuonyeshwa tena; orodha ya uhusiano kila huduma na sehemu za siri zilizofunikwa."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Postulo can reach you here"
-msgstr ""
+msgstr "Ulo Unaweza Kuipata Hapa"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr ""
+msgstr "Hii ni ujumbe wa mtihani kutoka kwa uunganisho wako wa kuingia. Kumbukumbu na kumbukumbu zitafika kwa njia sawa."

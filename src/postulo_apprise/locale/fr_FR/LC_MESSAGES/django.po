@@ -4,20 +4,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-09-13 04:03+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: français (France)\n"
+"PO-Revision-Date: 2026-10-13 12:36+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
+"Language-Team: French <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr "%(service)s sur %(host)s : %(error)s"
+msgstr "%(service)s sur %(host)s : %(error)s"
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise"
@@ -52,7 +52,7 @@ msgstr "La ligne %(line)d n'est pas une URL Apprise que cette version comprend (
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr "Une par ligne, sous la forme d'Apprise : tgram://jeton-du-bot/id-de-discussion, ntfy://sujet, discord://id-webhook/jeton-webhook, mailto://utilisateur:motdepasse@example.org, et toutes celles qu'Apprise recense. Les identifiants sont dans l'URL elle-même : tout le champ est donc chiffré et n'est jamais réaffiché ; la liste des connexions nomme chaque service en masquant les parties secrètes."
+msgstr "Une par ligne, sous la forme d'Apprise : tgram://jeton-du-bot/id-de-discussion, ntfy://sujet, discord://id-webhook/jeton-webhook, mailto://utilisateur:motdepasse@example.org, et toutes celles qu'Apprise recense. Les identifiants sont dans l'URL elle-même : tout le champ est donc conservé chiffré et jamais réaffiché ; la liste des connexions nomme chaque service en masquant les parties secrètes."
 
 #: src/postulo_apprise/notifier.py
 msgid "Postulo can reach you here"

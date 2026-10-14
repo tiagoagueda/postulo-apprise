@@ -4,60 +4,67 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-09-13 04:03+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: shqip\n"
+"PO-Revision-Date: 2026-10-10 12:45+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Albanian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/sq/>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr ""
+msgstr "%(service)s në [X15XX]: %(error)s"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise"
-msgstr ""
+msgstr "Apel"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise URLs"
-msgstr ""
+msgstr "URL të përshtatshme"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr ""
+msgstr "Nevojitet të paktën një URL Appise."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one service refused the message."
-msgstr ""
+msgstr "Të paktën një shërbim refuzoi mesazhin."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d service."
-msgstr ""
+msgstr "U dorëzua në shërbimin %(count)d."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d services."
-msgstr ""
+msgstr "U dorëzua në shërbimet %(count)d."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
+msgstr "Linja %(line)d nuk është një URL Applease këtë version e kupton ([X6X]."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr ""
+msgstr "Një për vijë, në formën e Apprease: tgram://bot-token/chat-id, ntfy://topic, mosmarrëveshje://webuk-id/webhook-token, mailto://user: Chword@examp.org, dhe secila prej listave të tjera të Appise. Kredencialet jetojnë brenda URL-së, kështu që e gjithë fusha ruhet e kriptuar dhe nuk tregohet më kurrë; lidhjet lista me emrat e çdo shërbimi me pjesët e fshehta të maskuara."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Postulo can reach you here"
-msgstr ""
+msgstr "Populo mund të të arrijë këtu"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr ""
+msgstr "Ky është mesazhi i testimit nga lidhja juaj me Appise. Kujtuesit dhe kapësit do të vijnë në të njëjtën mënyrë."

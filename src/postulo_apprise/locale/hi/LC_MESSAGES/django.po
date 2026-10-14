@@ -4,60 +4,67 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-10 10:45+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: हिन्दी\n"
+"PO-Revision-Date: 2026-10-13 12:36+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
+"Language-Team: Hindi <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr ""
+msgstr "%(host)s पर %(service)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise"
-msgstr ""
+msgstr "Apprise"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise URLs"
-msgstr ""
+msgstr "Apprise URL"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr ""
+msgstr "कम से कम एक Apprise URL ज़रूरी है।"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one service refused the message."
-msgstr ""
+msgstr "कम से कम एक सेवा ने मैसेज अस्वीकार कर दिया।"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d service."
-msgstr ""
+msgstr "%(count)d सेवा को डिलीवर किया गया।"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d services."
-msgstr ""
+msgstr "%(count)d सेवाओं को डिलीवर किया गया।"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
+msgstr "पंक्ति %(line)d ऐसा Apprise URL नहीं है जिसे यह वर्शन समझता हो (%(scheme)s)।"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr ""
+msgstr "हर पंक्ति में एक, Apprise के रूप में: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, और Apprise की सूची में दी गई कोई भी दूसरी सेवा। लॉगिन की जानकारी URL के अंदर ही होती है, इसलिए पूरी फ़ील्ड एन्क्रिप्ट करके रखी जाती है और फिर कभी नहीं दिखाई जाती; कनेक्शन की सूची में हर सेवा का नाम होता है और सीक्रेट हिस्से छिपे रहते हैं।"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Postulo can reach you here"
-msgstr ""
+msgstr "Postulo आप तक यहां पहुंच सकता है"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr ""
+msgstr "यह आपके Apprise कनेक्शन से भेजा गया टेस्ट मैसेज है। रिमाइंडर और कैप्चर भी इसी तरह आएंगे।"
