@@ -47,9 +47,11 @@ goes to every line. Tick the events you want under the URLs.
 Some things worth knowing:
 
 - **The URLs are secrets.** A Telegram URL carries the bot token; a mail URL carries the
-  password. The whole field is stored encrypted, is never shown back, and the connections
-  list names each service with the secret parts masked (`tgram://1...1/987654`). To
-  change the list, type it again.
+  password. The whole field is stored encrypted and is never shown back. The connections
+  list shows only the name of each service and, for one on a server of your own, that
+  server's host and port (`Telegram · ntfy ntfy.example.org`): never a path, a topic, a
+  user name or a token, because a webhook's path and an ntfy topic are credentials Apprise
+  does not know how to mask. To change the list, type it again.
 - **A typo is caught at the form.** Each line must be a URL Apprise understands; the
   form says which line is not, and nothing is saved until every line is.
 - **Your own servers are subject to the instance's destination policy.** An ntfy, Gotify
@@ -60,7 +62,23 @@ Some things worth knowing:
   destination like any other and was let through unchecked before 0.3.0. Which URLs name a
   server of yours is read from Apprise's own description of each service; hosted ones
   (Telegram, Discord, Pushover…) keep a token where the host would be, name no address of
-  yours, and are not affected.
+  yours, and are not affected. What is checked is the address a service really opens: a
+  `mailto://` line's `smtp=` server rather than the sender's domain, a Firebase `keyfile=`
+  given as an address. `ntfy://my-topic`, which uses ntfy.sh, and the API mailers (Mailgun,
+  SparkPost, SMTP2GO, SendPulse) have no server of yours and are not looked up.
+- **Redirects are never followed.** A public address that answers with a redirect to a
+  private one would otherwise lead the server past the destination policy, so a line that
+  sets `redirect=yes` is refused and a server that redirects `http` to `https` needs the
+  `https` form of the scheme (`jsons://`, `ntfys://`).
+- **Lines that act on the server itself are refused**: `syslog://`, the desktop
+  notifiers (`dbus`, `kde`, `qt`, `glib`, `gnome`, `macosx`, `windows`), `evolution://`
+  and `blink1://`, and a key file named by a path on the server (`keyfile=`, `subfile=`).
+- **Waits are bounded.** A line's `rto=` and `cto=` can lower Apprise's socket timeouts but
+  not raise them past ten seconds, one send is given up after 45 seconds, and one
+  connection holds at most twenty URLs, so a slow endpoint cannot hold up other people's
+  reminders.
+- **Words are text.** A title or a body is sent as plain text and escaped for the services
+  that send HTML (Telegram, email), so a captured page's title cannot arrive as markup.
 - **Several connections or several lines?** Either. One connection with three URLs sends
   every chosen event to all three; two connections let you send reminders to the phone
   and captures to a chat.
