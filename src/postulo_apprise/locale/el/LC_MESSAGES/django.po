@@ -41,16 +41,6 @@ msgstr "Τουλάχιστον μία υπηρεσία απέρριψε το μ�
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Παραδόθηκε σε %(count)d υπηρεσία."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Παραδόθηκε σε %(count)d υπηρεσίες."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Η γραμμή %(line)d δεν είναι διεύθυνση URL Apprise που καταλαβαίνει αυτή η έκδοση (%(scheme)s)."
 

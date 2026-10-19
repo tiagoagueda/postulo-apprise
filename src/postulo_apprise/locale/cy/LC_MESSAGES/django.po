@@ -41,16 +41,6 @@ msgstr "Gwrthododd o leiaf un gwasanaeth y neges."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Danfonwyd i %(count)d gwasanaeth."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Danfonwyd i %(count)d gwasanaeth."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Nid yw llinell %(line)d yn URL Apprise y mae'r fersiwn hon yn ei ddeall (%(scheme)s)."
 

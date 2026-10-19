@@ -41,16 +41,6 @@ msgstr "Alespoň jedna služba zprávu odmítla."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Doručeno %(count)d službě."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Doručeno %(count)d službám."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Řádek %(line)d není Apprise URL, které tato verze rozumí (%(scheme)s)."
 

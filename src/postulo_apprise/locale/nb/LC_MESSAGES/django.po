@@ -41,16 +41,6 @@ msgstr "I hvert fall én tjeneste nektet budskapet."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Levert til %(count)d tjeneste."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Levert til %(count)d tjenester."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Line %(line)d er ikke en Apprise URL denne versjonen forstår (%(scheme)s)."
 

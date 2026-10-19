@@ -37,16 +37,6 @@ msgstr "Al menos un servicio rechazó el mensaje."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Se entregó a %(count)d servicio."
-
-#: src/postulo_apprise/notifier.py
-#, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Se entregó a %(count)d servicios."
-
-#: src/postulo_apprise/notifier.py
-#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "La línea %(line)d no es una URL de Apprise que esta versión entienda (%(scheme)s)."
 

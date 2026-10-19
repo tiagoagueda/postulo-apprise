@@ -41,16 +41,6 @@ msgstr "Cel puțin un serviciu a refuzat mesajul."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Livrat către %(count)d serviciu."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Livrat către %(count)d servicii."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Linia %(line)d nu este un URL Apprise pe care această versiune îl înțelege (%(scheme)s)."
 

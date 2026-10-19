@@ -41,16 +41,6 @@ msgstr "कम से कम एक सेवा ने मैसेज अस�
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "%(count)d सेवा को डिलीवर किया गया।"
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "%(count)d सेवाओं को डिलीवर किया गया।"
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "पंक्ति %(line)d ऐसा Apprise URL नहीं है जिसे यह वर्शन समझता हो (%(scheme)s)।"
 

@@ -41,16 +41,6 @@ msgstr "Попри те, що одна послуга відмовилася в�
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Сервіс %(count)d."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Послуги %(count)d."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Лінія %(line)d не є URL-адресою Apprise цієї версії розуміє (%(scheme)s)."
 

@@ -41,16 +41,6 @@ msgstr "Minstens één dienst heeft het bericht geweigerd."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Bezorgd bij %(count)d dienst."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Bezorgd bij %(count)d diensten."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Regel %(line)d is geen Apprise-URL die deze versie begrijpt (%(scheme)s)."
 

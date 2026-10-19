@@ -41,16 +41,6 @@ msgstr "Առնվազն մեկ ծառայություն մերժեց հաղորդ
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Առաքվեց %(count)d ծառայության։"
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Առաքվեց %(count)d ծառայության։"
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Տող %(line)d՝ սա այնպիսի Apprise URL չէ, որը հասկանում է այս տարբերակը (%(scheme)s)։"
 

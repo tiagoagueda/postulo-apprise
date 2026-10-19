@@ -41,16 +41,6 @@ msgstr "Co najmniej jedna usługa odrzuciła wiadomość."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Dostarczono do %(count)d usługi."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Dostarczono do %(count)d usług."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Wiersz %(line)d nie jest adresem URL Apprise, który ta wersja rozumie (%(scheme)s)."
 

@@ -41,16 +41,6 @@ msgstr "Të paktën një shërbim refuzoi mesazhin."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "U dorëzua në shërbimin %(count)d."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "U dorëzua në shërbimet %(count)d."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Linja %(line)d nuk është një URL Applease këtë version e kupton ([X6X]."
 

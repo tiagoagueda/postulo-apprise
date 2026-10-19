@@ -41,16 +41,6 @@ msgstr "Vsaj ena storitev je sporočilo zavrnila."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Dostavljeno %(count)d storitvi."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Dostavljeno %(count)d storitvam."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Vrstica %(line)d ni URL Apprise, ki bi ga ta različica razumela (%(scheme)s)."
 

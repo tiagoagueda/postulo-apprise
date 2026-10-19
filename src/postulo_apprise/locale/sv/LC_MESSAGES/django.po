@@ -41,16 +41,6 @@ msgstr "Minst en tjänst avvisade meddelandet."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "Levererat till %(count)d tjänst."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Levererat till %(count)d tjänster."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Rad %(line)d är inte en Apprise-URL som den här versionen förstår (%(scheme)s)."
 

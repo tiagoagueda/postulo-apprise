@@ -41,16 +41,6 @@ msgstr "至少有一个服务拒绝留言."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "交付至%(count)d服务."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "交付给%(count)d服务."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Line %(line)d 不是此版本所理解的 Apprise URL (%(scheme)s)."
 

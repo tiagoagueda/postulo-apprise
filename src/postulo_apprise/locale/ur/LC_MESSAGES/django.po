@@ -41,16 +41,6 @@ msgstr "کم از کم ایک سروس نے اس پیغام سے انکار کر
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
-msgid "Delivered to %(count)d service."
-msgstr "%(count)d سروس کے لئے نجات دی."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "%(count)d خدمات کے حوالے کیا."
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "لائن %(line)d یہ نسخہ سمجھ میں نہیں ہے."
 
