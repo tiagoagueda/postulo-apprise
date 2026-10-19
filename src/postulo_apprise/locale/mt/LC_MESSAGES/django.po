@@ -20,6 +20,15 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s fuq %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
+#, python-format
+msgid "A connection holds at most %(count)d Apprise URL."
+msgid_plural "A connection holds at most %(count)d Apprise URLs."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "Apprise"
 msgstr "Apprise"
@@ -42,12 +51,21 @@ msgstr "Mill-inqas servizz wieħed irrifjuta l-messaġġ."
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
-msgstr "Twassal lil %(count)d servizz."
+msgid_plural "Delivered to %(count)d services."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Twassal lil %(count)d servizzi."
+#, python-format
+msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -55,14 +73,23 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "Il-linja %(line)d mhijiex URL ta' Apprise li din il-verżjoni tifhem (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
-msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr "Waħda f'kull linja, fil-forma ta' Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, u kwalunkwe oħra minn dawk li jelenka Apprise. Il-kredenzjali jinsabu ġewwa l-URL, għalhekk il-kamp kollu jinħażen kriptat u qatt ma jintwera iżjed; il-lista tal-konnessjonijiet issemmi kull servizz bil-partijiet sigrieti moħbija."
+#, python-format
+msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
+msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo jista' jilħqek hawn"
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "The services did not answer within %(seconds)d seconds."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

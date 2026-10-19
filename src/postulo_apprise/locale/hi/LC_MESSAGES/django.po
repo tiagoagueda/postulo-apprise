@@ -20,6 +20,13 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(host)s पर %(service)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
+#, python-format
+msgid "A connection holds at most %(count)d Apprise URL."
+msgid_plural "A connection holds at most %(count)d Apprise URLs."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "Apprise"
 msgstr "Apprise"
@@ -42,12 +49,19 @@ msgstr "कम से कम एक सेवा ने मैसेज अस�
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
-msgstr "%(count)d सेवा को डिलीवर किया गया।"
+msgid_plural "Delivered to %(count)d services."
+msgstr[0] ""
+msgstr[1] ""
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "%(count)d सेवाओं को डिलीवर किया गया।"
+#, python-format
+msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -55,14 +69,23 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "पंक्ति %(line)d ऐसा Apprise URL नहीं है जिसे यह वर्शन समझता हो (%(scheme)s)।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
-msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr "हर पंक्ति में एक, Apprise के रूप में: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, और Apprise की सूची में दी गई कोई भी दूसरी सेवा। लॉगिन की जानकारी URL के अंदर ही होती है, इसलिए पूरी फ़ील्ड एन्क्रिप्ट करके रखी जाती है और फिर कभी नहीं दिखाई जाती; कनेक्शन की सूची में हर सेवा का नाम होता है और सीक्रेट हिस्से छिपे रहते हैं।"
+#, python-format
+msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
+msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo आप तक यहां पहुंच सकता है"
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "The services did not answer within %(seconds)d seconds."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

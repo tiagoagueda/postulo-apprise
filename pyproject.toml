@@ -17,7 +17,9 @@ classifiers = [
 # Apprise is the whole point. Postulo itself is not declared: a plugin runs inside
 # Postulo's environment and uses what is already there, and Postulo is not on PyPI, so
 # naming it here would send pip looking for something it cannot find.
-dependencies = ["apprise>=1.9"]
+# 1.11 is the first release with `AppriseAsset(http_redirects=...)`: on an older one the
+# option is silently ignored and every redirect is followed (#15).
+dependencies = ["apprise>=1.11"]
 
 [project.urls]
 Homepage = "https://source.tiagoagueda.com/postulo/postulo-apprise"
@@ -48,10 +50,12 @@ artifacts = ["src/postulo_apprise/locale/*/LC_MESSAGES/django.mo"]
 # Pinned to a commit rather than left at the default branch. Without a ref the tests ran
 # against whatever Postulo was on that morning, which is how a plugin released beside 0.3.0
 # came to be tested against something else and how the catalogue tests came to skip in
-# silence (#1). This is the 0.3.0 release line; there is no `v0.3.0` tag yet, and the day
-# there is one, `@v0.3.0` replaces the commit and says the same thing in words.
+# silence (#1). The commit is the core's `main` when the lock was last resolved; move it
+# with `uv lock --upgrade`, which also moves every library with it, and run the `security`
+# job's audit (`.forgejo/workflows/ci.yml`) before pushing (#22). The day the core has a
+# tag for the line this plugin is released beside, the tag replaces the commit.
 dev = [
-    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@925e3e9cd35a97617cc45b36ecdde862d04515b1",
+    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@42be52048214fd98ed96d881fdf9fbadc10c4b73",
     "pytest>=8.3",
     "pytest-django>=4.14",
     "ruff>=0.16",

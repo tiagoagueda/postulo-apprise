@@ -16,6 +16,12 @@ on:
 permissions:
   contents: read
 
+# Bump both together with the core's `UV_VERSION` and `UV_INSTALLER_SHA256` in its
+# `.forgejo/workflows/ci.yml`. A lock file read by an unpinned tool is pinned only in name.
+env:
+  UV_VERSION: "0.12.17"
+  UV_INSTALLER_SHA256: "37b82230b28617c6c24fa52364fa28aa37f2aa40c114809a623f6b064a9730e5"
+
 jobs:
   gate:
     runs-on: ubuntu-latest
@@ -36,8 +42,12 @@ jobs:
           rm -rf /var/lib/apt/lists/*
 
       - name: Install uv
+        # The version the core names, and its installer checked against the sha256 the
+        # core records for it before the script is run (postulo/postulo#233, #790).
         run: |
-          curl -LsSf https://astral.sh/uv/install.sh | sh
+          curl -LsSf "https://astral.sh/uv/${UV_VERSION}/install.sh" -o /tmp/uv-install.sh
+          echo "${UV_INSTALLER_SHA256}  /tmp/uv-install.sh" | sha256sum -c -
+          sh /tmp/uv-install.sh
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Install the plugin, Postulo and the test tools

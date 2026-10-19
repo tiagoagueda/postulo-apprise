@@ -20,6 +20,13 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s (%(host)s)՝ %(error)s"
 
 #: src/postulo_apprise/notifier.py
+#, python-format
+msgid "A connection holds at most %(count)d Apprise URL."
+msgid_plural "A connection holds at most %(count)d Apprise URLs."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "Apprise"
 msgstr "Apprise"
@@ -42,12 +49,19 @@ msgstr "Առնվազն մեկ ծառայություն մերժեց հաղորդ
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
-msgstr "Առաքվեց %(count)d ծառայության։"
+msgid_plural "Delivered to %(count)d services."
+msgstr[0] ""
+msgstr[1] ""
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
-msgid "Delivered to %(count)d services."
-msgstr "Առաքվեց %(count)d ծառայության։"
+#, python-format
+msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -55,14 +69,23 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "Տող %(line)d՝ սա այնպիսի Apprise URL չէ, որը հասկանում է այս տարբերակը (%(scheme)s)։"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
-msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list names each service with the secret parts masked."
-msgstr "Ամեն տողում մեկ հասցե՝ Apprise-ի ձևով՝ tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org և Apprise-ի ցանկում նշված մյուսներից ցանկացածը։ Մուտքի տվյալները URL-ի ներսում են, ուստի ամբողջ դաշտը պահվում է գաղտնագրված և այլևս չի ցուցադրվում․ կապերի ցանկում յուրաքանչյուր ծառայություն նշվում է անունով՝ գաղտնի մասերը քողարկված։"
+#, python-format
+msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
+msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo-ն կարող է ձեզ հետ կապվել այստեղ"
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "The services did not answer within %(seconds)d seconds."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

@@ -99,6 +99,19 @@ def test_every_european_union_language_stays_complete(tool, code):
     assert gaps == [], f"{code}: {len(gaps)} untranslated, e.g. {gaps[:3]}"
 
 
+def test_the_count_of_services_is_one_plural_entry(tool):
+    """One entry with a plural, not two sentences chosen in code (#14).
+
+    A language with three or more plural forms cannot be translated from two unrelated
+    singular entries: the code would pick one of the two by English's rule.
+    """
+    catalogue = tool.parse(tool.po_path("fr-FR").read_text(encoding="utf-8"))
+    entries = {m.msgid: m for m in catalogue.messages.values()}
+    entry = entries["Delivered to %(count)d service."]
+    assert entry.plural == "Delivered to %(count)d services."
+    assert "Delivered to %(count)d services." not in entries
+
+
 def test_a_language_code_is_written_one_way():
     """`fr-FR` wherever a code is written here, the way Postulo writes one (#5).
 
