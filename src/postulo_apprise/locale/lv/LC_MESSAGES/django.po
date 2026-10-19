@@ -4,14 +4,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-09-13 04:03+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: latviešu\n"
+"PO-Revision-Date: 2026-10-19 11:15+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Latvian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/lv/>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
@@ -20,12 +20,12 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s uz %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "Savienojums satur ne vairāk kā %(count)d Apprise URLs."
+msgstr[2] "Savienojums satur ne vairāk kā 0 Apprise URL."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -52,18 +52,18 @@ msgstr "Vismaz viens pakalpojums noraidīja ziņu."
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
 msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[1] "Sniedza %(count)d pakalpojumus."
+msgstr[2] "Piegādāts līdz 0 pakalpojumiem."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "Line %(line)d (%(scheme)s) iedarbojas uz mašīnu Postulo darbojas, nevis uz jūsu pakalpojumu, tāpēc šeit to nevar izmantot."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "Line %(line)d lūdz sekot novirzēm; Postulo nekad neseko vienai, tāpēc norādiet galīgo adresi."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -71,13 +71,14 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "%(line)d. rinda nav Apprise URL adrese, ko šī versija saprot (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "Line %(line)d nosauc failu uz mašīnas Postulo darbojas (%(argument)s=). Tā vietā norādiet https adresi."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "Viens katrā rindā, Apprise formā: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, un jebkurš no citiem Apprise saraksti. Akreditāti dzīvo URL, tāpēc viss lauks tiek saglabāts šifrēts un nekad vairs netiek rādīts; savienojumu sarakstā ir redzams tikai katra pakalpojuma nosaukums un, vienam uz sava servera, šis serveris."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -85,9 +86,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo var jūs sasniegt šeit"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "Pakalpojumi neatbildēja %(seconds)d sekunžu laikā."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

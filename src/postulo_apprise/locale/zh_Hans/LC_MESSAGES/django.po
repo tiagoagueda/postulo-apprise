@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-10 12:45+0000\n"
+"PO-Revision-Date: 2026-10-19 11:15+0000\n"
 "Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -20,10 +20,10 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s,%(host)s:%(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
+msgstr[0] "连接最多持有 %(count)d Apprise URL."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -49,17 +49,17 @@ msgstr "至少有一个服务拒绝留言."
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
+msgstr[0] "交付给%(count)d服务."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "%(line)d (%(scheme)s)线在波斯图洛机器上运行,而不是在你的服务上运行,所以不能在这里使用."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "Line %(line)d 要求重定向要遵循; Postulo 从不遵循一个,所以给出最终地址."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -67,13 +67,14 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "Line %(line)d 不是此版本所理解的 Apprise URL (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "%(line)d行名取出机器Postulo上运行的文件 (%(argument)s=). 给出一个 https 地址 ."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "每行一张,形式为:tgram://bot-token/chat-id,ntfy://toption,不和:webhook-id/webhook-token,mailto://user:password@example.org等任何一份Apprise列表. 证书存在于URL内部,因此整个字段都是被加密而再也不显示;连接列表只显示每个服务的名称,对于您自己的服务器上的一个,则显示该服务器的名称."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -81,9 +82,9 @@ msgid "Postulo can reach you here"
 msgstr "波斯图洛可以联系你"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "这些服务没有在%(seconds)d秒内答复."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

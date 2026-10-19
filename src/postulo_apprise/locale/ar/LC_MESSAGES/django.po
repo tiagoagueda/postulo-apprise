@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-13 17:04+0000\n"
-"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
+"PO-Revision-Date: 2026-10-19 11:15+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Arabic <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -20,15 +20,15 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s على %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "هناك اتصال يمسك بـ \"أبريس\"."
+msgstr[1] "A connection holds at most %(count)d Apprise URL."
+msgstr[2] "وصلة تحمل أكثر من 2 آبريس."
+msgstr[3] "A connection holds at most %(count)d Apprise URLs."
 msgstr[4] ""
-msgstr[5] ""
+msgstr[5] "A connection holds at most %(count)d Apprise URLs."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -54,22 +54,22 @@ msgstr "رفضت خدمة واحدة على الأقل الرسالة."
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "تم تسليمها إلى صفر من الخدمات."
+msgstr[1] "تم تسليمها إلى %(count)d خدمة."
+msgstr[2] "قُدِّم إلى خدماتين."
+msgstr[3] "تم تسليمها إلى %(count)d خدمات."
 msgstr[4] ""
-msgstr[5] ""
+msgstr[5] "تم تسليمها إلى %(count)d خدمات."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "الخط %(line)d (%(scheme)s) يعمل على الآلة البريدية، وليس على خدمة لك، حتى لا يمكن استخدامه هنا."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "السطر (X5X) يطلب أن تتبع إعادة توجيه؛ ولا يتبع البريد الصوتي واحداً، لذا أعطي العنوان النهائي."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -77,13 +77,14 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "السطر %(line)d ليس عنوان Apprise يفهمه هذا الإصدار (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). أعطني عنواناً بدلاً من ذلك."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. وتعيش وثائق التفويض داخل الجبهة الثورية الثورية، لذا يُخزن الحقل بأكمله مشفرة ولا تظهر أبدا مرة أخرى؛ وتُظهر قائمة الاتصالات فقط اسم كل خدمة، وبالنسبة لواحد على خادم خاص بك، ذلك الخادم."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -91,9 +92,9 @@ msgid "Postulo can reach you here"
 msgstr "يستطيع Postulo الوصول إليك هنا"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "The services did not answer within %(seconds)d seconds."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
