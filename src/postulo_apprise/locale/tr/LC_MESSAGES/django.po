@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-10 12:45+0000\n"
+"PO-Revision-Date: 2026-10-19 11:15+0000\n"
 "Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Turkish <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/tr/>\n"
 "Language: tr\n"
@@ -20,11 +20,11 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bir bağlantı çoğu %(count)d Apprise URL'leri tutar."
+msgstr[1] "Bir bağlantı çoğu %(count)d Apprise URL'leri tutar."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -50,18 +50,18 @@ msgstr "En azından bir hizmet mesajı reddetti."
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(count)d hizmetlerine teslim oldu."
+msgstr[1] "%(count)d hizmetlerine teslim oldu."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "Line %(line)d ([X15X) makine Postulo üzerinde çalışır, sizin hizmetinizde değil, bu yüzden burada kullanılamaz."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "Line %(line)d yönlendirmeleri takip etmek için sorar; Postulo asla bir tane takip etmez, bu yüzden son adresi verin."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -69,13 +69,14 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "Line %(line)d bu versiyonda bir Apprise URL değil ([X62X))."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "Line %(line)d makine Postulo'da bir dosya çalışıyor (%(argument)s=). Bunun yerine bir https adresi verin."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "Bir per line, Apprise's form: tgram https://bot-token/chat-id, ntfy http://topik, diskord http://webhook-id/webhook-token, mailto https://user:password@system.org ve diğerlerinin herhangi biri Apprise listeleri. URL'de yaşayan kimlikler, bu yüzden tüm alan şifreli olarak depolanır ve asla tekrar gösterilmez; bağlantı listesi yalnızca her hizmet adına ve bu sunucunuzun bir sunucusunda biri için gösterir."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -83,9 +84,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo size burada ulaşabilir"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "Hizmetler %(seconds)d saniyeler içinde cevap vermedi."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

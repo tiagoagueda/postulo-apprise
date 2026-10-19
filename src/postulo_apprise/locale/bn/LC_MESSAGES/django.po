@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-13 17:04+0000\n"
-"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
+"PO-Revision-Date: 2026-10-19 11:15+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Bengali <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
@@ -20,11 +20,11 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(host)s-এ %(service)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "একটি সংযোগ অধিকাংশ [X2XX] ইউ. এস. ইউ. ইউ. আর।"
+msgstr[1] "একটি সংযোগ অধিকাংশ [X2XX] ইউ. এস. ইউ. ইউ. আর।"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -50,18 +50,18 @@ msgstr "অন্তত একটি পরিষেবা বার্তাট
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "এক্স-১৩এক্স সার্ভিসে পাঠানো হয়েছে।"
+msgstr[1] "এক্স-১৩এক্স সার্ভিসে পাঠানো হয়েছে।"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "লাইন [XXXX] [XXX] মেশিন পোস্টোর কাজগুলো পরিচালনা করে, আপনার সেবায় নয়, তাই এটি এখানে ব্যবহার করা যাবে না ।।"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "লাইন [XXXX] অনুসরণের চেষ্টা করছে; পোস্টুলো কখনো অনুসরণ করে না, তাই চূড়ান্ত ঠিকানা প্রদান করে।।"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -69,13 +69,14 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "লাইন %(line)d এমন কোনো Apprise URL নয় যা এই সংস্করণ বোঝে (%(scheme)s)।"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "লাইন %(line)d মেশিন পোস্টুলো রানে একটি ফাইলের নাম (X৫৯=) চালানো হয় । পরিবর্তে একটি এইচ এস এস এস এ ঠিকানা দিন।।"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "প্রতিটি লাইনে, আপ্‌স-সেটের ফর্মে একটি: টিগ্রামের মতো: Tblatp/tttyF, notify http://www.orgidie.com/wardi/womputtydetty, মেইল,@user/@home.net/net> এবং অন্যান্য যে কোন আপ্র্যাপ তালিকাভুক্ত করা হয়। অ্যাকাউন্টের মধ্যে চিহ্নিত পরিচয়-পংক্তিটি সংরক্ষণ করা হয় ও তারপর আবার আরম্ভ করা হয়; সার্ভারের দ্বারা শুধুমাত্র একটি সার্ভারের নাম প্রদর্শন করা হয়।।"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -83,9 +84,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo এখানে আপনার কাছে পৌঁছাতে পারে"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "সার্ভিস [X৩৫] - এর মধ্যে উত্তর দেয় নি ।।"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
