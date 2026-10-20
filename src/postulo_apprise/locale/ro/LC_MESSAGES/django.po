@@ -4,14 +4,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-09-13 04:03+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: română\n"
+"PO-Revision-Date: 2026-10-19 23:15+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"Language-Team: Romanian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;\n"
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
@@ -20,12 +20,12 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s la %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "O conexiune deține cel mult %(count)d URL-ul de configurare."
+msgstr[1] "O conexiune deține cel mult URL-uri %(count)d."
+msgstr[2] "O conexiune deține cel mult URL-uri %(count)d."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -51,19 +51,19 @@ msgstr "Cel puțin un serviciu a refuzat mesajul."
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Livrat la %(count)d."
+msgstr[1] "Livrate către %(count)d."
+msgstr[2] "Livrate către %(count)d."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "Linia %(line)d (%(scheme)s) acţionează asupra maşinii pe care funcţionează Postulo, nu pe un serviciu al tău, aşa că nu poate fi folosită aici."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "Linia %(line)d cere ca redirecționările să fie urmate; Postulo nu urmează niciodată una, așa că dați adresa finală."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -71,13 +71,14 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "Linia %(line)d nu este un URL Apprise pe care această versiune îl înțelege (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "Linia %(line)d denumeste un fisier pe masina Postulo ruleaza pe (%(argument)s=). Dă în schimb o adresă https."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "Una pe linie, sub forma lui Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@exemplu.org, și oricare dintre celelalte liste Apprise. Acreditările trăiesc în interiorul URL-ului, astfel încât întregul câmp este stocat criptat și nu a mai apărut niciodată; lista conexiunilor arată doar numele fiecărui serviciu și, pentru unul pe un server propriu, acel server."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -85,9 +86,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo te poate contacta aici"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "Serviciile nu au răspuns în %(seconds)d secunde."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
