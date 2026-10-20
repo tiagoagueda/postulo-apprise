@@ -117,4 +117,5 @@ form, with Apprise's delivery replaced by a recorder. No message leaves the mach
 
 ## Licence
 
-AGPL-3.0-or-later, like Postulo. Apprise is BSD-2-Clause.
+Copyright (C) 2026 Postulo contributors. [AGPL-3.0-or-later](LICENSE), like Postulo. Apprise is
+BSD-2-Clause.

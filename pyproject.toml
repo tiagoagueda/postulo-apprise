@@ -5,7 +5,7 @@ description = "Notifications from Postulo through Apprise: Telegram, ntfy, Disco
 readme = "README.md"
 requires-python = ">=3.12.4"
 license = "AGPL-3.0-or-later"
-authors = [{ name = "Tiago Agueda" }]
+authors = [{ name = "Postulo contributors" }]
 keywords = ["postulo", "plugin", "apprise", "notifications"]
 classifiers = [
     "Development Status :: 4 - Beta",
