@@ -65,7 +65,12 @@ dev = [
 DJANGO_SETTINGS_MODULE = "tests.settings"
 pythonpath = ["."]
 testpaths = ["tests"]
-filterwarnings = ["error"]
+filterwarnings = [
+    "error",
+    # Apprise imports `imghdr`, which Python 3.12 warns is going; 3.13 has no such module and
+    # Apprise installs its own shim. The warning is Apprise's, not ours, and only on 3.12.
+    "ignore:'imghdr' is deprecated:DeprecationWarning",
+]
 # The release gate: the twenty-four European Union catalogues complete, run before a tag
 # with `uv run pytest -m release`. Postulo's own gate cannot see a plugin's catalogues,
 # so each plugin holds its own (postulo/postulo#187).

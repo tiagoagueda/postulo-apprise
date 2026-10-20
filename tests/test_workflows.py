@@ -16,7 +16,7 @@ WORKFLOWS = sorted((Path(__file__).resolve().parents[1] / ".forgejo" / "workflow
 
 
 def test_there_are_workflows_to_read():
-    assert {path.name for path in WORKFLOWS} >= {"ci.yml", "release.yml"}
+    assert {path.name for path in WORKFLOWS} >= {"ci.yml", "release.yml", "every-python.yml"}
 
 
 @pytest.mark.parametrize("path", WORKFLOWS, ids=lambda path: path.name)
@@ -34,3 +34,11 @@ def test_the_locked_dependencies_are_audited_on_a_schedule():
     assert re.search(r"^\s+- cron: ", text, re.M), "a weekly run, for a quiet week"
     assert re.search(r"pip-audit==\d+\.\d+\.\d+ pip-audit --strict", text), "pinned, strict"
     assert "uv export --no-emit-project" in text, "the lock, not the installed environment"
+
+
+def test_the_pythons_a_push_does_not_test_are_tested_somewhere():
+    """`requires-python` promises 3.12 and 3.13; `every-python.yml` is where they run (#13)."""
+    text = (WORKFLOWS[0].parent / "every-python.yml").read_text(encoding="utf-8")
+    assert re.search(r'python-version: \["3\.12", "3\.13"\]', text)
+    assert re.search(r"^\s+- cron: ", text, re.M), "weekly, for a quiet week"
+    assert "uv sync --locked --python ${{ matrix.python-version }}" in text
