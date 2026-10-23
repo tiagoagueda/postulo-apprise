@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Urdu <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ur/>\n"
 "Language: ur\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,8 @@ msgstr "%(service)s پر %(host)s: %(error)s"
 #, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "زیادہ تر [X27XX] ایپیس پر مشتمل ہے."
-msgstr[1] "ایک اتصال زیادہ تر %(count)d ایپیس URLs پر محیط ہے۔."
+msgstr[0] "ایک کنکشن میں زیادہ سے زیادہ %(count)d Apprise URL ہو سکتا ہے۔"
+msgstr[1] "ایک کنکشن میں زیادہ سے زیادہ %(count)d Apprise URLs ہو سکتے ہیں۔"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -51,7 +51,7 @@ msgstr[1] "%(count)d خدمات کے حوالے کیا."
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "لائن %(line)d (X15X) مشین پوسٹلو پر کام کرتا ہے، آپ کی ایک خدمت پر نہیں، اس لیے یہاں استعمال نہیں کیا جا سکتا۔."
+msgstr "سطر %(line)d (%(scheme)s) اس مشین پر عمل کرتی ہے جس پر Postulo چلتا ہے، آپ کی کسی سروس پر نہیں، اس لیے اسے یہاں استعمال نہیں کیا جا سکتا۔"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -61,7 +61,7 @@ msgstr "لائن %(line)d کے لئے درخواست کرتا ہے کہ وہ ک�
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr "لائن %(line)d یہ نسخہ سمجھ میں نہیں ہے."
+msgstr "سطر %(line)d ایسا Apprise URL نہیں جو یہ ورژن سمجھتا ہو (%(scheme)s)۔"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "پوسٹو یہاں تک پہنچا سکتا ہے۔"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "استوائی ڈاک کی اطلاعات ایپسیس ٹو ٹیلی گرام، ٹیٹی، دیسکورڈ، ماتریکس، گوتم، پوٹھوہار، سگنل، ای میل اور اچھی طرح سے ہیں۔ ہر ایک پتّے کے نام سے منسوب ہوتا ہے جو اس کی مستندی کو برقرار رکھتا ہے اور اسے محفوظ رکھا جاتا ہے۔."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -88,8 +89,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "خدمات نے %(seconds)d سیکنڈ کے اندر جواب نہیں دیا۔."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "تیسرا حصہ اطلاعات ایپس کے ذریعے"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

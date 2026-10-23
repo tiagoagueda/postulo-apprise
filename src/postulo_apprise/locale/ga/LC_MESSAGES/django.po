@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Irish <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ga/>\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
@@ -85,8 +85,9 @@ msgid "Postulo can reach you here"
 msgstr "Is féidir le Postulo teacht ort anseo"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Seol fógraí Postulo trí Apprise to Telegram, ntfy, Discord, Maitrís, Gotify, Pushover, Signal, ríomhphost agus go maith thar céad seirbhísí eile. Tá gach ainmnithe ag seoladh amháin, a bhfuil a dintiúir agus tá sé stóráilte criptithe."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -94,8 +95,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Níor fhreagair na seirbhísí laistigh de %(seconds)d soicind."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Fógraí tríú páirtí trí Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

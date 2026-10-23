@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"PO-Revision-Date: 2026-10-23 12:45+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Arabic <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ar/>\n"
 "Language: ar\n"
@@ -64,7 +64,7 @@ msgstr "الخط %(line)d (%(scheme)s) يعمل على الآلة البريدي
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "السطر (X5X) يطلب أن تتبع إعادة توجيه؛ ولا يتبع البريد الصوتي واحداً، لذا أعطي العنوان النهائي."
+msgstr "يطلب السطر %(line)d اتباع عمليات إعادة التوجيه؛ لا يتبع Postulo أيًّا منها أبدًا، لذا أدخِل العنوان النهائي."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -87,8 +87,9 @@ msgid "Postulo can reach you here"
 msgstr "يستطيع Postulo الوصول إليك هنا"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "أرسل إخطارات (إرسال) من خلال (آبريس) إلى (تليغرام) و(إنتيفي) و(ديسكورد) و(ماتريكس) و(غوتيم) و(بوشوفر) و(ستارال) و(إيميل) وأكثر من مائة خدمة أخرى ويُسمّى كل منها عنوان واحد، ويحتفظ بمصداقيته ويُخزّن."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -96,8 +97,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "The services did not answer within %(seconds)d seconds."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "إخطارات الأطراف الثالثة عن طريق شركة Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

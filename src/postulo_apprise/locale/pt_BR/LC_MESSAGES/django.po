@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgstr "Linha %(line)d (%(scheme)s) atua na máquina Postulo funciona em, não e
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "A linha X5X pede redirecionamentos para serem seguidos, Postulo nunca segue um, então dê o endereço final."
+msgstr "A linha %(line)d pede que redirecionamentos sejam seguidos; o Postulo nunca segue nenhum, então informe o endereço final."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -79,17 +79,19 @@ msgid "Postulo can reach you here"
 msgstr "O Postulo consegue chegar até si por aqui"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Envie as notificações de Postulo através de Apprise para Telegram, Ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-mail e bem mais de cem outros serviços. Cada um é nomeado por um endereço, que tem sua credencial e é armazenado criptografado."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "Os serviços não responderam em segundos."
+msgstr "Os serviços não responderam em %(seconds)d segundos."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Notificações de terceiros via Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

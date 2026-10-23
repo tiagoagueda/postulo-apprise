@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Albanian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/sq/>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,7 @@ msgstr ""
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr "%(service)s në [X15XX]: %(error)s"
+msgstr "%(service)s në %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -61,12 +61,12 @@ msgstr "Linja %(line)d kërkon që të ndiqen ridrejtimet; Populo nuk ndjek kurr
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr "Linja %(line)d nuk është një URL Applease këtë version e kupton ([X6X]."
+msgstr "Rreshti %(line)d nuk është një URL Apprise që e kupton ky version (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Linja emrat a në Jep adresën e https."
+msgstr "Rreshti %(line)d tregon një skedar në makinën ku ekzekutohet Postulo (%(argument)s=). Jepni një adresë https në vend të saj."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "Populo mund të të arrijë këtu"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Dërgoni njoftimet e Postulos nëpërmjet Applease to Telegrafi, ntfy, Diskord, Matriks, Gotific, Pushover, sinjal, e-mail dhe më shumë se njëqind shërbime të tjera. Secili emërohet me një adresë, e cila përmban kredencialin e vet dhe ruhet e koduar."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -88,8 +89,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Shërbimet nuk u përgjigjën brenda %(seconds)d sekondave."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Njoftimet e palëve të treta nëpërmjet Apprease"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

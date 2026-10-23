@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Indonesian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -73,8 +73,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo dapat menjangkau Anda di sini"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Kirim pemberitahuan Postulo melalui Apprrise ke Telegram, ntfy, Discord, Matrix, Gotify, Pushover, sinyal, email dan juga lebih dari seratus layanan lain. Masing-masing dinamai oleh satu alamat, yang memegang kredensial dan disimpan terenkripsi."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -82,8 +83,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Layanan tidak menjawab dalam %(seconds)d detik."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Notifikasi pihak ke-3 via Appire"
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."

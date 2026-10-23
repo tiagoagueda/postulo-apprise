@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Turkish <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr[1] "%(count)d hizmetlerine teslim oldu."
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Line %(line)d ([X15X) makine Postulo üzerinde çalışır, sizin hizmetinizde değil, bu yüzden burada kullanılamaz."
+msgstr "%(line)d. satır (%(scheme)s) sizin bir hizmetiniz üzerinde değil, Postulo'nun çalıştığı makine üzerinde işlem yapar; bu nedenle burada kullanılamaz."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -61,7 +61,7 @@ msgstr "Line %(line)d yönlendirmeleri takip etmek için sorar; Postulo asla bir
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr "Line %(line)d bu versiyonda bir Apprise URL değil ([X62X))."
+msgstr "%(line)d. satır, bu sürümün anladığı bir Apprise URL'si değil (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo size burada ulaşabilir"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Postulo'nun Telegram'a yaptığı bildirimleri, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-posta ve yüz diğer hizmetler üzerinde iyi gönderin. Her biri bir adres tarafından adlandırılmaktadır, ki bu onun credential'i tutar ve şifrelenir."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -88,8 +89,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Hizmetler %(seconds)d saniyeler içinde cevap vermedi."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Apprise ile Üçüncü taraf bildirimleri"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/zh_Hant/>\n"
 "Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr[0] "已交付至%(count)d服務."
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "(X5X (%(scheme)s)) 在波斯圖洛相接而起的機器上出事了, 不是由您提供, 因此它不能被用到這裡."
+msgstr "第 %(line)d 行（%(scheme)s）作用於執行 Postulo 的機器，而非你的某項服務，因此無法在此使用。"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -77,8 +77,9 @@ msgid "Postulo can reach you here"
 msgstr "波斯圖可以接通你"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通通通通訊通訊通通訊通訊通訊通訊通訊通訊通通訊通通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通相接相接相接相接相接相接相接相接相接百多地相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相 每個都由一個地址取名 它有它的憑證被加密了."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -86,8 +87,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "在 %(seconds)d 秒以內."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "第三方通知"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

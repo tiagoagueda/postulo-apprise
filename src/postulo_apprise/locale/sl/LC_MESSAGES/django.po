@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Slovenian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -83,8 +83,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo vas lahko doseže tukaj"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Pošlji obvestila Postulo preko Apprise na Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email in veliko več kot sto drugih storitev. Vsaka je poimenovana z enim naslovom, ki drži svojo poverilnico in je shranjena šifrirana."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -92,8 +93,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Storitve niso odgovorile v %(seconds)d sekundah."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Uradna obvestila tretjih strani prek Objave"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
