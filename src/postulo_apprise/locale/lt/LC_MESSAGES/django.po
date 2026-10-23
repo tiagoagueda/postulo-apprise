@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Lithuanian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -77,8 +77,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo gali jus pasiekti čia"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Siųsti Postulo pranešimus per Apprise Telegramas, Ntfy, diskredituoti, Matrica, Gotify, Pushover, Signalas, elektroninio pašto ir daug daugiau nei šimtą kitų paslaugų. Kiekvienas yra pavadintas vienu adresu, kuris turi savo pasitikėjimą ir yra saugomas užšifruotas."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -86,8 +87,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Paslaugos neatsakė per %(seconds)d s."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Tryliktosios šalies pranešimai per programą"
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."

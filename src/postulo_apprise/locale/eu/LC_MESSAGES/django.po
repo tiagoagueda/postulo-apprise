@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Basque <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/eu/>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -56,17 +56,17 @@ msgstr "Lerroak %(line)d (%(scheme)s) Postulo makinan funtzionatzen du, ez zure 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Lerroak birzuzenketak eskatzen ditu; Postulok ez du inoiz jarraitzen, beraz, eman azken helbidea."
+msgstr "%(line)d. lerroak birbideratzeei jarraitzeko eskatzen du; Postulok ez dio inoiz birbideratzerik jarraitzen, beraz eman azken helbidea."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr "Lerroa %(line)d ez da bertsio honek ulertzen duen URL bat."
+msgstr "%(line)d. lerroa ez da bertsio honek ulertzen duen Apprise URL bat (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Lerroak fitxategi bat izendatzen du Postulo makinan%(argument)s=]. Eman https helbide bat horren ordez."
+msgstr "%(line)d. lerroak Postulo exekutatzen den makinako fitxategi bat aipatzen du (%(argument)s=). Eman https helbide bat horren ordez."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulok hemen aurkituko zaitu"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Bidali Postuloren jakinarazpenak Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-posta eta beste ehun zerbitzu baino gehiagotara. Bakoitza helbide batek izendatzen du, bere kredentziala gordetzen duena eta enkriptatuta gordetzen dena."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -88,8 +89,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Zerbitzuek ez zuten erantzun %(seconds)d segundotan."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Hirugarrenen jakinarazpenak eranskinen bidez"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

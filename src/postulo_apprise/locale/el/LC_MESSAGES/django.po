@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Greek <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "Εδώ μπορεί να σας βρει το Postulo"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Στείλτε τις ειδοποιήσεις του Postulo μέσω Apprise στο Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email και πολύ περισσότερες από εκατό άλλες υπηρεσίες. Καθένα από αυτά ονομάζεται από μία διεύθυνση, η οποία κρατά το πιστοποιητικό και αποθηκεύεται κρυπτογραφημένο."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -88,8 +89,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Οι υπηρεσίες δεν απάντησαν εντός %(seconds)d δευτερολέπτων."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Κοινοποιήσεις τρίτων μέσω Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

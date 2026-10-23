@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Swahili <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/sw/>\n"
 "Language: sw\n"
 "MIME-Version: 1.0\n"
@@ -17,14 +17,14 @@ msgstr ""
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr "[TD=\"width: 456\"] [FONT=&](2)[/FONT][FONT=&]Bila kuathiri masharti ya kifungu kidogo (1) cha kifungu hiki"
+msgstr "%(service)s kwenye %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "Uunganisho unashikilia URL zaidi ya X27X."
-msgstr[1] "Uunganisho unashikilia URL nyingi za X27X."
+msgstr[0] "Muunganisho mmoja hubeba URL %(count)d ya Apprise kwa upeo."
+msgstr[1] "Muunganisho mmoja hubeba URL %(count)d za Apprise kwa upeo."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -51,7 +51,7 @@ msgstr[1] "Huduma kwa wateja %(count)d."
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Mstari %(line)d (X15X) hufanya kazi kwenye mashine ya Postulo inaendesha, sio kwa huduma yako, kwa hivyo haiwezi kutumika hapa."
+msgstr "Mstari %(line)d (%(scheme)s) unatenda kazi kwenye mashine ambayo Postulo inaendeshwa, si kwenye huduma yako, kwa hiyo hauwezi kutumika hapa."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -66,7 +66,7 @@ msgstr "Mstari %(line)d si URL ya kuingia ambayo toleo hili linaelewa (%(scheme)
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Mstari %(line)d majina faili kwenye mashine Postulo anaendesha juu (X59X) =). Badala yake, tumia anwani ya IP."
+msgstr "Mstari %(line)d unataja faili kwenye mashine ambayo Postulo inaendeshwa (%(argument)s=). Weka anwani ya https badala yake."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "Ulo Unaweza Kuipata Hapa"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Tuma arifa za Postulo kupitia Kuinuka kwa Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, barua pepe na zaidi ya huduma zingine za 100. Kila mmoja ana jina lake kwa anwani moja, ambayo ina imani yake na imehifadhiwa kwa encrypted."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -88,8 +89,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Huduma haikujibu ndani ya sekunde %(seconds)d."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Taarifa za mtu wa tatu kupitia Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

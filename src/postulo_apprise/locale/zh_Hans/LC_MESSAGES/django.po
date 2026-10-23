@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"PO-Revision-Date: 2026-10-23 11:31+0000\n"
 "Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -77,8 +77,9 @@ msgid "Postulo can reach you here"
 msgstr "波斯图洛可以联系你"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "通过Apprise向Telegram、ntfy、Discord、Matrix、Gotify、Pushover、Signal、电子邮件和远超过100个其他服务发送Postulo的通知。 每个地址都由一个地址命名,该地址持有其证书并被加密存储."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -86,8 +87,9 @@ msgid "The services did not answer within %(seconds)d seconds."
 msgstr "这些服务没有在%(seconds)d秒内答复."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "通过审阅的第三方通知"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
