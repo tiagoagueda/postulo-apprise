@@ -4,84 +4,91 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-19 06:51+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: rumantsch\n"
+"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"Last-Translator: Administrator <weblate@tiagoagueda.com>\n"
+"Language-Team: Romansh <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/rm/>\n"
 "Language: rm\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr ""
+msgstr "%(service)s sin %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ina connexiun cuntegna maximalmain %(count)d URL dad Apprise."
+msgstr[1] "Ina connexiun cuntegna maximalmain %(count)d URLs dad Apprise."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise"
-msgstr ""
+msgstr "Apprise"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise URLs"
-msgstr ""
+msgstr "URLs dad Apprise"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr ""
+msgstr "I dovra almain in URL dad Apprise."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one service refused the message."
-msgstr ""
+msgstr "Almain in servetsch ha refusà il messadi."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Furnì a %(count)d servetsch."
+msgstr[1] "Furnì a %(count)d servetschs."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "La lingia %(line)d (%(scheme)s) agescha sin la maschina, sin la quala Postulo funcziuna, e betg sin in da Voss servetschs, perquai na po ella betg vegnir utilisada qua."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "La lingia %(line)d dumonda da suandar renviaments; Postulo na suonda mai in, perquai indicai l'adressa finala."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
+msgstr "La lingia %(line)d n'è betg in URL dad Apprise che questa versiun chapescha (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "La lingia %(line)d numna ina datoteca sin la maschina, sin la quala Postulo funcziuna (%(argument)s=). Indicai empè in'adressa https."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "In per lingia, en la furma dad Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, e tut ils auters che Apprise enumerescha. Las datas d'access sa chattan en l'URL, perquai vegn l'entir champ memorisà criptà e mai pli mussà; la glista da las connexiuns mussa mo il num da mintga servetsch e, per in sin in agen server, quel server."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Postulo can reach you here"
-msgstr ""
+msgstr "Postulo As po cuntanscher qua"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "Ils servetschs n'han betg respundì entaifer %(seconds)d secundas."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr ""
+msgstr "Quai è il messadi da test da Vossa connexiun Apprise. Promemorias e registraziuns arrivan da la medema moda."

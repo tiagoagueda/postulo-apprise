@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-19 11:15+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Lithuanian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -23,9 +23,9 @@ msgstr "%(service)s, serveris %(host)s: %(error)s"
 #, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] "Jungtis turi ne daugiau %(count)d April URL."
-msgstr[2] "Jungtis turi ne daugiau %(count)d April URL."
+msgstr[0] "Ryšyje gali būti ne daugiau kaip %(count)d Apprise URL."
+msgstr[1] "Ryšyje gali būti ne daugiau kaip %(count)d Apprise URL."
+msgstr[2] "Ryšyje gali būti ne daugiau kaip %(count)d Apprise URL."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise"
@@ -47,19 +47,19 @@ msgstr "Bent viena paslauga atmetė pranešimą."
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] "Skirti %(count)d paslaugoms."
-msgstr[2] "Skirti %(count)d paslaugoms."
+msgstr[0] "Pristatyta %(count)d paslaugai."
+msgstr[1] "Pristatyta %(count)d paslaugoms."
+msgstr[2] "Pristatyta %(count)d paslaugų."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Linija %(line)d (%(scheme)s) veikia mašina Postulo veikia, ne savo paslaugas, todėl ji negali būti naudojama čia."
+msgstr "Eilutė %(line)d (%(scheme)s) atlieka veiksmus kompiuteryje, kuriame veikia Postulo, o ne jūsų paslaugoje, todėl čia jos naudoti negalima."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Linija %(line)d prašo nukreipti; Postulo niekada taip, todėl nurodykite galutinį adresą."
+msgstr "Eilutėje %(line)d prašoma sekti nukreipimus; Postulo niekada jais neseka, todėl nurodykite galutinį adresą."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
@@ -69,12 +69,12 @@ msgstr "Eilutė %(line)d nėra Apprise URL, kurį supranta ši versija (%(scheme
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Linija %(line)d žymi failą apie mašiną Postulo veikia (%(argument)s =). Vietoj to nurodykite https adresą."
+msgstr "Eilutėje %(line)d nurodytas failas kompiuteryje, kuriame veikia Postulo (%(argument)s=). Vietoj to nurodykite https adresą."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "• • • • • • • • • • • Indikatoriai gyvena URL viduje, todėl visas laukas yra saugomas užšifruotas ir niekada rodomas iš naujo; ryšio sąrašas rodo tik kiekvienos paslaugos pavadinimą, ir, už vieną savo serverį, kad serveris."
+msgstr "Po vieną eilutėje, Apprise formatu: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org ir bet kuris kitas Apprise nurodytas formatas. Prisijungimo duomenys yra pačiame URL, todėl visas laukas saugomas užšifruotas ir daugiau niekada nerodomas; ryšių sąraše rodomas tik kiekvienos paslaugos pavadinimas, o jei paslauga veikia jūsų paties serveryje, – ir tas serveris."
 
 #: src/postulo_apprise/notifier.py
 msgid "Postulo can reach you here"
@@ -83,7 +83,7 @@ msgstr "Postulo gali jus pasiekti čia"
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "Tarnybos neatsakė per %(seconds)d sekundes."
+msgstr "Paslaugos neatsakė per %(seconds)d s."
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."

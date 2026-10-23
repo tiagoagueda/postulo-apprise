@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-19 11:15+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Galician <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,8 @@ msgstr "%(service)s en %(host)s: %(error)s"
 #, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "Unha conexión ten como máximo %(count)d Última URL."
-msgstr[1] "Unha conexión ten como máximo %(count)d URLs."
+msgstr[0] "Unha conexión admite como máximo %(count)d URL de Apprise."
+msgstr[1] "Unha conexión admite como máximo %(count)d URL de Apprise."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise"
@@ -43,21 +43,21 @@ msgid "At least one service refused the message."
 msgstr "Polo menos un servizo rexeitou a mensaxe."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "Enviado por %(count)d."
-msgstr[1] "Servizos %(count)d."
+msgstr[0] "Entregado a %(count)d servizo."
+msgstr[1] "Entregado a %(count)d servizos."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "A liña %(line)d (%(scheme)s) actúa sobre a máquina Postulo continúa, non sobre un servizo teu, polo que non se pode empregar aquí."
+msgstr "A liña %(line)d (%(scheme)s) actúa sobre a máquina na que se executa o Postulo, non sobre un servizo teu, así que non se pode usar aquí."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "A liña %(line)d pide que se sigan as redireccións; Postulo nunca segue unha, polo que dá a dirección final."
+msgstr "A liña %(line)d pide que se sigan as redireccións; o Postulo nunca segue ningunha, así que indica o enderezo final."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
@@ -65,21 +65,20 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "A liña %(line)d non é unha URL de Apprise que entenda esta versión (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Line %(line)d nomea un ficheiro na máquina Postulo (%(argument)s=). Dar un enderezo https."
+msgstr "A liña %(line)d indica un ficheiro na máquina na que se executa o Postulo (%(argument)s=). Indica no seu lugar un enderezo https."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Unha por liña, na forma de Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, e calquera das outras listas de aplicacións. As credenciais viven dentro da URL, polo que o campo enteiro é almacenado cifrado e nunca se mostra de novo; a lista de conexións mostra só o nome de cada servizo e, para un nun servidor propio, ese servidor."
+msgstr "Un por liña, na forma de Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, e calquera dos outros que enumera Apprise. As credenciais van dentro do URL, así que todo o campo se almacena cifrado e nunca se volve mostrar; a lista de conexións mostra só o nome de cada servizo e, se está nun servidor propio, ese servidor."
 
 #: src/postulo_apprise/notifier.py
 msgid "Postulo can reach you here"
 msgstr "Aquí o Postulo pode avisarte"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Os servizos non responderon en %(seconds)d segundos."
 

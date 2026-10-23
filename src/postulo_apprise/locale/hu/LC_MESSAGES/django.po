@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-19 11:15+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Hungarian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -23,8 +23,8 @@ msgstr "%(service)s a(z) %(host)s címen: %(error)s"
 #, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "A kapcsolat legfeljebb %(count)d Az URL."
-msgstr[1] "A kapcsolat legfeljebb %(count)d Az URLs."
+msgstr[0] "Egy kapcsolat legfeljebb %(count)d Apprise URL-t tartalmazhat."
+msgstr[1] "Egy kapcsolat legfeljebb %(count)d Apprise URL-t tartalmazhat."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise"
@@ -46,18 +46,18 @@ msgstr "Legalább egy szolgáltatás elutasította az üzenetet."
 #, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "%(count)d szolgáltatásnak kézbesítve."
-msgstr[1] "%(count)d szolgáltatásoknak kézbesítve."
+msgstr[0] "Kézbesítve %(count)d szolgáltatásnak."
+msgstr[1] "Kézbesítve %(count)d szolgáltatásnak."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "A %(line)d (%(scheme)s) vonal a Postulo gépen fut tovább, nem az Ön szolgálatán, így itt nem használható."
+msgstr "A(z) %(line)d. sor (%(scheme)s) azon a gépen végez műveletet, amelyen a Postulo fut, nem az Ön valamelyik szolgáltatásán, ezért itt nem használható."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "A %(line)d vonal az átirányítások követését kéri; a Postulo soha nem követ egyet, így adja meg a végső címet."
+msgstr "A(z) %(line)d. sor az átirányítások követését kéri; a Postulo soha nem követ átirányítást, ezért adja meg a végső címet."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
@@ -65,23 +65,22 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "A(z) %(line)d. sor nem olyan Apprise URL, amelyet ez a verzió ért (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Line %(line)d nevez egy fájlt a gép Postulo fut (%(argument)s =). Adja meg helyette a https címet."
+msgstr "A(z) %(line)d. sor egy fájlt nevez meg azon a gépen, amelyen a Postulo fut (%(argument)s=). Adjon meg helyette egy https-címet."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Egy soronként, Apprise formájában: tgram: / / bot- quier- / chat- id, nnfy: / / téma, discorder: / / webhook- id / webhook- given, mailto: / / felhasználó: jelszó @ example.org, és bármely más Apprise lista. Az adatok az URL-en belül élnek, így az egész mezőt titkosítva tárolják, és soha többé nem jelenik meg; a kapcsolatlista csak az egyes szolgáltatások nevét mutatja, és egy saját szerveren, azt a szervert."
+msgstr "Soronként egy, az Apprise formátumában: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, vagy bármely más, az Apprise által felsorolt szolgáltatás. A hitelesítő adatok az URL-ben vannak, ezért az egész mező titkosítva tárolódik, és többé nem jelenik meg; a kapcsolatok listája csak az egyes szolgáltatások nevét mutatja, saját kiszolgálón futó szolgáltatásnál pedig azt a kiszolgálót is."
 
 #: src/postulo_apprise/notifier.py
 msgid "Postulo can reach you here"
 msgstr "A Postulo itt érheti el Önt"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "A szolgáltatások %(seconds)d másodperc alatt nem válaszoltak."
+msgstr "A szolgáltatások nem válaszoltak %(seconds)d másodpercen belül."
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
