@@ -4,86 +4,93 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-19 06:51+0000\n"
-"Last-Translator: Postulo contributors\n"
-"Language-Team: crnogorski\n"
+"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"Last-Translator: Administrator <weblate@tiagoagueda.com>\n"
+"Language-Team: Montenegrin <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/cnr/>\n"
 "Language: cnr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr ""
+msgstr "%(service)s na %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Veza sadrži najviše %(count)d Apprise URL."
+msgstr[1] "Veza sadrži najviše %(count)d Apprise URL-a."
+msgstr[2] "Veza sadrži najviše %(count)d Apprise URL-ova."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise"
-msgstr ""
+msgstr "Apprise"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Apprise URLs"
-msgstr ""
+msgstr "Apprise URL-ovi"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr ""
+msgstr "Potreban je bar jedan Apprise URL."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "At least one service refused the message."
-msgstr ""
+msgstr "Bar jedan servis je odbio poruku."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Isporučeno na %(count)d servis."
+msgstr[1] "Isporučeno na %(count)d servisa."
+msgstr[2] "Isporučeno na %(count)d servisa."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "Red %(line)d (%(scheme)s) djeluje na računaru na kojem radi Postulo, a ne na vašem servisu, pa se ovdje ne može koristiti."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "Red %(line)d traži praćenje preusmjeravanja; Postulo ga nikad ne prati, pa navedite konačnu adresu."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
+msgstr "Red %(line)d nije Apprise URL koji ova verzija razumije (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "Red %(line)d navodi fajl na računaru na kojem radi Postulo (%(argument)s=). Umjesto toga navedite https adresu."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "Jedan po redu, u Apprise obliku: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, i bilo koji drugi koji Apprise navodi. Pristupni podaci se nalaze u samom URL-u, pa se cijelo polje čuva šifrovano i više se nikad ne prikazuje; lista veza prikazuje samo ime svakog servisa i, za servis na vašem sopstvenom serveru, taj server."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Postulo can reach you here"
-msgstr ""
+msgstr "Postulo vas ovdje može kontaktirati"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "Servisi nijesu odgovorili u roku od %(seconds)d s."
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr ""
+msgstr "Ovo je testna poruka s vaše Apprise veze. Podsjetnici i zabilješke stizaće na isti način."
