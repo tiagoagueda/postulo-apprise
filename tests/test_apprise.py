@@ -544,3 +544,14 @@ def test_the_plugin_speaks_french_and_portuguese_by_itself():
         assert notifier.validate({"urls": ""}) == {"urls": ["É preciso pelo menos um URL Apprise."]}
     with translation.override("en-GB"):
         assert notifier.config_fields()[0].label == "Apprise URLs"
+
+
+@pytest.mark.django_db
+def test_it_is_named_for_what_it_does_and_keeps_its_identifier():
+    """The name people read changes (#19); the identifier rows key on does not."""
+    registry.plugins("notifier", refresh=True)
+    notifier = registry.find_plugin("notifier", "apprise")
+    assert notifier.name == "apprise"
+    with translation.override("en-GB"):
+        assert str(notifier.label) == "Third-party notifications via Apprise"
+        assert "Apprise" in str(notifier.description)

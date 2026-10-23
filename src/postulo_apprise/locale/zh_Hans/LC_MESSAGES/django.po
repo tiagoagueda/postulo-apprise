@@ -27,11 +27,6 @@ msgstr[0] "连接最多持有 %(count)d Apprise URL."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
-msgid "Apprise"
-msgstr "总结"
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "汇总 URL"
 
@@ -82,9 +77,17 @@ msgid "Postulo can reach you here"
 msgstr "波斯图洛可以联系你"
 
 #: src/postulo_apprise/notifier.py
+msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "这些服务没有在%(seconds)d秒内答复."
+
+#: src/postulo_apprise/notifier.py
+msgid "Third-party notifications via Apprise"
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

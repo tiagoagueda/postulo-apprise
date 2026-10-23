@@ -50,7 +50,14 @@ from dataclasses import dataclass
 import apprise
 from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy, ngettext
-from postulo.plugins.api import DestinationRefused, FieldSpec, TestResult, check_destination
+from postulo.plugins.api import (
+    DestinationRefused,
+    FieldSpec,
+    Manifest,
+    TestResult,
+    check_destination,
+    declares,
+)
 
 from . import __version__
 
@@ -385,12 +392,22 @@ def _notify(client: apprise.Apprise, **kwargs) -> bool:
     return bool(outcome.get("sent"))
 
 
+@declares(
+    Manifest(
+        # The identifier stays `apprise`: stored connections and policy rows key on it, and
+        # a new one would orphan them. Only what people read changes (#19).
+        name="apprise",
+        label=gettext_lazy("Third-party notifications via Apprise"),
+        version=__version__,
+        kind="notifier",
+        description=gettext_lazy(
+            "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, "
+            "Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. "
+            "Each is named by one address, which holds its credential and is stored encrypted."
+        ),
+    )
+)
 class AppriseNotifier:
-    name = "apprise"
-    version = __version__
-    kind = "notifier"
-    label = gettext_lazy("Apprise")
-
     def config_fields(self) -> list[FieldSpec]:
         return [
             FieldSpec(

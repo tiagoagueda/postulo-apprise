@@ -29,11 +29,6 @@ msgstr[2] "Веза садржи највише %(count)d Apprise URL-ова."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
-msgid "Apprise"
-msgstr "Apprise"
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Apprise URL-ови"
 
@@ -86,9 +81,17 @@ msgid "Postulo can reach you here"
 msgstr "Postulo може да вас обавештава овде"
 
 #: src/postulo_apprise/notifier.py
+msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
 #, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Сервиси нису одговорили у року од %(seconds)d секунди."
+
+#: src/postulo_apprise/notifier.py
+msgid "Third-party notifications via Apprise"
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

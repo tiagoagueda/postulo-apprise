@@ -27,10 +27,6 @@ msgstr[0] "Egy kapcsolat legfeljebb %(count)d Apprise URL-t tartalmazhat."
 msgstr[1] "Egy kapcsolat legfeljebb %(count)d Apprise URL-t tartalmazhat."
 
 #: src/postulo_apprise/notifier.py
-msgid "Apprise"
-msgstr "Apprise"
-
-#: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise URL-ek"
 
@@ -78,9 +74,17 @@ msgid "Postulo can reach you here"
 msgstr "A Postulo itt érheti el Önt"
 
 #: src/postulo_apprise/notifier.py
+msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
 #, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "A szolgáltatások nem válaszoltak %(seconds)d másodpercen belül."
+
+#: src/postulo_apprise/notifier.py
+msgid "Third-party notifications via Apprise"
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."

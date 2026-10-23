@@ -28,10 +28,6 @@ msgstr[1] "Ryšyje gali būti ne daugiau kaip %(count)d Apprise URL."
 msgstr[2] "Ryšyje gali būti ne daugiau kaip %(count)d Apprise URL."
 
 #: src/postulo_apprise/notifier.py
-msgid "Apprise"
-msgstr "Apprise"
-
-#: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise URL adresai"
 
@@ -81,9 +77,17 @@ msgid "Postulo can reach you here"
 msgstr "Postulo gali jus pasiekti čia"
 
 #: src/postulo_apprise/notifier.py
+msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Paslaugos neatsakė per %(seconds)d s."
+
+#: src/postulo_apprise/notifier.py
+msgid "Third-party notifications via Apprise"
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."

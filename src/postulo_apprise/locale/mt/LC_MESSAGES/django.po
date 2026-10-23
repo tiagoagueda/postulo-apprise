@@ -30,11 +30,6 @@ msgstr[3] "Konnessjoni żżomm l-aktar %(count)d URL ta' Apprise."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
-msgid "Apprise"
-msgstr "Apprise"
-
-#: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "URLs ta' Apprise"
 
@@ -88,9 +83,17 @@ msgid "Postulo can reach you here"
 msgstr "Postulo jista' jilħqek hawn"
 
 #: src/postulo_apprise/notifier.py
+msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
+msgstr ""
+
+#: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Is-servizzi ma wieġbux fi żmien %(seconds)d sekondi."
+
+#: src/postulo_apprise/notifier.py
+msgid "Third-party notifications via Apprise"
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
