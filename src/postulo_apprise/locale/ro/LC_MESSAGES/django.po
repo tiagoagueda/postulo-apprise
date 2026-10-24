@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-24 05:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Romanian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -15,87 +15,79 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s la %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "O conexiune deține cel mult %(count)d URL-ul de configurare."
-msgstr[1] "O conexiune deține cel mult URL-uri %(count)d."
-msgstr[2] "O conexiune deține cel mult URL-uri %(count)d."
+msgstr[0] "O conexiune conține cel mult %(count)d URL Apprise."
+msgstr[1] "O conexiune conține cel mult %(count)d URL-uri Apprise."
+msgstr[2] "O conexiune conține cel mult %(count)d de URL-uri Apprise."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "URL-uri Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Este nevoie de cel puțin un URL Apprise."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Cel puțin un serviciu a refuzat mesajul."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "Livrat la %(count)d."
-msgstr[1] "Livrate către %(count)d."
-msgstr[2] "Livrate către %(count)d."
+msgstr[0] "Livrat către %(count)d serviciu."
+msgstr[1] "Livrat către %(count)d servicii."
+msgstr[2] "Livrat către %(count)d de servicii."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Linia %(line)d (%(scheme)s) acţionează asupra maşinii pe care funcţionează Postulo, nu pe un serviciu al tău, aşa că nu poate fi folosită aici."
+msgstr "Linia %(line)d (%(scheme)s) acționează asupra serverului pe care rulează Postulo, nu asupra unui serviciu al dumneavoastră, așa că nu poate fi folosită aici."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Linia %(line)d cere ca redirecționările să fie urmate; Postulo nu urmează niciodată una, așa că dați adresa finală."
+msgstr "Linia %(line)d cere urmarea redirecționărilor; Postulo nu urmează niciodată o redirecționare, așa că introduceți adresa finală."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Linia %(line)d nu este un URL Apprise pe care această versiune îl înțelege (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Linia %(line)d denumeste un fisier pe masina Postulo ruleaza pe (%(argument)s=). Dă în schimb o adresă https."
+msgstr "Linia %(line)d indică un fișier de pe serverul pe care rulează Postulo (%(argument)s=). Introduceți în schimb o adresă https."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Una pe linie, sub forma lui Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@exemplu.org, și oricare dintre celelalte liste Apprise. Acreditările trăiesc în interiorul URL-ului, astfel încât întregul câmp este stocat criptat și nu a mai apărut niciodată; lista conexiunilor arată doar numele fiecărui serviciu și, pentru unul pe un server propriu, acel server."
+msgstr "Câte una pe linie, în forma Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org și oricare dintre celelalte pe care le listează Apprise. Datele de autentificare se află în URL, așa că întregul câmp este stocat criptat și nu mai este afișat niciodată; lista conexiunilor arată doar numele fiecărui serviciu și, pentru unul aflat pe un server propriu, acel server."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
-msgstr "Postulo te poate contacta aici"
+msgstr "Postulo vă poate contacta aici"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Trimite notificări Postulo prin Apprise la Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-mail și bine peste o sută de alte servicii. Fiecare este numit printr-o singură adresă, care deține acreditarea sa și este stocată criptată."
+msgstr "Trimite notificările Postulo prin Apprise către Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-mail și peste o sută de alte servicii. Fiecare este identificat printr-o singură adresă, care conține datele de autentificare și este stocată criptat."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Serviciile nu au răspuns în %(seconds)d secunde."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "Notificări ale unor terțe părți prin intermediul unei recomandări"
+msgstr "Notificări prin servicii terțe, cu Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "Acesta este mesajul de test de la conexiunea ta Apprise. Mementourile și captările vor sosi în același fel."
+msgstr "Acesta este mesajul de test de la conexiunea dumneavoastră Apprise. Mementourile și capturile vor sosi în același fel."

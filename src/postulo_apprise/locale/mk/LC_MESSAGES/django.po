@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"PO-Revision-Date: 2026-10-24 03:02+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Macedonian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/mk/>\n"
 "Language: mk\n"
@@ -80,7 +80,7 @@ msgstr "Postulo може да ве достигне тука"
 
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Испраќајте ги известувањата на Postulo преку Apprise до Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, е-пошта и многу повеќе од сто други услуги. Секоја е означена со една адреса, која ги содржи нејзините акредитиви и се чува шифрирана."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -89,7 +89,7 @@ msgstr "Сервисите не одговорија во рок од %(seconds)
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Известувања од трети страни преку Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

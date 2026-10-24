@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-24 03:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Lithuanian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s, serveris %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "Ryšyje gali būti ne daugiau kaip %(count)d Apprise URL."
@@ -40,7 +40,7 @@ msgid "At least one service refused the message."
 msgstr "Bent viena paslauga atmetė pranešimą."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
 msgstr[0] "Pristatyta %(count)d paslaugai."
@@ -48,12 +48,12 @@ msgstr[1] "Pristatyta %(count)d paslaugoms."
 msgstr[2] "Pristatyta %(count)d paslaugų."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
 msgstr "Eilutė %(line)d (%(scheme)s) atlieka veiksmus kompiuteryje, kuriame veikia Postulo, o ne jūsų paslaugoje, todėl čia jos naudoti negalima."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
 msgstr "Eilutėje %(line)d prašoma sekti nukreipimus; Postulo niekada jais neseka, todėl nurodykite galutinį adresą."
 
@@ -63,12 +63,11 @@ msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)
 msgstr "Eilutė %(line)d nėra Apprise URL, kurį supranta ši versija (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "Eilutėje %(line)d nurodytas failas kompiuteryje, kuriame veikia Postulo (%(argument)s=). Vietoj to nurodykite https adresą."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "Po vieną eilutėje, Apprise formatu: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org ir bet kuris kitas Apprise nurodytas formatas. Prisijungimo duomenys yra pačiame URL, todėl visas laukas saugomas užšifruotas ir daugiau niekada nerodomas; ryšių sąraše rodomas tik kiekvienos paslaugos pavadinimas, o jei paslauga veikia jūsų paties serveryje, – ir tas serveris."
 
@@ -77,19 +76,17 @@ msgid "Postulo can reach you here"
 msgstr "Postulo gali jus pasiekti čia"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Siųsti Postulo pranešimus per Apprise Telegramas, Ntfy, diskredituoti, Matrica, Gotify, Pushover, Signalas, elektroninio pašto ir daug daugiau nei šimtą kitų paslaugų. Kiekvienas yra pavadintas vienu adresu, kuris turi savo pasitikėjimą ir yra saugomas užšifruotas."
+msgstr "Siųsti Postulo pranešimus per Apprise į Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, el. paštą ir dar daugiau nei šimtą kitų paslaugų. Kiekviena nurodoma vienu adresu, kuriame yra jos prisijungimo duomenys ir kuris saugomas užšifruotas."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Paslaugos neatsakė per %(seconds)d s."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "Tryliktosios šalies pranešimai per programą"
+msgstr "Trečiųjų šalių pranešimai per Apprise"
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."

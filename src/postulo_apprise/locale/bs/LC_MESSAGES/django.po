@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"PO-Revision-Date: 2026-10-24 05:02+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Bosnian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/bs/>\n"
 "Language: bs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s na %(host)s: %(error)s"
 
@@ -28,19 +28,16 @@ msgstr[1] "Veza sadrži najviše %(count)d Apprise URL-a."
 msgstr[2] "Veza sadrži najviše %(count)d Apprise URL-ova."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Apprise URL adrese"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Potrebna je barem jedna Apprise URL adresa."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
-msgstr "Barem jedna usluga je odbila poruku."
+msgstr "Barem jedan servis je odbio poruku."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
@@ -61,7 +58,7 @@ msgid "Line %(line)d asks for redirects to be followed; Postulo never follows on
 msgstr "Red %(line)d traži praćenje preusmjeravanja; Postulo nikad ne prati preusmjeravanje, pa navedite konačnu adresu."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Red %(line)d nije Apprise URL adresa koju ova verzija razumije (%(scheme)s)."
 
@@ -71,18 +68,16 @@ msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=)
 msgstr "Red %(line)d navodi datoteku na računaru na kojem Postulo radi (%(argument)s=). Umjesto toga navedite https adresu."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Jedan po redu, u Apprise obliku: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org i bilo koji drugi koje Apprise navodi. Pristupni podaci nalaze se unutar URL-a, pa se cijelo polje čuva šifrovano i nikad se više ne prikazuje; lista veza prikazuje samo naziv svakog servisa i, za onaj na vašem vlastitom serveru, taj server."
+msgstr "Jedan po redu, u Apprise obliku: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org i bilo koji drugi koje Apprise navodi. Pristupni podaci nalaze se unutar URL-a, pa se cijelo polje čuva šifrirano i nikad se više ne prikazuje; lista veza prikazuje samo naziv svakog servisa i, za onaj na vašem vlastitom serveru, taj server."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Ovdje vas Postulo može kontaktirati"
 
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Šaljite Postulova obavještenja putem Apprisea na Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-poštu i više od stotinu drugih servisa. Svaki se navodi jednom adresom, koja sadrži njegove pristupne podatke i pohranjuje se šifrirano."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
@@ -91,9 +86,8 @@ msgstr "Servisi nisu odgovorili u roku od %(seconds)d sekundi."
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Obavještenja trećih strana putem Apprisea"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "Ovo je testna poruka s vaše Apprise veze. Podsjetnici i hvatanja stizat će na isti način."
+msgstr "Ovo je probna poruka s vaše Apprise veze. Podsjetnici i uhvaćeni oglasi stizat će na isti način."
