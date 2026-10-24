@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-24 05:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Latvian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/lv/>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -15,87 +15,79 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr "%(service)s uz %(host)s: %(error)s"
+msgstr "%(service)s serverī %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] "Savienojums satur ne vairāk kā %(count)d Apprise URLs."
-msgstr[2] "Savienojums satur ne vairāk kā 0 Apprise URL."
+msgstr[0] "Savienojumā var būt ne vairāk kā %(count)d Apprise URL adrese."
+msgstr[1] "Savienojumā var būt ne vairāk kā %(count)d Apprise URL adreses."
+msgstr[2] "Savienojumā var būt ne vairāk kā %(count)d Apprise URL adrešu."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Apprise URL adreses"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Nepieciešama vismaz viena Apprise URL adrese."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Vismaz viens pakalpojums noraidīja ziņu."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] "Sniedza %(count)d pakalpojumus."
-msgstr[2] "Piegādāts līdz 0 pakalpojumiem."
+msgstr[0] "Piegādāts %(count)d pakalpojumam."
+msgstr[1] "Piegādāts %(count)d pakalpojumiem."
+msgstr[2] "Piegādāts %(count)d pakalpojumiem."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Line %(line)d (%(scheme)s) iedarbojas uz mašīnu Postulo darbojas, nevis uz jūsu pakalpojumu, tāpēc šeit to nevar izmantot."
+msgstr "%(line)d. rinda (%(scheme)s) darbojas serverī, kurā darbojas Postulo, nevis jūsu pakalpojumā, tāpēc šeit to nevar izmantot."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Line %(line)d lūdz sekot novirzēm; Postulo nekad neseko vienai, tāpēc norādiet galīgo adresi."
+msgstr "%(line)d. rinda prasa sekot pāradresācijām; Postulo nekad tām neseko, tāpēc norādiet galīgo adresi."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "%(line)d. rinda nav Apprise URL adrese, ko šī versija saprot (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Line %(line)d nosauc failu uz mašīnas Postulo darbojas (%(argument)s=). Tā vietā norādiet https adresi."
+msgstr "%(line)d. rinda norāda failu serverī, kurā darbojas Postulo (%(argument)s=). Tā vietā norādiet https adresi."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Viens katrā rindā, Apprise formā: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, un jebkurš no citiem Apprise saraksti. Akreditāti dzīvo URL, tāpēc viss lauks tiek saglabāts šifrēts un nekad vairs netiek rādīts; savienojumu sarakstā ir redzams tikai katra pakalpojuma nosaukums un, vienam uz sava servera, šis serveris."
+msgstr "Pa vienai katrā rindā, Apprise formātā: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org un jebkura cita, ko uzskaita Apprise. Pieteikšanās dati atrodas URL adresē, tāpēc viss lauks tiek glabāts šifrēts un vairs nekad netiek parādīts; savienojumu sarakstā redzams tikai katra pakalpojuma nosaukums un, ja pakalpojums ir jūsu paša serverī, šis serveris."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo var jūs sasniegt šeit"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Sūtīt Postulo paziņojumus caur Apprise Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signāls, e-pasts un daudz vairāk nekā simts citiem pakalpojumiem. Katrs ir nosaukts pēc vienas adreses, kas satur savu akreditācijas un tiek saglabāts šifrēts."
+msgstr "Sūta Postulo paziņojumus caur Apprise uz Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-pastu un vairāk nekā simts citiem pakalpojumiem. Katru norāda viena adrese, kurā ir tā pieteikšanās dati un kas tiek glabāta šifrēta."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Pakalpojumi neatbildēja %(seconds)d sekunžu laikā."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "Trešo personu paziņojumi, izmantojot Apprise"
+msgstr "Trešo pušu paziņojumi, izmantojot Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr "Šī ir testa ziņa no jūsu Apprise savienojuma. Atgādinājumi un tvērumi pienāks tāpat."

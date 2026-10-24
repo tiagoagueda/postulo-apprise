@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"PO-Revision-Date: 2026-10-24 03:02+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Armenian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/hy/>\n"
 "Language: hy\n"
@@ -23,8 +23,8 @@ msgstr "%(service)s (%(host)s)՝ %(error)s"
 #, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Կապը կարող է պարունակել առավելագույնը %(count)d Apprise URL։"
+msgstr[1] "Կապը կարող է պարունակել առավելագույնը %(count)d Apprise URL։"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -45,18 +45,18 @@ msgstr "Առնվազն մեկ ծառայություն մերժեց հաղորդ
 #, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Առաքվեց %(count)d ծառայության։"
+msgstr[1] "Առաքվեց %(count)d ծառայության։"
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "%(line)d տողը (%(scheme)s) գործում է այն մեքենայի վրա, որտեղ աշխատում է Postulo-ն, և ոչ թե ձեր որևէ ծառայության վրա, ուստի այն այստեղ չի կարող օգտագործվել։"
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "%(line)d տողը պահանջում է հետևել վերահղումներին․ Postulo-ն երբեք չի հետևում դրանց, ուստի նշեք վերջնական հասցեն։"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -66,11 +66,11 @@ msgstr "Տող %(line)d՝ սա այնպիսի Apprise URL չէ, որը հասկ�
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "%(line)d տողը նշում է ֆայլ այն մեքենայի վրա, որտեղ աշխատում է Postulo-ն (%(argument)s=)։ Փոխարենը նշեք https հասցե։"
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "Մեկ տողում՝ մեկը, Apprise-ի ձևով՝ tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org և Apprise-ի թվարկած մյուսներից ցանկացածը։ Մուտքի տվյալները գտնվում են URL-ի ներսում, ուստի ամբողջ դաշտը պահվում է գաղտնագրված և այլևս երբեք չի ցուցադրվում․ կապերի ցանկը ցույց է տալիս միայն յուրաքանչյուր ծառայության անունը, իսկ ձեր սեփական սերվերի վրա գտնվողի համար՝ նաև այդ սերվերը։"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -79,16 +79,16 @@ msgstr "Postulo-ն կարող է ձեզ հետ կապվել այստեղ"
 
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Ուղարկեք Postulo-ի ծանուցումները Apprise-ի միջոցով Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, էլ. փոստ և հարյուրից շատ ավելի այլ ծառայություններ։ Յուրաքանչյուրը նշվում է մեկ հասցեով, որը պարունակում է իր մուտքի տվյալները և պահվում է գաղտնագրված։"
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "Ծառայությունները չպատասխանեցին %(seconds)d վայրկյանի ընթացքում։"
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Երրորդ կողմի ծանուցումներ Apprise-ի միջոցով"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

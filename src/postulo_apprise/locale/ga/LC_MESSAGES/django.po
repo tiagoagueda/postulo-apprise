@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-24 05:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Irish <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ga/>\n"
 "Language: ga\n"
 "MIME-Version: 1.0\n"
@@ -15,91 +15,83 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s ag %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "Tá nasc ag an chuid is mó %(count)d URL éirí amach."
-msgstr[1] "Tá nasc ag an chuid is mó 2 URLanna Apprise."
-msgstr[2] "Tá nasc ag an chuid is mó %(count)d URLanna éirí amach."
-msgstr[3] "Tá nasc ag an chuid is mó %(count)d URLanna éirí amach."
-msgstr[4] "Tá nasc ag an chuid is mó %(count)d URLanna éirí amach."
+msgstr[0] "Ní féidir níos mó ná %(count)d URL Apprise a bheith i nasc."
+msgstr[1] "Ní féidir níos mó ná %(count)d URL Apprise a bheith i nasc."
+msgstr[2] "Ní féidir níos mó ná %(count)d URL Apprise a bheith i nasc."
+msgstr[3] "Ní féidir níos mó ná %(count)d URL Apprise a bheith i nasc."
+msgstr[4] "Ní féidir níos mó ná %(count)d URL Apprise a bheith i nasc."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "URLanna Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Tá URL Apprise amháin ar a laghad ag teastáil."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
-msgstr "Dhiúltaigh seirbhís amháin ar a laghad don teachtaireacht."
+msgstr "Dhiúltaigh seirbhís amháin ar a laghad an teachtaireacht."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "Seachadadh chuig %(count)d seirbhís."
-msgstr[1] "Seachadadh chuig seirbhísí 2."
-msgstr[2] "Seachadadh chuig %(count)d seirbhísí."
-msgstr[3] "Seachadadh chuig %(count)d seirbhísí."
-msgstr[4] "Seachadadh chuig %(count)d seirbhísí."
+msgstr[0] "Seachadta chuig %(count)d seirbhís."
+msgstr[1] "Seachadta chuig %(count)d sheirbhís."
+msgstr[2] "Seachadta chuig %(count)d sheirbhís."
+msgstr[3] "Seachadta chuig %(count)d seirbhís."
+msgstr[4] "Seachadta chuig %(count)d seirbhís."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Líne %(line)d (%(scheme)s) gníomhartha ar an meaisín Postulo ritheann ar, ní ar sheirbhís de mise, mar sin ní féidir é a úsáid anseo."
+msgstr "Gníomhaíonn líne %(line)d (%(scheme)s) ar an ríomhaire ar a ritheann Postulo, ní ar sheirbhís de do chuid, mar sin ní féidir í a úsáid anseo."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Iarrann Líne %(line)d ar atreorú a bheidh le leanúint; ní leanann Postulo ar cheann, mar sin tabhair an seoladh deiridh."
+msgstr "Iarrann líne %(line)d go leanfaí atreoruithe; ní leanann Postulo ceann ar bith riamh, mar sin tabhair an seoladh deiridh."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Ní URL Apprise a thuigeann an leagan seo í líne %(line)d (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Líne %(line)d ainmneacha comhad ar an meaisín Postulo ritheann ar (%(argument)s =). Tabhair aghaidh https ina ionad."
+msgstr "Ainmníonn líne %(line)d comhad ar an ríomhaire ar a ritheann Postulo (%(argument)s=). Tabhair seoladh https ina ionad."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Ceann in aghaidh na líne, i bhfoirm Apprise: tgram Cóipeáil-token/chat-id, ntfy Cóipeáiltopic, discord Cóipeáil nasc leis an tweet Leabaigh an Tweet https://www.password@example.org, agus aon cheann de na liostaí eile Apprise. Na dintiúir beo taobh istigh den URL, mar sin tá an réimse ar fad a stóráil criptithe agus riamh a thaispeántar arís; Léiríonn an liosta naisc ach an t-ainm ar gach seirbhís agus, ar cheann ar fhreastalaí de do chuid féin, an freastalaí."
+msgstr "Ceann in aghaidh na líne, i bhfoirm Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, agus aon cheann eile dá liostaíonn Apprise. Tá na dintiúir istigh sa URL, mar sin stóráiltear an réimse ar fad criptithe agus ní thaispeántar arís é; ní thaispeánann liosta na nasc ach ainm gach seirbhíse agus, i gcás seirbhíse ar fhreastalaí de do chuid féin, an freastalaí sin."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Is féidir le Postulo teacht ort anseo"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Seol fógraí Postulo trí Apprise to Telegram, ntfy, Discord, Maitrís, Gotify, Pushover, Signal, ríomhphost agus go maith thar céad seirbhísí eile. Tá gach ainmnithe ag seoladh amháin, a bhfuil a dintiúir agus tá sé stóráilte criptithe."
+msgstr "Seol fógraí Postulo trí Apprise chuig Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, ríomhphost agus i bhfad níos mó ná céad seirbhís eile. Ainmnítear gach ceann acu le seoladh amháin, ina bhfuil a dhintiúr, agus stóráiltear criptithe é."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Níor fhreagair na seirbhísí laistigh de %(seconds)d soicind."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
 msgstr "Fógraí tríú páirtí trí Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr "Seo an teachtaireacht tástála ó do nasc Apprise. Tiocfaidh meabhrúcháin agus gabhálacha ar an mbealach céanna."

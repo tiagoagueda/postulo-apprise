@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"PO-Revision-Date: 2026-10-24 03:02+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Luxembourgish <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/lb/>\n"
 "Language: lb\n"
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "Hei kann de Postulo Iech erreechen"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Schéckt dem Postulo seng Benoriichtegungen iwwer Apprise op Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, per E-Mail a wäit iwwer honnert aner Servicer. All Service gëtt mat enger Adress benannt, déi säin Zougang enthält a verschlësselt gespäichert gëtt."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -89,7 +90,7 @@ msgstr "D'Servicer hunn net bannent %(seconds)d Sekonne geäntwert."
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Benoriichtegungen vun Drëtten iwwer Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

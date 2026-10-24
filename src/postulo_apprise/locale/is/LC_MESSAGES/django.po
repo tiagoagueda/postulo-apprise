@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
+"PO-Revision-Date: 2026-10-24 03:02+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Icelandic <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/is/>\n"
 "Language: is\n"
@@ -79,8 +79,9 @@ msgid "Postulo can reach you here"
 msgstr "Postulo getur náð í þig hér"
 
 #: src/postulo_apprise/notifier.py
+#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Sendu tilkynningar Postulo í gegnum Apprise til Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, í tölvupósti og til vel yfir hundrað annarra þjónusta. Hver þeirra er tilgreind með einu vistfangi sem geymir auðkenni hennar og er vistað dulkóðað."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format
@@ -89,7 +90,7 @@ msgstr "Þjónusturnar svöruðu ekki innan %(seconds)d sekúndna."
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Tilkynningar þriðja aðila í gegnum Apprise"
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy

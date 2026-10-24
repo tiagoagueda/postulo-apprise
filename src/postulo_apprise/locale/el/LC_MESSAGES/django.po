@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-24 03:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Greek <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/el/>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
@@ -15,85 +15,77 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s στο %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "Μια σύνδεση περιέχει το πολύ %(count)d Apprise URL."
-msgstr[1] "Μια σύνδεση περιέχει το πολύ %(count)d Apprise URLs."
+msgstr[0] "Μια σύνδεση μπορεί να έχει το πολύ %(count)d διεύθυνση URL Apprise."
+msgstr[1] "Μια σύνδεση μπορεί να έχει το πολύ %(count)d διευθύνσεις URL Apprise."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Διευθύνσεις URL Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Χρειάζεται τουλάχιστον μία διεύθυνση URL Apprise."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Τουλάχιστον μία υπηρεσία απέρριψε το μήνυμα."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "Παραδόθηκε στην υπηρεσία %(count)d."
-msgstr[1] "Παραδόθηκε σε υπηρεσίες %(count)d."
+msgstr[0] "Παραδόθηκε σε %(count)d υπηρεσία."
+msgstr[1] "Παραδόθηκε σε %(count)d υπηρεσίες."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Η γραμμή %(line)d (%(scheme)s) δρα στο μηχάνημα που λειτουργεί η Postulo, όχι σε μια υπηρεσία σας, οπότε δεν μπορεί να χρησιμοποιηθεί εδώ."
+msgstr "Η γραμμή %(line)d (%(scheme)s) ενεργεί στο μηχάνημα όπου εκτελείται το Postulo, όχι σε κάποια δική σας υπηρεσία, οπότε δεν μπορεί να χρησιμοποιηθεί εδώ."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Η γραμμή %(line)d ζητά να ακολουθηθούν ανακατευθύνσεις· η Ποστούλο δεν ακολουθεί ποτέ μία, οπότε δώστε την τελική διεύθυνση."
+msgstr "Η γραμμή %(line)d ζητά να ακολουθούνται ανακατευθύνσεις· το Postulo δεν ακολουθεί ποτέ ανακατευθύνσεις, οπότε δώστε την τελική διεύθυνση."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Η γραμμή %(line)d δεν είναι διεύθυνση URL Apprise που καταλαβαίνει αυτή η έκδοση (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Η γραμμή %(line)d κατονομάζει ένα αρχείο στο μηχάνημα που λειτουργεί η Postulo (%(argument)s=). Δώστε μια διεύθυνση https αντ 'αυτού."
+msgstr "Η γραμμή %(line)d αναφέρει ένα αρχείο στο μηχάνημα όπου εκτελείται το Postulo (%(argument)s=). Δώστε αντί γι’ αυτό μια διεύθυνση https."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Μία ανά γραμμή, σε μορφή Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, και οποιαδήποτε από τις άλλες λίστες Apprise. Τα διαπιστευτήρια ζουν μέσα στο URL, έτσι ώστε όλο το πεδίο να είναι αποθηκευμένο κρυπτογραφημένο και να μην εμφανίζεται ξανά· η λίστα συνδέσεων εμφανίζει μόνο το όνομα κάθε υπηρεσίας και, για έναν σε έναν δικό σας διακομιστή, αυτόν τον εξυπηρετητή."
+msgstr "Μία ανά γραμμή, στη μορφή του Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, και οποιαδήποτε από τις υπόλοιπες που αναφέρει το Apprise. Τα διαπιστευτήρια βρίσκονται μέσα στη διεύθυνση URL, γι’ αυτό ολόκληρο το πεδίο αποθηκεύεται κρυπτογραφημένο και δεν εμφανίζεται ποτέ ξανά· η λίστα συνδέσεων δείχνει μόνο το όνομα κάθε υπηρεσίας και, για όσες βρίσκονται σε δικό σας διακομιστή, αυτόν τον διακομιστή."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Εδώ μπορεί να σας βρει το Postulo"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Στείλτε τις ειδοποιήσεις του Postulo μέσω Apprise στο Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email και πολύ περισσότερες από εκατό άλλες υπηρεσίες. Καθένα από αυτά ονομάζεται από μία διεύθυνση, η οποία κρατά το πιστοποιητικό και αποθηκεύεται κρυπτογραφημένο."
+msgstr "Αποστολή των ειδοποιήσεων του Postulo μέσω Apprise σε Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email και πάνω από εκατό ακόμη υπηρεσίες. Κάθε υπηρεσία ορίζεται με μία διεύθυνση, η οποία περιέχει τα διαπιστευτήριά της και αποθηκεύεται κρυπτογραφημένη."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Οι υπηρεσίες δεν απάντησαν εντός %(seconds)d δευτερολέπτων."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "Κοινοποιήσεις τρίτων μέσω Apprise"
+msgstr "Ειδοποιήσεις τρίτων υπηρεσιών μέσω Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "Αυτό είναι το δοκιμαστικό μήνυμα από τη σύνδεσή σας με το Apprise. Οι υπενθυμίσεις και οι συλλήψεις θα φτάνουν με τον ίδιο τρόπο."
+msgstr "Αυτό είναι το δοκιμαστικό μήνυμα από τη σύνδεσή σας με το Apprise. Οι υπενθυμίσεις και οι καταγραφές θα φτάνουν με τον ίδιο τρόπο."

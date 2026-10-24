@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-24 03:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Danish <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -15,85 +15,77 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s på %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "En forbindelse har højst %(count)d Appury URL."
-msgstr[1] "En forbindelse har højst %(count)d Appprise URL 'er."
+msgstr[0] "En forbindelse kan højst indeholde %(count)d Apprise-URL."
+msgstr[1] "En forbindelse kan højst indeholde %(count)d Apprise-URL'er."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Apprise-URL'er"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Mindst én Apprise-URL er nødvendig."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Mindst én tjeneste afviste beskeden."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "Leveres til %(count)d service."
-msgstr[1] "Leveres til %(count)d tjenester."
+msgstr[0] "Leveret til %(count)d tjeneste."
+msgstr[1] "Leveret til %(count)d tjenester."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Line %(line)d (%(scheme)s) virker på maskinen Postulo kører videre, ikke på en tjeneste af din, så det kan ikke bruges her."
+msgstr "Linje %(line)d (%(scheme)s) virker på den maskine, Postulo kører på, ikke på en af dine tjenester, så den kan ikke bruges her."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Linje %(line)d beder om omdirigering skal følges; Postulo aldrig følger en, så giv den endelige adresse."
+msgstr "Linje %(line)d beder om, at omdirigeringer følges; Postulo følger aldrig en omdirigering, så angiv den endelige adresse."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Linje %(line)d er ikke en Apprise-URL, som denne version forstår (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Line %(line)d navngiver en fil på maskinen Postulo kører på (%(argument)s =). Giv en https adresse i stedet."
+msgstr "Linje %(line)d angiver en fil på den maskine, Postulo kører på (%(argument)s=). Angiv en https-adresse i stedet."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "One per line, in Appprise 's form: tgram: / / bot- token / chat- id, ntfy: / / topic, discord: / / webhook- id / webhook- token, mailto: / / user: password @ example.org, og nogen af de andre Appprise lister. De legitimation lever inde i URL, så hele feltet er gemt krypteret og aldrig vist igen; tilslutningslisten viser kun navnet på hver tjeneste, og for en på en server af din egen, at serveren."
+msgstr "Én pr. linje, i Apprises form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org og alle de andre, Apprise oplister. Loginoplysningerne ligger i selve URL'en, så hele feltet gemmes krypteret og vises aldrig igen; forbindelseslisten viser kun navnet på hver tjeneste og, for en tjeneste på din egen server, den server."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo kan nå dig her"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Send Postulo 's meddelelser gennem Appprise til Telegram, ntfy, Discord, Matrix, Gotify, Pushuver, Signal, e-mail og langt over hundrede andre tjenester. Hver er navngivet af én adresse, som holder sin kreditværdighed og er gemt krypteret."
+msgstr "Send Postulos notifikationer via Apprise til Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-mail og langt over hundrede andre tjenester. Hver angives med én adresse, som indeholder dens loginoplysninger og gemmes krypteret."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Tjenesterne svarede ikke inden for %(seconds)d sekunder."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "Anmeldelser fra tredjeparter via Apprise"
+msgstr "Notifikationer fra tredjeparter via Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr "Dette er testbeskeden fra din Apprise-forbindelse. Påmindelser og indfangninger vil komme på samme måde."
