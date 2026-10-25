@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Administrator <weblate@tiagoagueda.com>\n"
+"PO-Revision-Date: 2026-10-25 04:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Faroese <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/fo/>\n"
 "Language: fo\n"
 "MIME-Version: 1.0\n"
@@ -15,83 +15,77 @@ msgstr ""
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s á %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "Eitt samband hevur í mesta lagi %(count)d Apprise-URL."
-msgstr[1] "Eitt samband hevur í mesta lagi %(count)d Apprise-URL'ar."
+msgstr[0] "Eitt samband hevur í mesta lagi %(count)d Apprise-URL-adressu."
+msgstr[1] "Eitt samband hevur í mesta lagi %(count)d Apprise-URL-adressur."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
-msgstr "Apprise-URL'ar"
+msgstr "Apprise-URL-adressur"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr "Í minsta lagi ein Apprise-URL krevst."
+msgstr "Í minsta lagi ein Apprise-URL-adressa krevst."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Í minsta lagi ein tænasta noktaði boðunum."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
 msgstr[0] "Sent til %(count)d tænastu."
 msgstr[1] "Sent til %(count)d tænastur."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
 msgstr "Linja %(line)d (%(scheme)s) virkar á teldini, sum Postulo koyrir á, ikki á eini tænastu hjá tær, so hon kann ikki brúkast her."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
 msgstr "Linja %(line)d biður um at fylgja víðarisendingum; Postulo fylgir ongantíð einari, so gev endaligu adressuna."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr "Linja %(line)d er ikki ein Apprise-URL, sum henda útgávan skilir (%(scheme)s)."
+msgstr "Linja %(line)d er ikki ein Apprise-URL-adressa, sum henda útgávan skilir (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "Linja %(line)d nevnir eina fílu á teldini, sum Postulo koyrir á (%(argument)s=). Gev eina https-adressu í staðin."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Ein á hvørji linju, á Apprise-sniði: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, og hvør sum helst av hinum, sum Apprise listar. Atgongdarupplýsingarnar liggja inni í URL'inum, so alt feltið verður goymt bronglað og ongantíð víst aftur; sambandslistin vísir bert navnið á hvørji tænastu og, fyri eina á tínum egna ambætara, tann ambætaran."
+msgstr "Ein á hvørji linju, á Apprise-sniði: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, og hvør sum helst av hinum, sum Apprise listar. Atgongdarupplýsingarnar liggja inni í URL-adressuni, so allur teigurin verður goymdur bronglaður og ongantíð vístur aftur; sambandslistin vísir bert navnið á hvørji tænastu og, fyri eina á tínum egna ambætara, tann ambætaran."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo kann røkka tær her"
 
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Send fráboðanirnar hjá Postulo gjøgnum Apprise til Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, teldupost og væl meira enn hundrað aðrar tænastur. Hvør teirra verður nevnd við einum vevbústaði, sum inniheldur atgongdarupplýsingarnar og verður goymdur bronglaður."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Tænasturnar svaraðu ikki innan %(seconds)d sekund."
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Fráboðanir frá triðjapørtum gjøgnum Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr "Hetta eru royndarboðini frá Apprise-sambandinum hjá tær. Áminningar og fangingar koma á sama hátt."

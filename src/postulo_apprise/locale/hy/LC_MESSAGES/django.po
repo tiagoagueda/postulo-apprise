@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-24 03:02+0000\n"
+"PO-Revision-Date: 2026-10-24 21:42+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Armenian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/hy/>\n"
 "Language: hy\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s (%(host)s)՝ %(error)s"
 
@@ -27,17 +27,14 @@ msgstr[0] "Կապը կարող է պարունակել առավելագույն�
 msgstr[1] "Կապը կարող է պարունակել առավելագույնը %(count)d Apprise URL։"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Apprise URL-ներ"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Անհրաժեշտ է առնվազն մեկ Apprise URL։"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Առնվազն մեկ ծառայություն մերժեց հաղորդագրությունը։"
 
@@ -59,9 +56,9 @@ msgid "Line %(line)d asks for redirects to be followed; Postulo never follows on
 msgstr "%(line)d տողը պահանջում է հետևել վերահղումներին․ Postulo-ն երբեք չի հետևում դրանց, ուստի նշեք վերջնական հասցեն։"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr "Տող %(line)d՝ սա այնպիսի Apprise URL չէ, որը հասկանում է այս տարբերակը (%(scheme)s)։"
+msgstr "Տող %(line)d․ Apprise-ի այս տարբերակը չի հասկանում այս URL-ը (%(scheme)s)։"
 
 #: src/postulo_apprise/notifier.py
 #, python-format
@@ -73,7 +70,6 @@ msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic,
 msgstr "Մեկ տողում՝ մեկը, Apprise-ի ձևով՝ tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org և Apprise-ի թվարկած մյուսներից ցանկացածը։ Մուտքի տվյալները գտնվում են URL-ի ներսում, ուստի ամբողջ դաշտը պահվում է գաղտնագրված և այլևս երբեք չի ցուցադրվում․ կապերի ցանկը ցույց է տալիս միայն յուրաքանչյուր ծառայության անունը, իսկ ձեր սեփական սերվերի վրա գտնվողի համար՝ նաև այդ սերվերը։"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo-ն կարող է ձեզ հետ կապվել այստեղ"
 
@@ -91,6 +87,5 @@ msgid "Third-party notifications via Apprise"
 msgstr "Երրորդ կողմի ծանուցումներ Apprise-ի միջոցով"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr "Սա ձեր Apprise կապի փորձնական հաղորդագրությունն է։ Հիշեցումներն ու որսերը կհասնեն նույն ձևով։"

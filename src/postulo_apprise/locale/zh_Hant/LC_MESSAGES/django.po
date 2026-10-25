@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"PO-Revision-Date: 2026-10-25 01:02+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -15,83 +15,75 @@ msgstr ""
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr "%(service)s 在 %(host)s: %(error)s"
+msgstr "%(host)s 上的 %(service)s：%(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "有接通最多 %(count)d Apprise URL ."
+msgstr[0] "每個連線最多可包含 %(count)d 個 Apprise 網址。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
-msgstr "新增網址"
+msgstr "Apprise 網址"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr "需要至少一個通訊網址 ."
+msgstr "至少需要一個 Apprise 網址。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
-msgstr "有至少一項服務拒絕了訊息 ."
+msgstr "至少有一項服務拒絕了此訊息。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "已交付至%(count)d服務."
+msgstr[0] "已送達 %(count)d 項服務。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "第 %(line)d 行（%(scheme)s）作用於執行 Postulo 的機器，而非你的某項服務，因此無法在此使用。"
+msgstr "第 %(line)d 行（%(scheme)s）作用於執行 Postulo 的機器，而非您的某項服務，因此無法在此使用。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "第1行 %(line)d 需要再接再通; Postulo 从不接通, 因此提供最后地址 ."
+msgstr "第 %(line)d 行要求追隨重新導向；Postulo 從不追隨重新導向，因此請提供最終網址。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr "第%(line)d行不是此版本所理解的相容URL (%(scheme)s) ."
+msgstr "第 %(line)d 行不是此版本能理解的 Apprise 網址（%(scheme)s）。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "第%(line)d行名取出相機 Postulo上所运行的檔案 (%(argument)s=). 提供 https 地址取而代之 ."
+msgstr "第 %(line)d 行指定了執行 Postulo 的機器上的檔案（%(argument)s=）。請改為提供 https 網址。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "每行一通:tgram://bot-token/chat-id;ntfy://topic;不和:webhook-id;webhook-token;mailto://user:password@example.org;和任何其他Apprise名單。 憑證活在 URL 內, 因此整個字段被加密而再也不會被顯示; 連接清單只顯示了每項服務的名稱, 就您自己伺服器上一個, 就顯示了伺服器的名稱 ."
+msgstr "每行一個，採用 Apprise 的格式：tgram://bot-token/chat-id、ntfy://topic、discord://webhook-id/webhook-token、mailto://user:password@example.org，以及 Apprise 列出的任何其他格式。憑證包含在網址中，因此整個欄位會加密儲存，且不會再次顯示；連線清單只會顯示每項服務的名稱，若服務位於您自己的伺服器上，也會顯示該伺服器。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
-msgstr "波斯圖可以接通你"
+msgstr "Postulo 可以在這裡聯絡到您"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通通通通訊通訊通通訊通訊通訊通訊通訊通訊通通訊通通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通訊通相接相接相接相接相接相接相接相接相接百多地相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相接相 每個都由一個地址取名 它有它的憑證被加密了."
+msgstr "透過 Apprise 將 Postulo 的通知傳送到 Telegram、ntfy、Discord、Matrix、Gotify、Pushover、Signal、電子郵件，以及一百多種其他服務。每項服務都以一個網址指定，網址中包含其憑證，並會加密儲存。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "在 %(seconds)d 秒以內."
+msgstr "服務未在 %(seconds)d 秒內回應。"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "第三方通知"
+msgstr "透過 Apprise 的第三方通知"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "這是您相關的測試訊息 。 有警示和捕捉也以同道而到."
+msgstr "這是來自您 Apprise 連線的測試訊息。提醒和擷取項目也會以相同方式送達。"

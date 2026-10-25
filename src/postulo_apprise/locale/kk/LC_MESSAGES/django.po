@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-22 21:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-10-25 04:02+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Kazakh <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/kk/>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
@@ -15,77 +15,77 @@ msgstr ""
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr ""
+msgstr "%(service)s (%(host)s): %(error)s"
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Бір қосылымда ең көбі %(count)d Apprise URL болады."
+msgstr[1] "Бір қосылымда ең көбі %(count)d Apprise URL болады."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
-msgstr ""
+msgstr "Apprise URL мекенжайлары"
 
 #: src/postulo_apprise/notifier.py
 msgid "At least one Apprise URL is needed."
-msgstr ""
+msgstr "Кемінде бір Apprise URL қажет."
 
 #: src/postulo_apprise/notifier.py
 msgid "At least one service refused the message."
-msgstr ""
+msgstr "Кемінде бір қызмет хабарды қабылдамады."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(count)d қызметке жеткізілді."
+msgstr[1] "%(count)d қызметке жеткізілді."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr ""
+msgstr "%(line)d-жол (%(scheme)s) сіздің қызметіңізде емес, Postulo жұмыс істейтін компьютерде әрекет етеді, сондықтан оны мұнда пайдалану мүмкін емес."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr ""
+msgstr "%(line)d-жол қайта бағыттауларға еруді сұрайды; Postulo ешқашан қайта бағыттауға ермейді, сондықтан соңғы мекенжайды беріңіз."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
-msgstr ""
+msgstr "%(line)d-жол — Apprise-тің бұл нұсқасы түсінетін URL емес (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr ""
+msgstr "%(line)d-жол Postulo жұмыс істейтін компьютердегі файлды атайды (%(argument)s=). Оның орнына https мекенжайын беріңіз."
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr ""
+msgstr "Әр жолға біреуден, Apprise пішімінде: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org және Apprise тізімдеген басқалардың кез келгені. Тіркелгі деректері URL ішінде болады, сондықтан бүкіл өріс шифрланып сақталады және қайта ешқашан көрсетілмейді; қосылымдар тізімінде тек әр қызметтің атауы және, егер ол өз серверіңізде болса, сол сервер көрсетіледі."
 
 #: src/postulo_apprise/notifier.py
 msgid "Postulo can reach you here"
-msgstr ""
+msgstr "Postulo сізбен осында байланыса алады"
 
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr ""
+msgstr "Postulo хабарландыруларын Apprise арқылы Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, электрондық пошта және тағы жүзден астам басқа қызметке жіберу. Әрқайсысы бір мекенжаймен беріледі, онда оның тіркелгі деректері болады және ол шифрланып сақталады."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr ""
+msgstr "Қызметтер %(seconds)d секунд ішінде жауап бермеді."
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
-msgstr ""
+msgstr "Apprise арқылы үшінші тарап хабарландырулары"
 
 #: src/postulo_apprise/notifier.py
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr ""
+msgstr "Бұл — Apprise қосылымыңыздан келген сынақ хабары. Еске салғыштар мен түсірілімдер де дәл осылай келеді."
