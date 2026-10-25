@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
+"PO-Revision-Date: 2026-10-24 21:42+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Basque <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/eu/>\n"
 "Language: eu\n"
@@ -15,85 +15,77 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr "%(service)s %(host)s: %(error)s"
+msgstr "%(service)s (%(host)s): %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "Konexio batek gehienez ere URL bat dauka."
-msgstr[1] "Konexio batek gehienez URLak onartzen ditu."
+msgstr[0] "Konexio batek Apprise URL bat izan dezake gehienez."
+msgstr[1] "Konexio batek %(count)d Apprise URL izan ditzake gehienez."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
-msgstr "URLak"
+msgstr "Apprise URLak"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr "URL bat behar da gutxienez."
+msgstr "Apprise URL bat behar da gutxienez."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Gutxienez zerbitzu batek uko egin zion mezuari."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "%(count)d zerbitzura bidalia."
-msgstr[1] "%(count)d zerbitzuetara bidalia."
+msgstr[0] "Zerbitzu batera bidali da."
+msgstr[1] "%(count)d zerbitzutara bidali da."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "Lerroak %(line)d (%(scheme)s) Postulo makinan funtzionatzen du, ez zure zerbitzuan, beraz ezin da hemen erabili."
+msgstr "%(line)d. lerroak (%(scheme)s) Postulo exekutatzen den makinan jarduten du, ez zure zerbitzu batean; beraz, ezin da hemen erabili."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
 msgstr "%(line)d. lerroak birbideratzeei jarraitzeko eskatzen du; Postulok ez dio inoiz birbideratzerik jarraitzen, beraz eman azken helbidea."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "%(line)d. lerroa ez da bertsio honek ulertzen duen Apprise URL bat (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "%(line)d. lerroak Postulo exekutatzen den makinako fitxategi bat aipatzen du (%(argument)s=). Eman https helbide bat horren ordez."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "Lerro bakoitzeko bat, Apprise-ren moduan: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, eta beste edozein Apprise zerrendak. kredentzialak URLaren barruan bizi dira, beraz, eremu osoa enkriptatuta dago eta ez da berriro erakusten; konexio-zerrendak zerbitzu bakoitzaren izena bakarrik erakusten du, eta, bat zure zerbitzari batean, zerbitzari hori."
+msgstr "Bat lerro bakoitzeko, Apprise-ren formatuan: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, eta Apprise-k zerrendatzen dituen beste edozein. Kredentzialak URLaren barruan daude; beraz, eremu osoa zifratuta gordetzen da eta ez da berriro erakusten. Konexioen zerrendak zerbitzu bakoitzaren izena soilik erakusten du eta, zure zerbitzari batean dagoen zerbitzu batentzat, zerbitzari hori."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
-msgstr "Postulok hemen aurkituko zaitu"
+msgstr "Postulok hemen aurki zaitzake"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Bidali Postuloren jakinarazpenak Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-posta eta beste ehun zerbitzu baino gehiagotara. Bakoitza helbide batek izendatzen du, bere kredentziala gordetzen duena eta enkriptatuta gordetzen dena."
+msgstr "Bidali Postuloren jakinarazpenak Apprise bidez Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, posta elektroniko eta beste ehun zerbitzu baino gehiagotara. Bakoitza helbide batek izendatzen du; helbide horrek bere kredentziala dauka eta zifratuta gordetzen da."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "Zerbitzuek ez zuten erantzun %(seconds)d segundotan."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "Hirugarrenen jakinarazpenak eranskinen bidez"
+msgstr "Hirugarrenen jakinarazpenak Apprise bidez"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "Hau da zure aplikazio-konexioaren proba-mezua. Oroigarriak eta harrapaketak era berean iritsiko dira."
+msgstr "Hau da zure Apprise konexioaren proba-mezua. Oroigarriak eta kapturak era berean iritsiko dira."

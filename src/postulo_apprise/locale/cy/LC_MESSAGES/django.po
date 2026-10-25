@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-24 03:02+0000\n"
+"PO-Revision-Date: 2026-10-24 21:42+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Welsh <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/cy/>\n"
 "Language: cy\n"
@@ -15,12 +15,12 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s ar %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "Gall cysylltiad ddal %(count)d URL Apprise ar y mwyaf."
@@ -29,56 +29,51 @@ msgstr[2] "Gall cysylltiad ddal %(count)d URL Apprise ar y mwyaf."
 msgstr[3] "Gall cysylltiad ddal %(count)d URL Apprise ar y mwyaf."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "URLau Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "Mae angen o leiaf un URL Apprise."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "Gwrthododd o leiaf un gwasanaeth y neges."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "Wedi'i ddanfon i %(count)d gwasanaeth."
-msgstr[1] "Wedi'i ddanfon i %(count)d gwasanaeth."
-msgstr[2] "Wedi'i ddanfon i %(count)d o wasanaethau."
-msgstr[3] "Wedi'i ddanfon i %(count)d o wasanaethau."
+msgstr[0] "Wedi'i anfon i %(count)d gwasanaeth."
+msgstr[1] "Wedi'i anfon i %(count)d wasanaeth."
+msgstr[2] "Wedi'i anfon i %(count)d gwasanaeth."
+msgstr[3] "Wedi'i anfon i %(count)d gwasanaeth."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
 msgstr "Mae llinell %(line)d (%(scheme)s) yn gweithredu ar y peiriant y mae Postulo'n rhedeg arno, nid ar wasanaeth o'ch eiddo chi, felly does dim modd ei defnyddio yma."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "Mae llinell %(line)d yn gofyn am ddilyn ailgyfeiriadau; dyw Postulo byth yn dilyn un, felly rhowch y cyfeiriad terfynol."
+msgstr "Mae llinell %(line)d yn gofyn am ddilyn ailgyfeiriadau; nid yw Postulo byth yn dilyn un, felly rhowch y cyfeiriad terfynol."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "Nid yw llinell %(line)d yn URL Apprise y mae'r fersiwn hon yn ei ddeall (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "Mae llinell %(line)d yn enwi ffeil ar y peiriant y mae Postulo'n rhedeg arno (%(argument)s=). Rhowch gyfeiriad https yn lle hynny."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "Un i bob llinell, ar ffurf Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, ac unrhyw un o'r lleill y mae Apprise yn eu rhestru. Mae'r manylion mewngofnodi y tu mewn i'r URL, felly caiff y maes cyfan ei storio wedi'i amgryptio a byth ei ddangos eto; dim ond enw pob gwasanaeth y mae'r rhestr o gysylltiadau yn ei ddangos ac, ar gyfer un ar weinydd o'ch eiddo chi, y gweinydd hwnnw."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Gall Postulo eich cyrraedd yma"
 
@@ -87,15 +82,14 @@ msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, 
 msgstr "Anfon hysbysiadau Postulo drwy Apprise i Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-bost a thros gant o wasanaethau eraill. Caiff pob un ei enwi gan un cyfeiriad, sy'n dal ei fanylion mewngofnodi ac sy'n cael ei storio wedi'i amgryptio."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "Wnaeth y gwasanaethau ddim ateb o fewn %(seconds)d eiliad."
+msgstr "Ni wnaeth y gwasanaethau ateb o fewn %(seconds)d eiliad."
 
 #: src/postulo_apprise/notifier.py
 msgid "Third-party notifications via Apprise"
 msgstr "Hysbysiadau trydydd parti drwy Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "Dyma'r neges brawf o'ch cysylltiad Apprise. Bydd nodiadau atgoffa a dalfeydd yn cyrraedd yn yr un ffordd."
+msgstr "Dyma'r neges brawf o'ch cysylltiad Apprise. Bydd nodiadau atgoffa a chipiadau yn cyrraedd yn yr un ffordd."

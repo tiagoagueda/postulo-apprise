@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"PO-Revision-Date: 2026-10-25 01:02+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Arabic <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ar/>\n"
 "Language: ar\n"
@@ -15,93 +15,85 @@ msgstr ""
 "X-Generator: postulo scripts/messages.py\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(service)s على %(host)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
-msgstr[0] "هناك اتصال يمسك بـ \"أبريس\"."
-msgstr[1] "A connection holds at most %(count)d Apprise URL."
-msgstr[2] "وصلة تحمل أكثر من 2 آبريس."
-msgstr[3] "A connection holds at most %(count)d Apprise URLs."
-msgstr[4] ""
-msgstr[5] "A connection holds at most %(count)d Apprise URLs."
+msgstr[0] "لا يقبل الاتصال أي عنوان Apprise."
+msgstr[1] "يقبل الاتصال عنوان Apprise واحدًا على الأكثر."
+msgstr[2] "يقبل الاتصال %(count)d من عناوين Apprise على الأكثر."
+msgstr[3] "يقبل الاتصال %(count)d عناوين Apprise على الأكثر."
+msgstr[4] "يقبل الاتصال %(count)d من عناوين Apprise على الأكثر."
+msgstr[5] "يقبل الاتصال %(count)d من عناوين Apprise على الأكثر."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "عناوين Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "يلزم عنوان Apprise واحد على الأقل."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "رفضت خدمة واحدة على الأقل الرسالة."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "تم تسليمها إلى صفر من الخدمات."
-msgstr[1] "تم تسليمها إلى %(count)d خدمة."
-msgstr[2] "قُدِّم إلى خدماتين."
-msgstr[3] "تم تسليمها إلى %(count)d خدمات."
-msgstr[4] ""
-msgstr[5] "تم تسليمها إلى %(count)d خدمات."
+msgstr[0] "لم يُسلَّم إلى أي خدمة."
+msgstr[1] "سُلِّم إلى خدمة واحدة."
+msgstr[2] "سُلِّم إلى %(count)d خدمتين."
+msgstr[3] "سُلِّم إلى %(count)d خدمات."
+msgstr[4] "سُلِّم إلى %(count)d خدمةً."
+msgstr[5] "سُلِّم إلى %(count)d خدمة."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "الخط %(line)d (%(scheme)s) يعمل على الآلة البريدية، وليس على خدمة لك، حتى لا يمكن استخدامه هنا."
+msgstr "السطر %(line)d (%(scheme)s) يعمل على الجهاز الذي يشغّل Postulo، لا على خدمة تخصّك، لذا لا يمكن استخدامه هنا."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
 msgstr "يطلب السطر %(line)d اتباع عمليات إعادة التوجيه؛ لا يتبع Postulo أيًّا منها أبدًا، لذا أدخِل العنوان النهائي."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "السطر %(line)d ليس عنوان Apprise يفهمه هذا الإصدار (%(scheme)s)."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). أعطني عنواناً بدلاً من ذلك."
+msgstr "السطر %(line)d يشير إلى ملف على الجهاز الذي يشغّل Postulo (%(argument)s=). أدخِل عنوان https بدلًا من ذلك."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. وتعيش وثائق التفويض داخل الجبهة الثورية الثورية، لذا يُخزن الحقل بأكمله مشفرة ولا تظهر أبدا مرة أخرى؛ وتُظهر قائمة الاتصالات فقط اسم كل خدمة، وبالنسبة لواحد على خادم خاص بك، ذلك الخادم."
+msgstr "عنوان واحد في كل سطر، بصيغة Apprise: tgram://bot-token/chat-id، ntfy://topic، discord://webhook-id/webhook-token، mailto://user:password@example.org، وأي عنوان آخر من العناوين التي يدرجها Apprise. بيانات الاعتماد موجودة داخل العنوان، لذا يُخزَّن الحقل كاملًا مشفّرًا ولا يُعرض مرة أخرى أبدًا؛ ولا تُظهر قائمة الاتصالات إلا اسم كل خدمة، ومعه الخادم إن كانت الخدمة على خادم خاص بك."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "يستطيع Postulo الوصول إليك هنا"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "أرسل إخطارات (إرسال) من خلال (آبريس) إلى (تليغرام) و(إنتيفي) و(ديسكورد) و(ماتريكس) و(غوتيم) و(بوشوفر) و(ستارال) و(إيميل) وأكثر من مائة خدمة أخرى ويُسمّى كل منها عنوان واحد، ويحتفظ بمصداقيته ويُخزّن."
+msgstr "إرسال إشعارات Postulo عبر Apprise إلى Telegram وntfy وDiscord وMatrix وGotify وPushover وSignal والبريد الإلكتروني وأكثر من مئة خدمة أخرى. تُحدَّد كل خدمة بعنوان واحد يتضمّن بيانات اعتمادها ويُخزَّن مشفّرًا."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "The services did not answer within %(seconds)d seconds."
+msgstr "لم تستجب الخدمات خلال %(seconds)d ثانية."
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "إخطارات الأطراف الثالثة عن طريق شركة Apprise"
+msgstr "إشعارات خارجية عبر Apprise"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "هذه رسالة الاختبار من اتصال Apprise الخاص بك. ستصل التذكيرات وعمليات الالتقاط بالطريقة نفسها."
+msgstr "هذه رسالة الاختبار من اتصال Apprise الخاص بك. ستصل التذكيرات والالتقاطات بالطريقة نفسها."
