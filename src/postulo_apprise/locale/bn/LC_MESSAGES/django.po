@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"PO-Revision-Date: 2026-10-30 23:16+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Bengali <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/bn/>\n"
 "Language: bn\n"
@@ -15,85 +15,77 @@ msgstr ""
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(host)s-এ %(service)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "একটি সংযোগে সর্বোচ্চ %(count)dটি Apprise URL থাকতে পারে।"
 msgstr[1] "একটি সংযোগে সর্বোচ্চ %(count)dটি Apprise URL থাকতে পারে।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Apprise URL"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "অন্তত একটি Apprise URL দরকার।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "অন্তত একটি পরিষেবা বার্তাটি প্রত্যাখ্যান করেছে।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "এক্স-১৩এক্স সার্ভিসে পাঠানো হয়েছে।"
-msgstr[1] "এক্স-১৩এক্স সার্ভিসে পাঠানো হয়েছে।"
+msgstr[0] "%(count)dটি পরিষেবায় পাঠানো হয়েছে।"
+msgstr[1] "%(count)dটি পরিষেবায় পাঠানো হয়েছে।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
 msgstr "লাইন %(line)d (%(scheme)s) Postulo যে মেশিনে চলে তার ওপর কাজ করে, আপনার কোনো পরিষেবার ওপর নয়, তাই এটি এখানে ব্যবহার করা যায় না।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "লাইন %(line)d পুনর্নির্দেশ অনুসরণ করতে বলে; Postulo কখনও পুনর্নির্দেশ অনুসরণ করে না, তাই চূড়ান্ত ঠিকানাটি দিন।"
+msgstr "লাইন %(line)d রিডাইরেক্ট অনুসরণ করতে বলে; Postulo কখনও রিডাইরেক্ট অনুসরণ করে না, তাই চূড়ান্ত ঠিকানাটি দিন।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "লাইন %(line)d এমন কোনো Apprise URL নয় যা এই সংস্করণ বোঝে (%(scheme)s)।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "লাইন %(line)d Postulo যে মেশিনে চলে তার একটি ফাইলের নাম উল্লেখ করে (%(argument)s=)। পরিবর্তে একটি https ঠিকানা দিন।"
+msgstr "লাইন %(line)d Postulo যে মেশিনে চলে তার একটি ফাইলের নাম উল্লেখ করে (%(argument)s=)। এর বদলে একটি https ঠিকানা দিন।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "প্রতি লাইনে একটি, Apprise-এর রূপে: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, এবং Apprise তালিকাভুক্ত অন্য যেকোনোটি। ক্রেডেনশিয়ালগুলো URL-এর ভেতরেই থাকে, তাই পুরো ক্ষেত্রটি এনক্রিপ্ট করে সংরক্ষণ করা হয় এবং আর কখনও দেখানো হয় না; সংযোগের তালিকা কেবল প্রতিটি পরিষেবার নাম দেখায় এবং, আপনার নিজের সার্ভারে থাকা পরিষেবার ক্ষেত্রে, সেই সার্ভারটি।"
+msgstr "প্রতি লাইনে একটি, Apprise-এর ফরম্যাটে: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, এবং Apprise-এর তালিকার অন্য যেকোনোটি। ক্রেডেনশিয়ালগুলো URL-এর ভেতরেই থাকে, তাই পুরো ফিল্ডটি এনক্রিপ্ট করে সংরক্ষণ করা হয় এবং আর কখনও দেখানো হয় না; সংযোগের তালিকা কেবল প্রতিটি পরিষেবার নাম দেখায় এবং, আপনার নিজের সার্ভারে থাকা পরিষেবার ক্ষেত্রে, সেই সার্ভারটি।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo এখানে আপনার কাছে পৌঁছাতে পারে"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Postulo-র বিজ্ঞপ্তিগুলো Apprise-এর মাধ্যমে Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, ইমেল এবং এক শোরও বেশি অন্যান্য পরিষেবায় পাঠান। প্রতিটি একটি ঠিকানা দিয়ে চিহ্নিত, যাতে এর ক্রেডেনশিয়াল থাকে এবং যা এনক্রিপ্ট করে সংরক্ষণ করা হয়।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
 msgstr "পরিষেবাগুলো %(seconds)d সেকেন্ডের মধ্যে উত্তর দেয়নি।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "অ্যাপোর মাধ্যমে তৃতীয়-প্রসেস বিজ্ঞপ্তি"
+msgstr "Apprise-এর মাধ্যমে তৃতীয় পক্ষের বিজ্ঞপ্তি"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr "এটি আপনার Apprise সংযোগ থেকে পাঠানো পরীক্ষামূলক বার্তা। অনুস্মারক ও ক্যাপচারও একইভাবে আসবে।"

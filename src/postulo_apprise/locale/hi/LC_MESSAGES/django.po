@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"PO-Revision-Date: 2026-10-30 23:16+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Hindi <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/hi/>\n"
 "Language: hi\n"
@@ -15,85 +15,77 @@ msgstr ""
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
 msgstr "%(host)s पर %(service)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "एक कनेक्शन में अधिकतम %(count)d Apprise URL हो सकता है।"
 msgstr[1] "एक कनेक्शन में अधिकतम %(count)d Apprise URL हो सकते हैं।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
 msgstr "Apprise URL"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
 msgstr "कम से कम एक Apprise URL ज़रूरी है।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
 msgstr "कम से कम एक सेवा ने मैसेज अस्वीकार कर दिया।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "%(count)d सेवा तक पहुँचाया गया।"
-msgstr[1] "%(count)d सेवाओं तक पहुँचाया गया।"
+msgstr[0] "%(count)d सेवा तक पहुंचाया गया।"
+msgstr[1] "%(count)d सेवाओं तक पहुंचाया गया।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
-msgstr "पंक्ति %(line)d (%(scheme)s) उस मशीन पर काम करती है जिस पर Postulo चलता है, आपकी किसी सेवा पर नहीं, इसलिए इसका यहाँ उपयोग नहीं किया जा सकता।"
+msgstr "पंक्ति %(line)d (%(scheme)s) उस मशीन पर काम करती है जिस पर Postulo चलता है, आपकी किसी सेवा पर नहीं, इसलिए इसे यहां इस्तेमाल नहीं किया जा सकता।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "पंक्ति %(line)d रीडायरेक्ट का अनुसरण करने के लिए कहती है; Postulo कभी किसी रीडायरेक्ट का अनुसरण नहीं करता, इसलिए अंतिम पता दें।"
+msgstr "पंक्ति %(line)d रीडायरेक्ट फ़ॉलो करने के लिए कहती है; Postulo कभी कोई रीडायरेक्ट फ़ॉलो नहीं करता, इसलिए आखिरी पता दें।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "पंक्ति %(line)d ऐसा Apprise URL नहीं है जिसे यह वर्शन समझता हो (%(scheme)s)।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "पंक्ति %(line)d उस मशीन पर स्थित किसी फ़ाइल का नाम देती है जिस पर Postulo चलता है (%(argument)s=)। इसके बजाय कोई https पता दें।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "हर पंक्ति में एक, Apprise के प्रारूप में: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, और Apprise द्वारा सूचीबद्ध कोई भी अन्य। क्रेडेंशियल URL के भीतर ही होते हैं, इसलिए पूरा फ़ील्ड एन्क्रिप्ट करके सहेजा जाता है और फिर कभी नहीं दिखाया जाता; कनेक्शन सूची में केवल हर सेवा का नाम दिखता है और, यदि वह आपके अपने सर्वर पर है, तो वह सर्वर।"
+msgstr "हर पंक्ति में एक, Apprise के प्रारूप में: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, और Apprise की सूची में दी गई कोई भी अन्य सेवा। क्रेडेंशियल URL के भीतर ही होते हैं, इसलिए पूरा फ़ील्ड एन्क्रिप्ट करके स्टोर किया जाता है और फिर कभी नहीं दिखाया जाता; कनेक्शन की सूची में सिर्फ़ हर सेवा का नाम दिखता है और, अगर वह आपके अपने सर्वर पर है, तो वह सर्वर।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
 msgstr "Postulo आप तक यहां पहुंच सकता है"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "Postulo की सूचनाएँ Apprise के माध्यम से Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, ईमेल और सौ से भी अधिक अन्य सेवाओं पर भेजें। हर सेवा एक पते से पहचानी जाती है, जिसमें उसका क्रेडेंशियल होता है और जो एन्क्रिप्ट करके सहेजा जाता है।"
+msgstr "Postulo की सूचनाएं Apprise के ज़रिए Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, ईमेल और सौ से भी ज़्यादा दूसरी सेवाओं पर भेजें। हर सेवा एक पते से पहचानी जाती है, जिसमें उसका क्रेडेंशियल होता है और जो एन्क्रिप्ट करके स्टोर किया जाता है।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "सेवाओं ने %(seconds)d सेकंड के भीतर उत्तर नहीं दिया।"
+msgstr "सेवाओं ने %(seconds)d सेकंड के भीतर जवाब नहीं दिया।"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "Apprise के माध्यम से तीसरे पक्ष की अधिसूचनाएं"
+msgstr "Apprise के ज़रिए थर्ड-पार्टी सूचनाएं"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
 msgstr "यह आपके Apprise कनेक्शन से भेजा गया टेस्ट मैसेज है। रिमाइंडर और कैप्चर भी इसी तरह आएंगे।"
