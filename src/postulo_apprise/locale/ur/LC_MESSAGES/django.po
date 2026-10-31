@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 12:45+0000\n"
+"PO-Revision-Date: 2026-10-30 23:16+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Urdu <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ur/>\n"
 "Language: ur\n"
@@ -15,85 +15,77 @@ msgstr ""
 "X-Generator: postulo-messages\n"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "%(service)s at %(host)s: %(error)s"
-msgstr "%(service)s پر %(host)s: %(error)s"
+msgstr "%(host)s پر %(service)s: %(error)s"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "ایک کنکشن میں زیادہ سے زیادہ %(count)d Apprise URL ہو سکتا ہے۔"
 msgstr[1] "ایک کنکشن میں زیادہ سے زیادہ %(count)d Apprise URLs ہو سکتے ہیں۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Apprise URLs"
-msgstr "پیکج تنصیب کار"
+msgstr "Apprise URLs"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one Apprise URL is needed."
-msgstr "کم از کم ایک ایپیس کی ضرورت ہے."
+msgstr "کم از کم ایک Apprise URL درکار ہے۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "At least one service refused the message."
-msgstr "کم از کم ایک سروس نے اس پیغام سے انکار کر دیا۔."
+msgstr "کم از کم ایک سروس نے پیغام مسترد کر دیا۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Delivered to %(count)d service."
 msgid_plural "Delivered to %(count)d services."
-msgstr[0] "%(count)d سروس کے لئے نجات دی."
-msgstr[1] "%(count)d خدمات کے حوالے کیا."
+msgstr[0] "%(count)d سروس تک پہنچا دیا گیا۔"
+msgstr[1] "%(count)d سروسز تک پہنچا دیا گیا۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d (%(scheme)s) acts on the machine Postulo runs on, not on a service of yours, so it cannot be used here."
 msgstr "سطر %(line)d (%(scheme)s) اس مشین پر عمل کرتی ہے جس پر Postulo چلتا ہے، آپ کی کسی سروس پر نہیں، اس لیے اسے یہاں استعمال نہیں کیا جا سکتا۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d asks for redirects to be followed; Postulo never follows one, so give the final address."
-msgstr "لائن %(line)d کے لئے درخواست کرتا ہے کہ وہ کسی کی پیروی کرے ؛ پوسٹلؤ کبھی بھی کسی کی پیروی نہ کرے، آخر پتہ بتائیں."
+msgstr "سطر %(line)d ری ڈائریکٹس کی پیروی کا کہتی ہے؛ Postulo کبھی کسی ری ڈائریکٹ کی پیروی نہیں کرتا، اس لیے حتمی پتہ دیں۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d is not an Apprise URL this version understands (%(scheme)s)."
 msgstr "سطر %(line)d ایسا Apprise URL نہیں جو یہ ورژن سمجھتا ہو (%(scheme)s)۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
-msgstr "لائن %(line)d اسمِ ساحہ مشین پوسٹلُو پر مشتمل فائل (%(argument)s= (معاونت)۔ ایس ."
+msgstr "سطر %(line)d اس مشین پر موجود ایک فائل کا نام لیتی ہے جس پر Postulo چلتا ہے (%(argument)s=)۔ اس کی بجائے ایک https پتہ دیں۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
-msgstr "ایک لائن، ایپیسی فارم میں:Tgram http://bot-condis/chat-id, ntfy http://webhook-id/webhok-depell، میلتو httpser:pascial special.org اور کسی بھی دوسرے ایپیس فہرست میں سے کسی بھی۔ سندیں اصل میں رہتے ہیں، تو پورے میدان کو محفوظ کر کے کبھی کبھی نہیں دکھایا جاتا؛ تعلقات کی فہرست میں صرف ہر سروس کا نام اور آپ کے ایک سرور کے لئے،."
+msgstr "ہر سطر میں ایک، Apprise کی شکل میں: tgram://bot-token/chat-id، ntfy://topic، discord://webhook-id/webhook-token، mailto://user:password@example.org، اور وہ سب دوسرے جو Apprise درج کرتا ہے۔ اسناد URL کے اندر ہوتی ہیں، اس لیے پورا خانہ انکرپٹ کر کے محفوظ کیا جاتا ہے اور دوبارہ کبھی نہیں دکھایا جاتا؛ کنکشنز کی فہرست صرف ہر سروس کا نام دکھاتی ہے اور، اگر وہ آپ کے اپنے سرور پر ہو، تو وہ سرور۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Postulo can reach you here"
-msgstr "پوسٹو یہاں تک پہنچا سکتا ہے۔"
+msgstr "Postulo یہاں آپ تک پہنچ سکتا ہے"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
-msgstr "استوائی ڈاک کی اطلاعات ایپسیس ٹو ٹیلی گرام، ٹیٹی، دیسکورڈ، ماتریکس، گوتم، پوٹھوہار، سگنل، ای میل اور اچھی طرح سے ہیں۔ ہر ایک پتّے کے نام سے منسوب ہوتا ہے جو اس کی مستندی کو برقرار رکھتا ہے اور اسے محفوظ رکھا جاتا ہے۔."
+msgstr "Postulo کی اطلاعات Apprise کے ذریعے Telegram، ntfy، Discord، Matrix، Gotify، Pushover، Signal، ای میل اور سو سے کہیں زیادہ دوسری سروسز کو بھیجیں۔ ہر سروس ایک پتے سے پہچانی جاتی ہے، جس میں اس کی سند ہوتی ہے اور جو انکرپٹ کر کے محفوظ کیا جاتا ہے۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy, python-format
+#, python-format
 msgid "The services did not answer within %(seconds)d seconds."
-msgstr "خدمات نے %(seconds)d سیکنڈ کے اندر جواب نہیں دیا۔."
+msgstr "سروسز نے %(seconds)d سیکنڈ کے اندر جواب نہیں دیا۔"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "Third-party notifications via Apprise"
-msgstr "تیسرا حصہ اطلاعات ایپس کے ذریعے"
+msgstr "Apprise کے ذریعے تیسرے فریق کی اطلاعات"
 
 #: src/postulo_apprise/notifier.py
-#, fuzzy
 msgid "This is the test message from your Apprise connection. Reminders and captures will arrive the same way."
-msgstr "یہ آپ کے ایپیس اتصال کا ٹیسٹ پیغام ہے. یاددہانیاں اور گرفتاریاں اسی طرح پہنچ جائیں گی۔."
+msgstr "یہ آپ کے Apprise کنکشن کا آزمائشی پیغام ہے۔ یاد دہانیاں اور کیپچر بھی اسی طرح پہنچیں گے۔"
