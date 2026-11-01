@@ -1,6 +1,6 @@
 [project]
 name = "postulo-apprise"
-version = "0.3.0"
+version = "0.5.0"
 description = "Notifications from Postulo through Apprise: Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services, each named by one URL."
 readme = "README.md"
 requires-python = ">=3.12.4"
@@ -47,15 +47,14 @@ artifacts = ["src/postulo_apprise/locale/*/LC_MESSAGES/django.mo"]
 # Postulo itself, for the tests: they run the plugin inside a real Postulo, through its
 # registry, exactly as an instance would.
 #
-# Pinned to a commit rather than left at the default branch. Without a ref the tests ran
-# against whatever Postulo was on that morning, which is how a plugin released beside 0.3.0
-# came to be tested against something else and how the catalogue tests came to skip in
-# silence (#1). The commit is the core's `main` when the lock was last resolved; move it
-# with `uv lock --upgrade`, which also moves every library with it, and run the `security`
-# job's audit (`.forgejo/workflows/ci.yml`) before pushing (#22). The day the core has a
-# tag for the line this plugin is released beside, the tag replaces the commit.
+# Pinned to the core's release tag, the Postulo this plugin is released beside, rather than
+# left at the default branch. Without a ref the tests ran against whatever Postulo was on
+# that morning, which is how a plugin released beside 0.3.0 came to be tested against
+# something else and how the catalogue tests came to skip in silence (#1). A plugin release
+# moves the tag (postulo/postulo#1090) with `uv lock --upgrade-package postulo`; run the
+# `security` job's audit (`.forgejo/workflows/ci.yml`) before pushing (#22).
 dev = [
-    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@a8467ab21fac7e16c4a6faf825413e42381656e5",
+    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@v0.5.0",
     "pytest>=8.3",
     "pytest-django>=4.14",
     "ruff>=0.16",
