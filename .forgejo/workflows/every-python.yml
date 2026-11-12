@@ -7,6 +7,9 @@
 #
 # A workflow of its own rather than a matrix in `ci.yml`, for the reasons the core's
 # `every-python.yml` gives: this Forgejo expands a matrix before it knows the event.
+#
+# Each leg is the shared plugin CI, Postulo/plugin-ci (postulo/postulo#1170), on that Python;
+# `ci.yml` says why it is named by its full address.
 name: Every Python
 
 on:
@@ -14,17 +17,9 @@ on:
     # Release branches only; `main` is `ci.yml`'s alone.
     branches: ["[0-9]*"]
   schedule:
-    # The same morning as `ci.yml`'s weekly run, half an hour after it.
+    # The same morning as the weekly audit, half an hour after it.
     - cron: "47 6 * * 1"
   workflow_dispatch:
-
-permissions:
-  contents: read
-
-# Bump both together with `ci.yml`'s, which say why each is pinned, and with the core's.
-env:
-  UV_VERSION: "0.12.17"
-  UV_INSTALLER_SHA256: "37b82230b28617c6c24fa52364fa28aa37f2aa40c114809a623f6b064a9730e5"
 
 jobs:
   test:
@@ -39,32 +34,20 @@ jobs:
         # Every supported Python but the newest, which `ci.yml` runs on every push.
         python-version: ["3.12", "3.13"]
 
+    # Only what depends on the interpreter: the lint, the audit and the catalogue checks
+    # read the same on every Python and stay in `ci.yml`.
     steps:
       - uses: actions/checkout@v4
         with:
           persist-credentials: false
-
-      - name: Install WeasyPrint's libraries
-        # Postulo's settings import its PDF backend, which loads Pango.
-        run: |
-          apt-get update
-          apt-get install -y --no-install-recommends libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz0b libfontconfig1
-          rm -rf /var/lib/apt/lists/*
-
-      - name: Install uv
-        run: |
-          curl -LsSf "https://astral.sh/uv/${UV_VERSION}/install.sh" -o /tmp/uv-install.sh
-          echo "${UV_INSTALLER_SHA256}  /tmp/uv-install.sh" | sha256sum -c -
-          sh /tmp/uv-install.sh
-          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
-
-      - name: Install the plugin, Postulo and the test tools
-        run: uv sync --locked --python ${{ matrix.python-version }}
-
-      - name: Compile the catalogues
-        # The tests read the compiled catalogues (`.mo`), which are not committed; `ci.yml`
-        # compiles them in its catalogue step, which this workflow does not run.
-        run: uv run postulo-messages compile
+        timeout-minutes: 5
 
       - name: Test
-        run: uv run pytest
+        # WeasyPrint's libraries, uv, `uv sync --locked` on this Python, the catalogues
+        # compiled (the .mo files are not committed), the tests.
+        uses: https://source.tiagoagueda.com/Postulo/plugin-ci@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+          lint: "false"
+          catalogues: "false"
+        timeout-minutes: 30
