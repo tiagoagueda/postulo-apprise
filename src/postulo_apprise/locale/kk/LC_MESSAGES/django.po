@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-25 04:02+0000\n"
+"PO-Revision-Date: 2026-11-15 22:49+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Kazakh <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/kk/>\n"
 "Language: kk\n"
@@ -27,8 +27,9 @@ msgstr[0] "Бір қосылымда ең көбі %(count)d Apprise URL бол�
 msgstr[1] "Бір қосылымда ең көбі %(count)d Apprise URL болады."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "Postulo жұмыс істейтін машинада әрекет етеді, сіздің қызметіңізде емес, сондықтан оны пайдалану мүмкін емес."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -70,12 +71,14 @@ msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=)
 msgstr "%(line)d-жол Postulo жұмыс істейтін компьютердегі файлды атайды (%(argument)s=). Оның орнына https мекенжайын беріңіз."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "{packages} қажет, ол бұл машинада орнатылмаған."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Not available on this machine."
-msgstr ""
+msgstr "Бұл машинада қолжетімсіз."
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -90,9 +93,9 @@ msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, 
 msgstr "Postulo хабарландыруларын Apprise арқылы Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, электрондық пошта және тағы жүзден астам басқа қызметке жіберу. Әрқайсысы бір мекенжаймен беріледі, онда оның тіркелгі деректері болады және ол шифрланып сақталады."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "Бұл данада өшірілген: %(services)s. Әкімші оны қоса алады."
 
 #: src/postulo_apprise/notifier.py
 #, python-format

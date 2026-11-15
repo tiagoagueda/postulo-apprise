@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-24 23:02+0000\n"
+"PO-Revision-Date: 2026-11-15 22:48+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Georgian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ka/>\n"
 "Language: ka\n"
@@ -27,8 +27,9 @@ msgstr[0] "კავშირი მაქსიმუმ %(count)d Apprise URL-
 msgstr[1] "კავშირი მაქსიმუმ %(count)d Apprise URL-ს შეიცავს."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "მოქმედებს მანქანაზე, რომელზეც Postulo მუშაობს, და არა თქვენს სერვისზე, ამიტომ მისი გამოყენება შეუძლებელია."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -70,12 +71,14 @@ msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=)
 msgstr "სტრიქონი %(line)d ასახელებს ფაილს იმ კომპიუტერზე, სადაც Postulo მუშაობს (%(argument)s=). სანაცვლოდ მიუთითეთ https მისამართი."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "საჭიროა {packages}, რომელიც ამ მანქანაზე დაყენებული არ არის."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Not available on this machine."
-msgstr ""
+msgstr "ამ მანქანაზე მიუწვდომელია."
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -90,9 +93,9 @@ msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, 
 msgstr "Postulo-ს შეტყობინებების გაგზავნა Apprise-ის მეშვეობით Telegram-ზე, ntfy-ზე, Discord-ზე, Matrix-ზე, Gotify-ზე, Pushover-ზე, Signal-ზე, ელფოსტით და ასზე მეტ სხვა სერვისზე. თითოეული ერთი მისამართით აღინიშნება, რომელიც მის ავტორიზაციის მონაცემს შეიცავს და დაშიფრულად ინახება."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "ამ ინსტანციაზე გამორთულია: %(services)s. ადმინისტრატორს შეუძლია ჩართოს."
 
 #: src/postulo_apprise/notifier.py
 #, python-format

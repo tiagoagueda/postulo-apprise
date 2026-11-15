@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-24 21:42+0000\n"
+"PO-Revision-Date: 2026-11-15 22:47+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Basque <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/eu/>\n"
 "Language: eu\n"
@@ -27,8 +27,9 @@ msgstr[0] "Konexio batek Apprise URL bat izan dezake gehienez."
 msgstr[1] "Konexio batek %(count)d Apprise URL izan ditzake gehienez."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "Postulo exekutatzen den makinan jarduten du, ez zure zerbitzu batean, beraz ezin da erabili."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -70,12 +71,14 @@ msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=)
 msgstr "%(line)d. lerroak Postulo exekutatzen den makinako fitxategi bat aipatzen du (%(argument)s=). Eman https helbide bat horren ordez."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "{packages} behar ditu, eta ez daude makina honetan instalatuta."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Not available on this machine."
-msgstr ""
+msgstr "Ez dago eskuragarri makina honetan."
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -90,9 +93,9 @@ msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, 
 msgstr "Bidali Postuloren jakinarazpenak Apprise bidez Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, posta elektroniko eta beste ehun zerbitzu baino gehiagotara. Bakoitza helbide batek izendatzen du; helbide horrek bere kredentziala dauka eta zifratuta gordetzen da."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "Instantzia honetan itzalita dago: %(services)s. Administratzaile batek pizteko aukera du."
 
 #: src/postulo_apprise/notifier.py
 #, python-format

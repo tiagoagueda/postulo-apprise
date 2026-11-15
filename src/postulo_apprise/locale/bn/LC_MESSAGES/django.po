@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-30 23:16+0000\n"
+"PO-Revision-Date: 2026-11-15 22:48+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Bengali <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/bn/>\n"
 "Language: bn\n"
@@ -27,8 +27,9 @@ msgstr[0] "একটি সংযোগে সর্বোচ্চ %(count)dট
 msgstr[1] "একটি সংযোগে সর্বোচ্চ %(count)dটি Apprise URL থাকতে পারে।"
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "এটি Postulo যে মেশিনে চলছে সেটির উপর কাজ করে, আপনার কোনো পরিষেবার উপর নয়, তাই এটি ব্যবহার করা যায় না।"
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -70,12 +71,14 @@ msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=)
 msgstr "লাইন %(line)d Postulo যে মেশিনে চলে তার একটি ফাইলের নাম উল্লেখ করে (%(argument)s=)। এর বদলে একটি https ঠিকানা দিন।"
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "{packages} প্রয়োজন, যা এই মেশিনে ইনস্টল করা নেই।"
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Not available on this machine."
-msgstr ""
+msgstr "এই মেশিনে উপলব্ধ নয়।"
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -90,9 +93,9 @@ msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, 
 msgstr "Postulo-র বিজ্ঞপ্তিগুলো Apprise-এর মাধ্যমে Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, ইমেল এবং এক শোরও বেশি অন্যান্য পরিষেবায় পাঠান। প্রতিটি একটি ঠিকানা দিয়ে চিহ্নিত, যাতে এর ক্রেডেনশিয়াল থাকে এবং যা এনক্রিপ্ট করে সংরক্ষণ করা হয়।"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "এই ইনস্ট্যান্সে বন্ধ করা আছে: %(services)s। একজন প্রশাসক এটি চালু করতে পারেন।"
 
 #: src/postulo_apprise/notifier.py
 #, python-format

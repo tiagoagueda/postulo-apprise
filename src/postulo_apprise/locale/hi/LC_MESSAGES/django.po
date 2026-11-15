@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-30 23:16+0000\n"
+"PO-Revision-Date: 2026-11-15 22:48+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Hindi <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/hi/>\n"
 "Language: hi\n"
@@ -28,7 +28,7 @@ msgstr[1] "एक कनेक्शन में अधिकतम %(count)d A
 
 #: src/postulo_apprise/services.py
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "यह उस मशीन पर काम करता है जिस पर Postulo चलता है, आपकी किसी सेवा पर नहीं, इसलिए इसका उपयोग नहीं किया जा सकता।"
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -71,11 +71,11 @@ msgstr "पंक्ति %(line)d उस मशीन पर स्थित �
 
 #: src/postulo_apprise/services.py
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "इसके लिए {packages} चाहिए, जो इस मशीन पर इंस्टॉल नहीं है।"
 
 #: src/postulo_apprise/services.py
 msgid "Not available on this machine."
-msgstr ""
+msgstr "इस मशीन पर उपलब्ध नहीं है।"
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -92,7 +92,7 @@ msgstr "Postulo की सूचनाएं Apprise के ज़रिए Tele
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "इस इंस्टेंस पर बंद है: %(services)s। एडमिन इसे चालू कर सकता है।"
 
 #: src/postulo_apprise/notifier.py
 #, python-format

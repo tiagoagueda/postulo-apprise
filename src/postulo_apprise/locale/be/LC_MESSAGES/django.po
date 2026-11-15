@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-25 04:02+0000\n"
+"PO-Revision-Date: 2026-11-15 22:48+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Belarusian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/be/>\n"
 "Language: be\n"
@@ -28,8 +28,9 @@ msgstr[1] "Падключэнне ўтрымлівае не больш за %(co
 msgstr[2] "Падключэнне ўтрымлівае не больш за %(count)d URL Apprise."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "Дзейнічае на машыне, на якой працуе Postulo, а не на вашым сэрвісе, таму яго нельга выкарыстоўваць."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -72,12 +73,14 @@ msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=)
 msgstr "Радок %(line)d указвае на файл на машыне, дзе працуе Postulo (%(argument)s=). Замест гэтага ўкажыце адрас https."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "Патрабуе {packages}, якія не ўсталяваны на гэтай машыне."
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Not available on this machine."
-msgstr ""
+msgstr "Недаступна на гэтай машыне."
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -92,9 +95,9 @@ msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, 
 msgstr "Адпраўляйце апавяшчэнні Postulo праз Apprise у Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, на электронную пошту і ў больш як сотню іншых сэрвісаў. Кожны задаецца адным адрасам, які змяшчае яго ўліковыя даныя і захоўваецца ў зашыфраваным выглядзе."
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "Выключана на гэтым экзэмпляры: %(services)s. Адміністратар можа яе ўключыць."
 
 #: src/postulo_apprise/notifier.py
 #, python-format

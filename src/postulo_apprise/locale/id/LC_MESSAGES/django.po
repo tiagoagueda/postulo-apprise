@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-23 11:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2026-11-15 22:48+0000\n"
+"Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Indonesian <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr[0] "Sebuah koneksi berlaku di sebagian besar %(count)d URL Apprise."
 
 #: src/postulo_apprise/services.py
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "Bekerja pada mesin tempat Postulo berjalan, bukan pada layanan Anda, sehingga tidak dapat digunakan."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -69,11 +69,11 @@ msgstr "Baris %(line)d nama berkas pada mesin Postulo berjalan (%(argument)s =).
 
 #: src/postulo_apprise/services.py
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "Memerlukan {packages}, yang tidak terpasang di mesin ini."
 
 #: src/postulo_apprise/services.py
 msgid "Not available on this machine."
-msgstr ""
+msgstr "Tidak tersedia di mesin ini."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy
@@ -92,7 +92,7 @@ msgstr "Kirim pemberitahuan Postulo melalui Apprrise ke Telegram, ntfy, Discord,
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "Dinonaktifkan di instans ini: %(services)s. Administrator dapat mengaktifkannya."
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format

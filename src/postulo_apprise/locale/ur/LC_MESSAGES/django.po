@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-30 23:16+0000\n"
+"PO-Revision-Date: 2026-11-15 22:48+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Urdu <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/ur/>\n"
 "Language: ur\n"
@@ -27,8 +27,9 @@ msgstr[0] "ایک کنکشن میں زیادہ سے زیادہ %(count)d Apprise
 msgstr[1] "ایک کنکشن میں زیادہ سے زیادہ %(count)d Apprise URLs ہو سکتے ہیں۔"
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "یہ اس مشین پر کام کرتا ہے جس پر Postulo چلتا ہے، آپ کی کسی سروس پر نہیں، اس لیے اسے استعمال نہیں کیا جا سکتا۔"
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -70,12 +71,14 @@ msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=)
 msgstr "سطر %(line)d اس مشین پر موجود ایک فائل کا نام لیتی ہے جس پر Postulo چلتا ہے (%(argument)s=)۔ اس کی بجائے ایک https پتہ دیں۔"
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "{packages} درکار ہے، جو اس مشین پر انسٹال نہیں ہے۔"
 
 #: src/postulo_apprise/services.py
+#, fuzzy
 msgid "Not available on this machine."
-msgstr ""
+msgstr "اس مشین پر دستیاب نہیں۔"
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -90,9 +93,9 @@ msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, 
 msgstr "Postulo کی اطلاعات Apprise کے ذریعے Telegram، ntfy، Discord، Matrix، Gotify، Pushover، Signal، ای میل اور سو سے کہیں زیادہ دوسری سروسز کو بھیجیں۔ ہر سروس ایک پتے سے پہچانی جاتی ہے، جس میں اس کی سند ہوتی ہے اور جو انکرپٹ کر کے محفوظ کیا جاتا ہے۔"
 
 #: src/postulo_apprise/notifier.py
-#, python-format
+#, fuzzy, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "اس انسٹینس پر بند ہے: %(services)s۔ ایک منتظم اسے آن کر سکتا ہے۔"
 
 #: src/postulo_apprise/notifier.py
 #, python-format

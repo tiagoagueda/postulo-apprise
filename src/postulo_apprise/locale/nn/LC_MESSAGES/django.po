@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: postulo-apprise\n"
-"PO-Revision-Date: 2026-10-25 04:02+0000\n"
+"PO-Revision-Date: 2026-11-15 22:49+0000\n"
 "Last-Translator: Tiago Águeda <tiago.agueda@tiagoagueda.com>\n"
 "Language-Team: Norwegian Nynorsk <https://translate.tiagoagueda.com/projects/postulo/plugin-apprise/nn/>\n"
 "Language: nn\n"
@@ -28,7 +28,7 @@ msgstr[1] "Ei tilkopling kan innehalde høgst %(count)d Apprise-URL-ar."
 
 #: src/postulo_apprise/services.py
 msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
-msgstr ""
+msgstr "Verkar på maskinen Postulo køyrer på, ikkje på ei tenesta du har, og kan difor ikkje brukast."
 
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
@@ -71,11 +71,11 @@ msgstr "Linje %(line)d nemner ei fil på maskina Postulo køyrer på (%(argument
 
 #: src/postulo_apprise/services.py
 msgid "Needs {packages}, which is not installed on this machine."
-msgstr ""
+msgstr "Treng {packages}, som ikkje er installert på denne maskinen."
 
 #: src/postulo_apprise/services.py
 msgid "Not available on this machine."
-msgstr ""
+msgstr "Ikkje tilgjengeleg på denne maskinen."
 
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -92,7 +92,7 @@ msgstr "Send varsla frå Postulo via Apprise til Telegram, ntfy, Discord, Matrix
 #: src/postulo_apprise/notifier.py
 #, python-format
 msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
-msgstr ""
+msgstr "Slått av på denne instansen: %(services)s. Ein administrator kan slå det på."
 
 #: src/postulo_apprise/notifier.py
 #, python-format
