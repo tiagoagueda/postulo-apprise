@@ -26,6 +26,10 @@ msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "Yhteydessä voi olla enintään %(count)d Apprise-URL."
 msgstr[1] "Yhteydessä voi olla enintään %(count)d Apprise-URL:ää."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise-URL-osoitteet"
@@ -65,6 +69,14 @@ msgstr "Rivi %(line)d ei ole Apprise-URL, jonka tämä versio ymmärtää (%(sch
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "Rivi %(line)d viittaa tiedostoon koneella, jolla Postulo toimii (%(argument)s=). Anna sen sijaan https-osoite."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "Yksi riville, Apprisen muodossa: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org ja mikä tahansa muu Apprisen luettelemista. Tunnistetiedot ovat URL-osoitteen sisällä, joten koko kenttä tallennetaan salattuna eikä sitä näytetä enää koskaan; yhteysluettelossa näkyy vain kunkin palvelun nimi ja omalla palvelimellasi olevan palvelun kohdalla myös kyseinen palvelin."
@@ -76,6 +88,11 @@ msgstr "Postulo tavoittaa sinut täältä"
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Lähetä Postulon ilmoitukset Apprisen kautta Telegramiin, ntfy:hin, Discordiin, Matrixiin, Gotifyhin, Pushoveriin, Signaliin, sähköpostiin ja yli sataan muuhun palveluun. Kukin määritetään yhdellä osoitteella, joka sisältää sen tunnistetiedot ja tallennetaan salattuna."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

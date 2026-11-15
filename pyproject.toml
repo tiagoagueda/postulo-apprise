@@ -54,7 +54,7 @@ artifacts = ["src/postulo_apprise/locale/*/LC_MESSAGES/django.mo"]
 # moves the tag (postulo/postulo#1090) with `uv lock --upgrade-package postulo`; run the
 # `security` job's audit (`.forgejo/workflows/ci.yml`) before pushing (#22).
 dev = [
-    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@v0.5.0",
+    "postulo @ git+https://source.tiagoagueda.com/postulo/postulo.git@70b444f56d4fa97a24ad9314cdb4134092a22402",
     "pytest>=8.3",
     "pytest-django>=4.14",
     "ruff>=0.16",

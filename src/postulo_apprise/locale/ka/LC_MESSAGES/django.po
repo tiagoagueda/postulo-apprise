@@ -26,6 +26,10 @@ msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "კავშირი მაქსიმუმ %(count)d Apprise URL-ს შეიცავს."
 msgstr[1] "კავშირი მაქსიმუმ %(count)d Apprise URL-ს შეიცავს."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise-ის URL-ები"
@@ -65,6 +69,14 @@ msgstr "სტრიქონი %(line)d არ არის Apprise URL, რ�
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "სტრიქონი %(line)d ასახელებს ფაილს იმ კომპიუტერზე, სადაც Postulo მუშაობს (%(argument)s=). სანაცვლოდ მიუთითეთ https მისამართი."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "თითო სტრიქონზე თითო, Apprise-ის ფორმით: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org და ნებისმიერი სხვა, რომელსაც Apprise ჩამოთვლის. ავტორიზაციის მონაცემები URL-შია, ამიტომ მთელი ველი დაშიფრულად ინახება და აღარასოდეს ჩანს; კავშირების სიაში ჩანს მხოლოდ თითოეული სერვისის სახელი და, თუ ის თქვენს საკუთარ სერვერზეა, ეს სერვერი."
@@ -76,6 +88,11 @@ msgstr "აქ Postulo-ს შეუძლია თქვენთან და
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Postulo-ს შეტყობინებების გაგზავნა Apprise-ის მეშვეობით Telegram-ზე, ntfy-ზე, Discord-ზე, Matrix-ზე, Gotify-ზე, Pushover-ზე, Signal-ზე, ელფოსტით და ასზე მეტ სხვა სერვისზე. თითოეული ერთი მისამართით აღინიშნება, რომელიც მის ავტორიზაციის მონაცემს შეიცავს და დაშიფრულად ინახება."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

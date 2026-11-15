@@ -25,6 +25,10 @@ msgid "A connection holds at most %(count)d Apprise URL."
 msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "每個連線最多可包含 %(count)d 個 Apprise 網址。"
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise 網址"
@@ -63,6 +67,14 @@ msgstr "第 %(line)d 行不是此版本能理解的 Apprise 網址（%(scheme)s�
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "第 %(line)d 行指定了執行 Postulo 的機器上的檔案（%(argument)s=）。請改為提供 https 網址。"
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "每行一個，採用 Apprise 的格式：tgram://bot-token/chat-id、ntfy://topic、discord://webhook-id/webhook-token、mailto://user:password@example.org，以及 Apprise 列出的任何其他格式。憑證包含在網址中，因此整個欄位會加密儲存，且不會再次顯示；連線清單只會顯示每項服務的名稱，若服務位於您自己的伺服器上，也會顯示該伺服器。"
@@ -74,6 +86,11 @@ msgstr "Postulo 可以在這裡聯絡到您"
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "透過 Apprise 將 Postulo 的通知傳送到 Telegram、ntfy、Discord、Matrix、Gotify、Pushover、Signal、電子郵件，以及一百多種其他服務。每項服務都以一個網址指定，網址中包含其憑證，並會加密儲存。"
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

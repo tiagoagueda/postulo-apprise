@@ -27,6 +27,10 @@ msgstr[0] "Savienojumā var būt ne vairāk kā %(count)d Apprise URL adrese."
 msgstr[1] "Savienojumā var būt ne vairāk kā %(count)d Apprise URL adreses."
 msgstr[2] "Savienojumā var būt ne vairāk kā %(count)d Apprise URL adrešu."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise URL adreses"
@@ -67,6 +71,14 @@ msgstr "%(line)d. rinda nav Apprise URL adrese, ko šī versija saprot (%(scheme
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "%(line)d. rinda norāda failu serverī, kurā darbojas Postulo (%(argument)s=). Tā vietā norādiet https adresi."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "Pa vienai katrā rindā, Apprise formātā: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org un jebkura cita, ko uzskaita Apprise. Pieteikšanās dati atrodas URL adresē, tāpēc viss lauks tiek glabāts šifrēts un vairs nekad netiek parādīts; savienojumu sarakstā redzams tikai katra pakalpojuma nosaukums un, ja pakalpojums ir jūsu paša serverī, šis serveris."
@@ -78,6 +90,11 @@ msgstr "Postulo var jūs sasniegt šeit"
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Sūta Postulo paziņojumus caur Apprise uz Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-pastu un vairāk nekā simts citiem pakalpojumiem. Katru norāda viena adrese, kurā ir tā pieteikšanās dati un kas tiek glabāta šifrēta."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

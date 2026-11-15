@@ -26,6 +26,10 @@ msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "Muunganisho mmoja hubeba URL %(count)d ya Apprise kwa upeo."
 msgstr[1] "Muunganisho mmoja hubeba URL %(count)d za Apprise kwa upeo."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "Apprise URLs"
@@ -68,6 +72,14 @@ msgstr "Mstari %(line)d si URL ya kuingia ambayo toleo hili linaelewa (%(scheme)
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "Mstari %(line)d unataja faili kwenye mashine ambayo Postulo inaendeshwa (%(argument)s=). Weka anwani ya https badala yake."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 #, fuzzy
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
@@ -82,6 +94,11 @@ msgstr "Ulo Unaweza Kuipata Hapa"
 #, fuzzy
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Tuma arifa za Postulo kupitia Kuinuka kwa Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, barua pepe na zaidi ya huduma zingine za 100. Kila mmoja ana jina lake kwa anwani moja, ambayo ina imani yake na imehifadhiwa kwa encrypted."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, fuzzy, python-format

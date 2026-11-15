@@ -26,6 +26,10 @@ msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "Ina connexiun cuntegna maximalmain %(count)d URL dad Apprise."
 msgstr[1] "Ina connexiun cuntegna maximalmain %(count)d URLs dad Apprise."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "URLs dad Apprise"
@@ -65,6 +69,14 @@ msgstr "La lingia %(line)d n'è betg in URL dad Apprise che questa versiun chape
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "La lingia %(line)d numna ina datoteca sin la maschina, sin la quala Postulo funcziuna (%(argument)s=). Indicai empè in'adressa https."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "In per lingia, en la furma dad Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, e tut ils auters che Apprise enumerescha. Las datas d'access sa chattan en l'URL, perquai vegn l'entir champ memorisà criptà e mai pli mussà; la glista da las connexiuns mussa mo il num da mintga servetsch e, per in sin in agen server, quel server."
@@ -76,6 +88,11 @@ msgstr "Postulo As po cuntanscher qua"
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Trametta las communicaziuns da Postulo via Apprise a Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, e-mail e bler dapli che tschient auters servetschs. Mintgin vegn indicà cun in'adressa che cuntegna sias datas d'access e vegn arcunada criptada."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

@@ -26,6 +26,10 @@ msgid_plural "A connection holds at most %(count)d Apprise URLs."
 msgstr[0] "Egy kapcsolat legfeljebb %(count)d Apprise URL-t tartalmazhat."
 msgstr[1] "Egy kapcsolat legfeljebb %(count)d Apprise URL-t tartalmazhat."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise URL-ek"
@@ -65,6 +69,14 @@ msgstr "A(z) %(line)d. sor nem olyan Apprise URL, amelyet ez a verzió ért (%(s
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "A(z) %(line)d. sor egy fájlt nevez meg azon a gépen, amelyen a Postulo fut (%(argument)s=). Adjon meg helyette egy https-címet."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "Soronként egy, az Apprise formátumában: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, vagy bármely más, az Apprise által felsorolt szolgáltatás. A hitelesítő adatok az URL-ben vannak, ezért az egész mező titkosítva tárolódik, és többé nem jelenik meg; a kapcsolatok listája csak az egyes szolgáltatások nevét mutatja, saját kiszolgálón futó szolgáltatásnál pedig azt a kiszolgálót is."
@@ -76,6 +88,11 @@ msgstr "A Postulo itt érheti el Önt"
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "A Postulo értesítéseinek továbbítása az Apprise segítségével a Telegram, az ntfy, a Discord, a Matrix, a Gotify, a Pushover, a Signal, az e-mail és jóval több mint száz további szolgáltatás felé. Mindegyiket egyetlen cím adja meg, amely a hozzáférési adatait is tartalmazza, és titkosítva tárolódik."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

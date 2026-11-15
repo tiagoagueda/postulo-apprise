@@ -54,12 +54,15 @@ from postulo.plugins.api import (
     DestinationRefused,
     FieldSpec,
     Manifest,
+    SubPlugin,
     TestResult,
     check_destination,
     declares,
+    sub_plugin_enabled,
 )
 
-from . import __version__
+from . import __version__, services
+from .services import LOCAL_SCHEMES
 
 #: The longest, in seconds, a connection or a read may wait. The core's own client waits
 #: ten for the same reason, and a line's ``rto=`` / ``cto=`` cannot raise it (#17).
@@ -72,26 +75,6 @@ SEND_DEADLINE = 45.0
 
 #: How many lines one connection may hold. Each is a connection that can wait its timeout.
 MAX_LINES = 20
-
-#: Services that act on the machine Postulo runs on, not on a remote party: the system log,
-#: the desktop's notification daemons, a local mail client, a USB light. A connection is
-#: one person's setting; these write to something that belongs to the operator (#12).
-LOCAL_SCHEMES = frozenset(
-    {
-        "syslog",
-        "dbus",
-        "kde",
-        "qt",
-        "glib",
-        "gio",
-        "gnome",
-        "macosx",
-        "windows",
-        "evolution",
-        "evolutions",
-        "blink1",
-    }
-)
 
 #: Services whose ``host`` slot holds something other than the address that is opened: the
 #: sender's domain of a mail API, an agent id. They send to their own API (#16).
@@ -365,6 +348,27 @@ def describe(server) -> str:
     return f"{server.service_name} {addresses[0]}" if addresses else str(server.service_name)
 
 
+def switched_off(urls: list[str], user) -> list[str]:
+    """The names of the services these lines address that an administrator has switched off.
+
+    Asked at every send, as the destination policy is: the switch is the operator's and may
+    change after the connection was saved. A line Apprise cannot read is not this function's
+    to judge (the form refused it); a scheme that is no listed service is let through.
+    """
+    off: list[str] = []
+    for _number, server in servers_by_line(urls):
+        if server is None:
+            continue
+        for scheme in sorted(_protocols(server)):
+            service = services.service_for(scheme)
+            if service is None:
+                continue
+            if not sub_plugin_enabled("apprise", service.id, user) and service.name not in off:
+                off.append(service.name)
+            break
+    return off
+
+
 def _notify(client: apprise.Apprise, **kwargs) -> bool:
     """``client.notify`` with one overall deadline, so a slow endpoint cannot hold the caller.
 
@@ -408,6 +412,10 @@ def _notify(client: apprise.Apprise, **kwargs) -> bool:
     )
 )
 class AppriseNotifier:
+    def sub_plugins(self) -> list[SubPlugin]:
+        """Every service Apprise supports, each switched on or off by the administrator (#20)."""
+        return services.sub_plugins()
+
     def config_fields(self) -> list[FieldSpec]:
         return [
             FieldSpec(
@@ -519,6 +527,22 @@ class AppriseNotifier:
 
     def send(self, notification, config: dict, user) -> None:
         """Carry one notification. Raise on failure: Postulo records it on the connection."""
+        # What can never work is said first: a service that acts on this machine is refused
+        # for that reason, not because its switch happens to be off.
+        problems = self._problems(config)
+        if problems:
+            raise ConfigurationError(" ".join(problems))
+        off = switched_off(split_urls(config.get("urls", "")), user)
+        if off:
+            raise ConfigurationError(
+                str(
+                    _(
+                        "Switched off on this instance: %(services)s. "
+                        "An administrator can switch it on."
+                    )
+                )
+                % {"services": ", ".join(off)}
+            )
         client = self._client(config)
         parts = []
         if notification.body:

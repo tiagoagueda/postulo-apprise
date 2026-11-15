@@ -27,6 +27,10 @@ msgstr[0] "Připojení může obsahovat nejvýše %(count)d adresu URL Apprise."
 msgstr[1] "Připojení může obsahovat nejvýše %(count)d adresy URL Apprise."
 msgstr[2] "Připojení může obsahovat nejvýše %(count)d adres URL Apprise."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Adresy URL Apprise"
@@ -67,6 +71,14 @@ msgstr "Řádek %(line)d není adresa URL Apprise, které by tato verze rozuměl
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "Řádek %(line)d odkazuje na soubor na počítači, na kterém Postulo běží (%(argument)s=). Uveďte místo toho adresu https."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "Jedna na řádek, ve tvaru Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org a kterékoli další, které Apprise uvádí. Přihlašovací údaje jsou přímo v adrese URL, proto se celé pole ukládá zašifrovaně a už se nikdy nezobrazí; seznam připojení ukazuje jen název každé služby a u služby na vašem vlastním serveru i tento server."
@@ -78,6 +90,11 @@ msgstr "Postulo vás zde může zastihnout"
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Posílá oznámení Postulo přes Apprise do Telegramu, ntfy, Discordu, Matrixu, Gotify, Pushoveru, Signalu, e-mailu a více než stovky dalších služeb. Každá služba je určena jednou adresou, která obsahuje její přihlašovací údaje a ukládá se zašifrovaně."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

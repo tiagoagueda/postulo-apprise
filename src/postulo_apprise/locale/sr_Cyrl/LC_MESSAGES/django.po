@@ -27,6 +27,10 @@ msgstr[0] "Веза садржи највише %(count)d Apprise URL."
 msgstr[1] "Веза садржи највише %(count)d Apprise URL-а."
 msgstr[2] "Веза садржи највише %(count)d Apprise URL-ова."
 
+#: src/postulo_apprise/services.py
+msgid "Acts on the machine Postulo runs on, not on a service of yours, so it cannot be used."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "Apprise URLs"
 msgstr "Apprise URL-ови"
@@ -67,6 +71,14 @@ msgstr "Ред %(line)d није Apprise URL који ова верзија ра
 msgid "Line %(line)d names a file on the machine Postulo runs on (%(argument)s=). Give an https address instead."
 msgstr "Ред %(line)d наводи датотеку на рачунару на ком ради Postulo (%(argument)s=). Уместо тога наведите https адресу."
 
+#: src/postulo_apprise/services.py
+msgid "Needs {packages}, which is not installed on this machine."
+msgstr ""
+
+#: src/postulo_apprise/services.py
+msgid "Not available on this machine."
+msgstr ""
+
 #: src/postulo_apprise/notifier.py
 msgid "One per line, in Apprise's form: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org, and any of the others Apprise lists. The credentials live inside the URL, so the whole field is stored encrypted and never shown again; the connections list shows only the name of each service and, for one on a server of your own, that server."
 msgstr "Један по реду, у облику који користи Apprise: tgram://bot-token/chat-id, ntfy://topic, discord://webhook-id/webhook-token, mailto://user:password@example.org и било који други које Apprise наводи. Акредитиви се налазе унутар URL-а, па се цело поље чува шифровано и више се никада не приказује; на списку веза приказује се само назив сваке услуге и, за услугу на вашем сопственом серверу, тај сервер."
@@ -78,6 +90,11 @@ msgstr "Postulo може да вас обавештава овде"
 #: src/postulo_apprise/notifier.py
 msgid "Send Postulo's notifications through Apprise to Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, email and well over a hundred other services. Each is named by one address, which holds its credential and is stored encrypted."
 msgstr "Шаље обавештења из Postulo преко Apprise на Telegram, ntfy, Discord, Matrix, Gotify, Pushover, Signal, е-пошту и на више од стотину других услуга. Свака се наводи једном адресом, која садржи њен акредитив и чува се шифровано."
+
+#: src/postulo_apprise/notifier.py
+#, python-format
+msgid "Switched off on this instance: %(services)s. An administrator can switch it on."
+msgstr ""
 
 #: src/postulo_apprise/notifier.py
 #, python-format

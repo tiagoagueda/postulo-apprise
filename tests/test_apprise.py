@@ -375,6 +375,7 @@ def test_a_line_cannot_raise_the_socket_timeouts_past_the_ceiling():
     assert (plain.socket_connect_timeout, plain.socket_read_timeout) == (4.0, 4.0)
 
 
+@pytest.mark.django_db
 def test_a_send_that_never_returns_is_given_up_on(monkeypatch):
     release = threading.Event()
     monkeypatch.setattr(notifier_module, "SEND_DEADLINE", 0.2)
@@ -400,6 +401,7 @@ def test_a_connection_holds_a_bounded_number_of_lines():
 # ------------------------------------------------ what the words are (#21)
 
 
+@pytest.mark.django_db
 def test_the_words_are_text_so_an_html_service_escapes_them(monkeypatch):
     """A captured page's title must not arrive in Telegram or in mail as markup."""
     from apprise.plugins.telegram import NotifyTelegram
@@ -423,6 +425,7 @@ def test_the_words_are_text_so_an_html_service_escapes_them(monkeypatch):
     assert "&lt;a href" in text and "&amp;" in text
 
 
+@pytest.mark.django_db
 def test_every_send_declares_its_body_as_text(sent, no_dns):
     notifier = AppriseNotifier()
     notifier.send(Notification(event="reminder_due", title="x"), {"urls": TELEGRAM}, user=None)
@@ -453,6 +456,7 @@ def test_the_test_button_explains_a_bad_configuration_instead_of_sending(sent):
     assert sent == []
 
 
+@pytest.mark.django_db
 def test_a_notification_travels_as_title_and_body_with_its_link(sent):
     AppriseNotifier().send(
         Notification(
@@ -471,6 +475,7 @@ def test_a_notification_travels_as_title_and_body_with_its_link(sent):
     )
 
 
+@pytest.mark.django_db
 def test_a_refusal_by_the_service_raises_so_postulo_records_it(monkeypatch):
     monkeypatch.setattr("apprise.Apprise.notify", lambda self, **kwargs: False)
     with pytest.raises(RuntimeError, match="refused"):
